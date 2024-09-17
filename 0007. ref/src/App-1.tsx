@@ -1,4 +1,3 @@
-
 // 字符串 ref 在旧版的 react 中可用，但是在当前 react 版本 v18 中是不可用的。
 import { Component } from 'react';
 
