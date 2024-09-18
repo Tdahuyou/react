@@ -95,7 +95,7 @@ ReactDOM.render(div, document.getElementById('root'));
 <!-- 引入 babel，用于编译 JSX，最终效果跟 React.createElement 函数调用的效果是完全一致的。 -->
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<script>
+<script type='text/babel'>
 // const span = React.createElement("span", {
 //   title: '这是一个 span 元素'
 // }, "this is a span element");
@@ -118,6 +118,9 @@ const div = (
 ReactDOM.render(div, document.getElementById("root"));
 </script>
 ```
+
+- `<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>` 需要引入 Babel 来编译 JSX。
+- `<script type='text/babel'>` 需要让浏览器知道这部分的 JS 是需要交给 Babel 编译处理的脚本。
 
 [3.html](./3.html) 的最终渲染结果如下图所示：
 
