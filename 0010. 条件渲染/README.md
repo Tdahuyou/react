@@ -2,7 +2,7 @@
 
 ## 🔗 链接
 
-- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Conditional_operator - react - quick start - Conditional rendering 条件渲染
+- https://zh-hans.react.dev/learn#conditional-rendering - react - quick start - Conditional rendering 条件渲染
 
 ## 📝 笔记
 
