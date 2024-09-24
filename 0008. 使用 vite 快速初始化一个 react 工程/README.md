@@ -2,8 +2,8 @@
 
 ## 🔗 Vite
 
-- https://vitejs.dev/guide/，vite 官方文档
-- https://github.com/vitejs/vite，vite github
+- https://vitejs.dev/guide/ - vite 官方文档
+- https://github.com/vitejs/vite - vite github
 
 
 ## 📝 使用 vite 创建 react 工程
