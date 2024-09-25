@@ -8,6 +8,7 @@
   - 注：需要额外的 webpack 配置才能使用。
 - https://github.com/suren-atoyan/monaco-react - monaco-react Github
   - 注：不需要额外的 webpack 配置就能使用。
+  - 本文中的 demo 是基于这个组件来写的。
 - https://github.com/suren-atoyan/monaco-react?tab=readme-ov-file#props - 查看 monaco-react 的 Editor 组件都有哪些属性可配置。
 
 ## 📝 笔记 - 单词 monaco
