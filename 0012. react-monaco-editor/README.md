@@ -20,6 +20,12 @@
 
 ![](md-imgs/2024-09-25-10-23-31.png)
 
+## 📝 笔记 - 安装 @monaco-editor/react
+
+```bash
+npm i @monaco-editor/react
+```
+
 ## 💻 demo - 引入 Editor 组件
 
 ```jsx
