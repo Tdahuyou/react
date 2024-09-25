@@ -219,6 +219,156 @@ export default App;
 - `editorRef.current.getValue()` 方法获取到当前值。
 - `editorRef.current.setValue(newValue)` 方法修改编辑器的内容。
 
+## 💻 实战练习 - 模仿 matatastudio 的代码预览效果封装一个代码预览组件
+
+可以在 https://vinci.matatastudio.com/ 中查看参考的代码预览效果示例：
+
+![](md-imgs/2024-09-25-11-31-27.png)
+
+一些细节：
+1. 展开和收起需要有动画过渡效果
+2. 预览区域是只读的
+3. 预览区域的光标位置改变有动画过渡效果，而非瞬间移动过去
+
+```jsx
+// src/App.jsx
+import { useRef } from 'react';
+import MyEditor from './MyEditor';
+
+function App() {
+  const editorRef = useRef(null);
+
+  function handleEditorDidMount(editor) {
+    editorRef.current = editor;
+  }
+
+  function showValue() {
+    alert(editorRef.current.getValue());
+  }
+
+  function writeValue() {
+    editorRef.current.setValue('// new value \n// this is new line');
+  }
+
+  return (
+    <>
+      <div className='editor-wrapper'>
+        <button onClick={showValue}>Show value</button>
+        <button onClick={writeValue}>Write value</button>
+        <MyEditor
+          width={'50vw'}
+          height={'50vh'}
+          onMount={handleEditorDidMount}
+          defaultValue={`// some comment
+#include "xxx.h"
+
+void user_main(){
+    // gen...
+}`}
+          language='c'
+        />
+      </div>
+    </>
+  );
+}
+
+export default App;
+```
+
+```jsx
+// src/MyEditor.jsx
+import { useRef, useState } from 'react';
+import Editor from '@monaco-editor/react';
+import PropTypes from 'prop-types';
+import './MyEditor.css';
+
+const DEFAULT_CODES = `// some comment
+#include "xxx.h"
+
+void user_main(){
+    // gen...
+}`;
+
+const MyEditor = ({ height, width, onMount, defaultValue, language }) => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  const editorRef = useRef(null);
+
+  const handleEditorDidMount = (editor) => {
+    editorRef.current = editor;
+    if (onMount) {
+      onMount(editor);
+    }
+  };
+
+  const toggleWidth = () => {
+    setIsCollapsed((prev) => !prev);
+  };
+
+  return (
+    <div className={`my-editor ${isCollapsed ? 'collapsed' : ''}`} style={{ width, height }} >
+      <button className='expand-button' onClick={toggleWidth}>
+        {isCollapsed ? '<' : '>'}
+      </button>
+      <Editor
+        height={height}
+        width={width}
+        defaultLanguage={language || 'c'}
+        defaultValue={defaultValue || DEFAULT_CODES}
+        onMount={handleEditorDidMount}
+        options={{
+          readOnly: true,
+          domReadOnly: true,
+          // 让光标移动更加平滑，有一个动画过度效果。
+          cursorSmoothCaretAnimation: 'on',
+          minimap: {
+            enabled: false, // 将侧边的代码缩略图隐藏
+          },
+        }}
+      />
+    </div>
+  );
+};
+
+MyEditor.propTypes = {
+  height: PropTypes.string,
+  width: PropTypes.string,
+  onMount: PropTypes.func,
+  defaultValue: PropTypes.string,
+  language: PropTypes.string,
+};
+
+export default MyEditor;
+```
+
+```css
+/* src/MyEditor.css */
+.my-editor {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  border: 1px solid #ccc;
+}
+
+.expand-button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: -2rem;
+  transform: translateY(-50%);
+}
+
+/* 新增的隐藏样式 */
+.my-editor.collapsed {
+  width: 0 !important;
+}
+```
+
+实际效果：
+
+![](md-imgs/2024-09-25-11-29-47.png)
+
 ## 🤖 请介绍一下 react-monaco-editor
 
 `react-monaco-editor` 是一个专门为 React 应用程序设计的代码编辑器组件，它基于微软的 Monaco Editor。Monaco Editor 以其强大的功能和良好的用户体验而闻名，是 Visual Studio Code 的核心部分。通过 `react-monaco-editor`，开发者可以在他们的 React 应用中轻松集成一个功能丰富且性能优越的代码编辑环境。
