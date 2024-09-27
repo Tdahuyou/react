@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 
 function App() {
   const items = [
@@ -8,35 +8,38 @@ function App() {
   ];
 
   // 写法1
+  // 正确写法
   return (
     <>
-      {items.map(item => (
-        <>
+      {items.map(item => (<React.Fragment key={item.id}>
           <h2>{item.title}</h2>
           <p>{item.description}</p>
-        </>
+        </React.Fragment>
       ))}
     </>
   );
 
-  // 写法2（跟写法 1 等效）
+  // 写法2
+  // 会报错
+  // Warning: Each child in a list should have a unique "key" prop.
   // return (
   //   <>
   //     {items.map(item => (
-  //       <React.Fragment key={item.id}>
+  //       <>
   //         <h2>{item.title}</h2>
   //         <p>{item.description}</p>
-  //       </React.Fragment>
+  //       </>
   //     ))}
   //   </>
   // );
 
   // 写法3
-  // 会影响到真实 DOM
+  // 会报错
+  // Warning: Each child in a list should have a unique "key" prop.
   // return (
   //   <>
   //     {items.map(item => (
-  //       <div key={item.id}>
+  //       <div>
   //         <h2>{item.title}</h2>
   //         <p>{item.description}</p>
   //       </div>
@@ -45,11 +48,11 @@ function App() {
   // );
 
   // 写法4
-  // 会报错：Missing "key" prop for element in iterator
+  // 会影响到真实 DOM
   // return (
   //   <>
   //     {items.map(item => (
-  //       <div>
+  //       <div key={item.id}>
   //         <h2>{item.title}</h2>
   //         <p>{item.description}</p>
   //       </div>

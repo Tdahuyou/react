@@ -26,7 +26,7 @@ function App() {
 
 ![](md-imgs/2024-09-27-16-08-13.png)
 
-## 💻 demo - React.Fragment 在渲染列表时的应用
+## 💻 demo - React.Fragment 渲染列表
 
 场景描述：
 
@@ -53,14 +53,12 @@ const items = [
 
 此时，React.Fragment 就可以解决这个问题。
 1. 可以使用 `<React.Fragment>` 标签来包裹需要渲染的所有根元素。
-2. 在列表渲染时如果没有指定 key 的话会存在问题，Fragment 考虑到了这一点，当我们循环渲染列表时，Fragment 会自动帮我们处理 key 的问题。
-   1. 可以不写 key，直接使用 `<></>` 的写法来写。
-   2. 可以指定 key，此时不能使用简写形式，应该谢伟 `<React.Fragment key={...}></React.Fragment>`。
+2. 在列表渲染时如果没有指定 key 的话会存在问题，Fragment 考虑到了这一点，当我们循环渲染列表时，不能使用简写形式，应该写为 `<React.Fragment key={...}></React.Fragment>`。
 
 示例：
 
 ```js
-import { React } from "react";
+import React from "react";
 
 function App() {
   const items = [
@@ -70,35 +68,38 @@ function App() {
   ];
 
   // 写法1
+  // 正确写法
   return (
     <>
-      {items.map(item => (
-        <>
+      {items.map(item => (<React.Fragment key={item.id}>
           <h2>{item.title}</h2>
           <p>{item.description}</p>
-        </>
+        </React.Fragment>
       ))}
     </>
   );
 
-  // 写法2（跟写法 1 等效基本等效）
+  // 写法2
+  // 会报错
+  // Warning: Each child in a list should have a unique "key" prop.
   // return (
   //   <>
   //     {items.map(item => (
-  //       <React.Fragment key={item.id}>
+  //       <>
   //         <h2>{item.title}</h2>
   //         <p>{item.description}</p>
-  //       </React.Fragment>
+  //       </>
   //     ))}
   //   </>
   // );
 
   // 写法3
-  // 会影响到真实 DOM
+  // 会报错
+  // Warning: Each child in a list should have a unique "key" prop.
   // return (
   //   <>
   //     {items.map(item => (
-  //       <div key={item.id}>
+  //       <div>
   //         <h2>{item.title}</h2>
   //         <p>{item.description}</p>
   //       </div>
@@ -107,11 +108,11 @@ function App() {
   // );
 
   // 写法4
-  // 会报错：Missing "key" prop for element in iterator
+  // 会影响到真实 DOM
   // return (
   //   <>
   //     {items.map(item => (
-  //       <div>
+  //       <div key={item.id}>
   //         <h2>{item.title}</h2>
   //         <p>{item.description}</p>
   //       </div>
