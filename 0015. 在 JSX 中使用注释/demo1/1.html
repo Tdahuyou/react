@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+
+    <!-- 引入 babel，用于编译 JSX，最终效果跟 React.createElement 函数调用的效果是完全一致的。 -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      ReactDOM.render(
+        // 下面是 JSX 语法
+        <div>
+          <h2>title</h2>
+          // <p>description</p>
+          {/* 这是 JSX 中的注释内容 */}
+        </div>,
+        document.getElementById('root')
+      );
+
+      // 在这个 .html 文件的 script 脚本中的 JSX 部分，如果你使用快捷方式 ctrl + / 来注释代码，默认生成的是错误的注释格式。
+    </script>
+  </body>
+</html>
