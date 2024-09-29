@@ -1,10 +1,14 @@
 # 0010. 条件渲染
 
-## 🔗 链接
+## 🔗 links
 
 - https://zh-hans.react.dev/learn#conditional-rendering - react - quick start - Conditional rendering 条件渲染
 
-## 📝 笔记
+## 📝 notes
+
+- React 中没有类似 vue 中的 v-if、v-else、v-show 的条件渲染指令，React 中的条件渲染是通过在 JSX 使用原始的 JavaScript 条件逻辑来决定要渲染什么内容的，写起来更加原生，更加直观、更加灵活。
+
+## 📝 notes - 条件渲染
 
 React 没有特殊的语法来编写条件语句，因此你使用的就是普通的 JavaScript 代码。例如使用 if 语句根据条件引入 JSX：
 
@@ -44,7 +48,7 @@ return (
 
 所有这些方法也适用于有条件地指定属性。如果你对 JavaScript 语法不熟悉，你可以先使用 if...else。
 
-## 💻 示例
+## 💻 demo - 条件渲染
 
 ```jsx
 import { useState } from 'react'
@@ -70,7 +74,7 @@ function App() {
 export default App
 ```
 
-## 📝 对比 vue
+## 📝 notes - 对比 vue
 
 在 vue 中，有俩内置指令：
 
