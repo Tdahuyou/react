@@ -28,6 +28,10 @@ function App() {
 
 此时 htmlContent 会被视作普通的 html 字符串（普通文本），而不是作为 HTML 内容（真实 DOM）被解析。
 
+这种写法最终生成的真实 DOM 结构如下：
+
+![](md-imgs/2024-09-29-08-55-18.png)
+
 ```jsx
 function App() {
   const htmlContent = '<p>This is a <strong>bold</strong> text.</p>';
@@ -45,11 +49,7 @@ function App() {
 
 这种写法最终生成的真实 DOM 结构如下：
 
-```html
-<div>
-  <p>This is a <strong>bold</strong> text.</p>
-</div>
-```
+![](md-imgs/2024-09-29-08-55-57.png)
 
 ## 🤖 请介绍一下 dangerouslySetInnerHTML
 
