@@ -4,7 +4,15 @@
 
 - https://zh-hans.react.dev/learn#rendering-lists - react - quick start - Rendering lists 列表渲染
 
-## 📝 笔记
+## 📝 notes
+
+- 列表渲染中的“列表”指的是“数组”。
+- 如果在 render 中返回一个 `{[1, 2, 3]}` 也是可以正常渲染的。React 会取出数组的每一项进行渲染。你会在页面上看到渲染结果 1 2 3。
+- 如果需要渲染的列表（数组）中包含 React 元素，则必须给元素加上 key，否则会报错。
+- 如果需要渲染的累表（数组）中包含无法渲染的内容，比如 null、undefined，React 会忽略它们。比如 `{[1, 2, 3, null, undefined]}` 最终会渲染 1 2 3。
+- 如果要渲染的列表（数组）中包含普通对象，比如 `{ title: 'Cabbage', isFruit: false, id: 1 }`，那么会报错，对象无法直接渲染。通常会使用 `arr.map` 来对对象数组 `arr` 做一个映射处理，将每一个对象映射为对应的 React 元素，然后渲染 React 元素列表。
+
+## 📝 doc - 列表渲染
 
 你将依赖 JavaScript 的特性，例如 **for 循环** 和 **array 的 map() 函数** 来渲染组件列表。
 
@@ -34,7 +42,7 @@ return (
 
 注意， `<li>` 有一个 `key` 属性。对于列表中的每一个元素，你都应该传递一个字符串或者数字给 `key`，用于在其兄弟节点中唯一标识该元素。通常 `key` 来自你的数据，比如数据库中的 ID。如果你在后续插入、删除或重新排序这些项目，React 将依靠你提供的 `key` 来思考发生了什么。
 
-## 💻 示例
+## 💻 demo - 列表渲染
 
 ```jsx
 const products = [
@@ -75,9 +83,9 @@ export default function ShoppingList() {
 - magenta 洋红
 - darkgreen 暗绿色
 
-## 📝 “列表渲染”中的“列表”是什么？
+## 📝 notes - “列表渲染”中的“列表”是什么？
 
-“列表渲染”中的“列表”是【数组】。
+**“列表渲染”中的“列表”是【数组】**。
 
 比如可以直接传入一个 `[1, 2, 3]`，也能渲染。
 
