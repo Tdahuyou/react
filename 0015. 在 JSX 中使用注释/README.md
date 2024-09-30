@@ -1,10 +1,10 @@
 # 0015. 在 JSX 中使用注释
 
-## 🔗 链接
+## 🔗 links
 
 - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md - jsx-eslint - GitHub - Disallow comments from being inserted as text nodes (react/jsx-no-comment-textnodes)
 
-## 📝 笔记 - JSX 中注释的写法
+## 📝 JSX 中注释的写法
 
 在 JSX 中使用注释的方式与在 JavaScript 中使用注释的方式有些不同。在 JSX 中，注释应该被包含在特殊的注释标签中，即 `{/* */}`。
 

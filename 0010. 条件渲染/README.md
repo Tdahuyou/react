@@ -8,7 +8,7 @@
 
 - React 中没有类似 vue 中的 v-if、v-else、v-show 的条件渲染指令，React 中的条件渲染是通过在 JSX 使用原始的 JavaScript 条件逻辑来决定要渲染什么内容的，写起来更加原生，更加直观、更加灵活。
 
-## 📝 notes - 条件渲染
+## 📝 条件渲染
 
 React 没有特殊的语法来编写条件语句，因此你使用的就是普通的 JavaScript 代码。例如使用 if 语句根据条件引入 JSX：
 
@@ -74,7 +74,7 @@ function App() {
 export default App
 ```
 
-## 📝 notes - 对比 vue
+## 📝 对比 vue
 
 在 vue 中，有俩内置指令：
 

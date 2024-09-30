@@ -1,10 +1,21 @@
 # 🎯 0008. 使用 vite 快速初始化一个 react 工程
 
-## 🔗 Vite
+## 🔗 links
 
 - https://vitejs.dev/guide/ - vite 官方文档
 - https://github.com/vitejs/vite - vite github
 
+## 📝 notes
+
+实际操作流程：
+1. pnpm create vite
+2. 输入项目名称，比如 demo
+3. 选择模板，比如 React
+4. cd demo
+5. pnpm i
+6. pnpm run dev
+
+文档中提到的命令 `npm create vite@latest my-react-app -- --template react` 其实就是 1+2+3 的步骤。如果记不住的话，直接运行命令 `pnpm create vite` 然后根据命令行提示来配置即可。
 
 ## 📝 使用 vite 创建 react 工程
 
@@ -32,7 +43,7 @@ $ npm run dev
 
 ![](md-imgs/2024-09-24-10-05-05.png)
 
-## 🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
+## 🤖 AI - 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
 
 `npm create vite@latest my-react-app -- --template react` 这条命令是用来创建一个新的 React 项目，使用 Vite 作为构建工具。让我们逐部分解释这条命令：
 

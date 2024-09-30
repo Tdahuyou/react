@@ -1,10 +1,10 @@
 # 0014. React.Fragment
 
-## 🔗 链接
+## 🔗 links
 
 - https://zh-hans.react.dev/reference/react/Fragment - React - Reference - Components - Fragment
 
-## 📝 笔记
+## 📝 notes
 
 - `React.Fragment` 是 React 中的一个内置组件，它允许你将多个子元素组合在一起，而 **无需向 DOM 添加额外的节点**。
 - `<React.Fragment></React.Fragment>` 标签可以简写为 `<></>`。

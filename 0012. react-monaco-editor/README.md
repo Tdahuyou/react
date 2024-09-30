@@ -11,7 +11,7 @@
   - 本文中的 demo 是基于这个组件来写的。
 - https://github.com/suren-atoyan/monaco-react?tab=readme-ov-file#props - 查看 monaco-react 的 Editor 组件都有哪些属性可配置。
 
-## 📝 笔记 - 单词 monaco
+## 📝 单词 monaco
 
 - monaco n. 摩纳哥（欧洲西南部国家）
   - 英 `/ ˈmɒnəkəʊ /`
@@ -20,7 +20,7 @@
 
 ![](md-imgs/2024-09-25-10-23-31.png)
 
-## 📝 笔记 - 安装 @monaco-editor/react
+## 📝 安装 @monaco-editor/react
 
 ```bash
 npm i @monaco-editor/react
