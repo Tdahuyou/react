@@ -2,16 +2,22 @@
 
 通过一些 demo 来快速了解 react-monaco-editor 组件的基本使用。
 
-## 🔗 链接
+## 🔗 links
 
 - https://github.com/react-monaco-editor/react-monaco-editor - react-monaco-editor GitHub
   - 注：需要额外的 webpack 配置才能使用。
 - https://github.com/suren-atoyan/monaco-react - monaco-react Github
   - 注：不需要额外的 webpack 配置就能使用。
   - 本文中的 demo 是基于这个组件来写的。
-- https://github.com/suren-atoyan/monaco-react?tab=readme-ov-file#props - 查看 monaco-react 的 Editor 组件都有哪些属性可配置。
+- https://github.com/suren-atoyan/monaco-react?tab=readme-ov-file#props
+  - 查看 monaco-react 的 Editor 组件都有哪些属性可配置。
+- https://github.com/microsoft/autogen/issues/3556
+  - [Issue]: The problem of downloading monaco-editor when accessing autogenstudio in offline environment. #3556
+  - 坑 - 网络问题导致编辑器无法正常工作的问题
+- https://www.npmjs.com/package/@monaco-editor/react#loader-config
+  - loader 配置
 
-## 📝 单词 monaco
+## 📝 notes - 单词 monaco
 
 - monaco n. 摩纳哥（欧洲西南部国家）
   - 英 `/ ˈmɒnəkəʊ /`
@@ -20,10 +26,57 @@
 
 ![](md-imgs/2024-09-25-10-23-31.png)
 
-## 📝 安装 @monaco-editor/react
+## 📝 notes - 安装 @monaco-editor/react
 
 ```bash
+# 执行 npm 命令安装  @monaco-editor/react
 npm i @monaco-editor/react
+```
+
+## 📝 notes - 坑 - 网络问题导致编辑器无法正常工作的问题
+
+- 现象：页面上看到的效果如下图所示，会一直提示在 loading 中。
+  - ![](md-imgs/2024-10-08-10-36-19.png)
+- 根本原因：有一个核心模块下载失败。
+  - ![](md-imgs/2024-10-08-10-38-02.png)
+  - 在 `node_modules\@monaco-editor\loader\lib\es\config\index.js` 文件中引用到了这个模块。
+
+```js
+// node_modules\@monaco-editor\loader\lib\es\config\index.js
+var config = {
+  paths: {
+    vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs'
+  }
+};
+
+export default config;
+```
+
+- 解决办法 1 - 在线：确保电脑网络环境正常，可以尝试在浏览器地址栏中输入 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 看看能否拿到文件内容。
+  - ![](md-imgs/2024-10-08-10-44-04.png)
+- 解决办法 2 - 离线：手动将 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 文件下载到本地，并修改路径指向本地文件。如何配置 loader 的指向，可以查看官方文档中的 loader 配置 - https://www.npmjs.com/package/@monaco-editor/react#loader-config。
+
+```js
+// from: https://www.npmjs.com/package/@monaco-editor/react#loader-config
+import { loader } from '@monaco-editor/react';
+
+// you can change the source of the monaco files
+loader.config({ paths: { vs: '...' } });
+
+// you can configure the locales
+loader.config({ 'vs/nls': { availableLanguages: { '*': 'de' } } });
+
+// or
+loader.config({
+  paths: {
+    vs: '...',
+  },
+  'vs/nls': {
+    availableLanguages: {
+      '*': 'de',
+    },
+  },
+});
 ```
 
 ## 💻 demo - 引入 Editor 组件
@@ -226,7 +279,7 @@ export default App;
 - `editorRef.current.getValue()` 方法获取到当前值。
 - `editorRef.current.setValue(newValue)` 方法修改编辑器的内容。
 
-## 💻 实战练习 - 模仿 matatastudio 的代码预览效果封装一个代码预览组件
+## 💻 demo - 实战练习 - 模仿 matatastudio 的代码预览效果封装一个代码预览组件
 
 可以在 https://vinci.matatastudio.com/ 中查看参考的代码预览效果示例：
 
@@ -376,7 +429,7 @@ export default MyEditor;
 
 ![](md-imgs/2024-09-25-11-29-47.png)
 
-## 🤖 请介绍一下 react-monaco-editor
+## 🤖 ai - 请介绍一下 react-monaco-editor
 
 `react-monaco-editor` 是一个专门为 React 应用程序设计的代码编辑器组件，它基于微软的 Monaco Editor。Monaco Editor 以其强大的功能和良好的用户体验而闻名，是 Visual Studio Code 的核心部分。通过 `react-monaco-editor`，开发者可以在他们的 React 应用中轻松集成一个功能丰富且性能优越的代码编辑环境。
 
@@ -455,7 +508,7 @@ export default MyEditor;
 
 `react-monaco-editor` 是一个强大且灵活的工具，适用于需要嵌入代码编辑功能的任何 React 应用场景。无论是在线代码演示、教学平台还是开发工具，它都能提供坚实的支持。随着社区的发展和维护，这个库将继续成为许多 React 开发者的首选。
 
-## 🤖 monaco 名称的由来
+## 🤖 ai - monaco 名称的由来
 
 Monaco Editor 的名称来源于摩纳哥（Monaco），一个位于欧洲南部的小国。这个名字的选择背后并没有公开的官方解释，但通常软件产品的命名可能会受到多种因素的影响，比如简洁性、易于记忆、与项目特点相关联等。
 
