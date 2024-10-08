@@ -4,8 +4,11 @@
   - [x] 0015. 在 JSX 中使用注释
   - [x] 0009. 动态插值 - 在 jsx 中使用大括号实现
 - [x] dangerouslySetInnerHTML
+  - [x] 0016. dangerouslySetInnerHTML
 - [ ] React 生命周期
+  - [ ] 0027. 生命周期
 - [ ] ref
+  - [ ] 0007. ref
 - [ ] hooks
 - [ ] hoc
 - [ ] redux
