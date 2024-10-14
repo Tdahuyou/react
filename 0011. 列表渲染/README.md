@@ -82,7 +82,7 @@ export default function ShoppingList() {
 
 ![](md-imgs/2024-09-24-14-52-15.png)
 
-## 📝 notes - “列表渲染”中的“列表”是什么？
+## 📒 notes - “列表渲染”中的“列表”是什么？
 
 **“列表渲染”中的“列表”是【数组】**。
 

@@ -5,7 +5,7 @@
 - https://vitejs.dev/guide/ - vite 官方文档
 - https://github.com/vitejs/vite - vite github
 
-## 📝 notes
+## 📒 notes
 
 实际操作流程：
 1. pnpm create vite
