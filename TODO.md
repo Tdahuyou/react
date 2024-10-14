@@ -1,51 +1,51 @@
-- [ ] 快速上手--第一个 react 应用
-  - [ ] [0001. Hello World](./0001.%20Hello%20World/README.md)
-- [x] jsx
+- 快速上手--第一个 react 应用
+  - [x] [0001. Hello World](./0001.%20Hello%20World/README.md)
+- jsx
   - [x] [0013. 什么是 JSX](./0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md)
   - [x] [0003. html to jsx 在线转换](./0003.%20html%20to%20jsx%20%E5%9C%A8%E7%BA%BF%E8%BD%AC%E6%8D%A2/README.md)
   - [x] [0015. 在 JSX 中使用注释](./0015.%20%E5%9C%A8%20JSX%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%B3%A8%E9%87%8A/README.md)
   - [x] [0009. 动态插值 - 在 jsx 中使用大括号实现](./0009.%20%E5%8A%A8%E6%80%81%E6%8F%92%E5%80%BC%20-%20%E5%9C%A8%20jsx%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%8B%AC%E5%8F%B7%E5%AE%9E%E7%8E%B0/README.md)
   - [ ] [0017. 在 JSX 中书写内联样式 style](./0017.%20%E5%9C%A8%20JSX%20%E4%B8%AD%E4%B9%A6%E5%86%99%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F%20style/README.md)
-- [x] dangerouslySetInnerHTML
+- dangerouslySetInnerHTML
   - [x] [0016. dangerouslySetInnerHTML](./0016.%20dangerouslySetInnerHTML/README.md)
-- [ ] ref
+- ref
   - [ ] [0007. ref](./0007.%20ref/README.md)
-- [ ] hooks
-- [ ] hoc
-- [ ] redux
-- [ ] 组件--组件名
+- hooks
+- hoc
+- redux
+- 组件--组件名
   - [ ] [0002. react 组件名的命名规则](./0002.%20react%20%E7%BB%84%E4%BB%B6%E5%90%8D%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/README.md)
-- [ ] 组件--className
+- 组件--className
   - [ ] [0004. 使用 className 添加样式名](./0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D/README.md)
-- [x] 组件--认识 React 组件
+- 组件--认识 React 组件
   - [x] [0021. 在 React 中，一个组件都有哪些部分组成？](./0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F/README.md)
   - [x] [0022. 什么是函数组件](./0022.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6/README.md)
   - [x] [0023. 什么是类组件](./0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md)
   - [x] [0024. 什么是单向数据流](./0024.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%95%E5%90%91%E6%95%B0%E6%8D%AE%E6%B5%81/README.md)
-- [x] 组件--了解属性的基本使用
+- 组件--了解属性的基本使用
   - [x] [0019. 组件属性的传递和接收](./0019.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BC%A0%E9%80%92%E5%92%8C%E6%8E%A5%E6%94%B6/README.md)
-- [ ] 组件--children 传递内容
+- 组件--children 传递内容
   - [ ] [0005. 通过 props 和 children 来传递元素内容](./0005.%20%E9%80%9A%E8%BF%87%20props%20%E5%92%8C%20children%20%E6%9D%A5%E4%BC%A0%E9%80%92%E5%85%83%E7%B4%A0%E5%86%85%E5%AE%B9/README.md)
-- [x] 组件--布尔属性
+- 组件--布尔属性
   - [x] [0025. 什么是布尔属性](./0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md)
   - [x] [0026. 布尔属性的简写](./0026.%20%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E5%86%99/README.md)
-- [ ] 组件--属性校验
+- 组件--属性校验
   - [ ] [0020. 组件属性的校验](./0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md)
-- [ ] 组件--属性默认值
-- [ ] 组件--状态
-- [ ] 组件--生命周期
+- 组件--属性默认值
+- 组件--状态
+- 组件--生命周期
   - [ ] [0027. 生命周期](./0027.%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/README.md)
-- [ ] 组件--条件渲染
+- 组件--条件渲染
   - [ ] [0010. 条件渲染](./0010.%20%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/README.md)
-- [ ] 组件--列表渲染
+- 组件--列表渲染
   - [ ] [0011. 列表渲染](./0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md)
-- [ ] 内置组件--React.Fragment
+- 内置组件--React.Fragment
   - [ ] [0014. React.Fragment](./0014.%20React.Fragment/README.md)
-- [ ] 第三方库--react-modal
+- 第三方库--react-modal
   - [ ] [0006. react-modal 的基本使用](./0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md)
-- [ ] 第三方库--react-monaco-editor
+- 第三方库--react-monaco-editor
   - [ ] [0012. react-monaco-editor](./0012.%20react-monaco-editor/README.md)
-- [ ] 构建工具
+- 构建工具
   - [ ] [0008. 使用 vite 快速初始化一个 react 工程](./0008.%20%E4%BD%BF%E7%94%A8%20vite%20%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%20react%20%E5%B7%A5%E7%A8%8B/README.md)
-- [ ] 小练习--图片切换效果
+- 小练习--图片切换效果
   - [ ] [0018. demo-图片定时切换](./0018.%20demo-%E5%9B%BE%E7%89%87%E5%AE%9A%E6%97%B6%E5%88%87%E6%8D%A2/README.md)

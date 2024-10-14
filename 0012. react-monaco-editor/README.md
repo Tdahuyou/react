@@ -17,7 +17,7 @@
 - https://www.npmjs.com/package/@monaco-editor/react#loader-config
   - loader 配置
 
-## 📝 notes - 单词 monaco
+## 📒 notes - 单词 monaco
 
 - monaco n. 摩纳哥（欧洲西南部国家）
   - 英 `/ ˈmɒnəkəʊ /`
@@ -26,14 +26,14 @@
 
 ![](md-imgs/2024-09-25-10-23-31.png)
 
-## 📝 notes - 安装 @monaco-editor/react
+## 📒 notes - 安装 @monaco-editor/react
 
 ```bash
 # 执行 npm 命令安装  @monaco-editor/react
 npm i @monaco-editor/react
 ```
 
-## 📝 notes - 坑 - 网络问题导致编辑器无法正常工作的问题
+## 📒 notes - 坑 - 网络问题导致编辑器无法正常工作的问题
 
 - 现象：页面上看到的效果如下图所示，会一直提示在 loading 中。
   - ![](md-imgs/2024-10-08-10-36-19.png)

@@ -1,6 +1,6 @@
 # 0004. 使用 className 添加样式名
 
-## 📝 notes
+## 📒 notes
 
 - 在 React 中，我们通过使用 JSX 语法来定义组件模板，在组件模板中，我们可以使用 className 来指定一个 CSS 的 class。
   - ✔ `<img className="avatar" />`

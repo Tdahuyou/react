@@ -1,6 +1,6 @@
 # 0013. 什么是 JSX
 
-## 📝 笔记
+## 📝 summary
 
 - JSX 是一种将 HTML 和 JavaScript 混合使用的语法扩展。JSX 让开发者可以在 JavaScript 中编写类似 HTML 的代码，这使得模板逻辑更加直观和易于理解。
 - JSX 是由 Facebook 起草的 JS 扩展语法。
@@ -10,7 +10,7 @@
   - `<React.Fragment></React.Fragment>` 可以简写为 `<></>`
 - 每个 JSX 元素必须有结束标记（XML 规范）
 
-## 🤖 react 中的 jsx 是什么
+## 🤖 ai - react 中的 jsx 是什么
 
 JSX 是 JavaScript XML 的缩写，它是 React 中用于描述用户界面的一种语法扩展。虽然它看起来很像 HTML，但实际上它是 JavaScript 的一部分，并且最终会被编译成纯 JavaScript 代码。JSX 允许开发者在 JavaScript 代码中直接编写类似 HTML 的结构，这样可以更直观地将 UI 与逻辑结合起来。
 

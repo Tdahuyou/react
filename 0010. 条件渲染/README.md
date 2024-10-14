@@ -4,7 +4,7 @@
 
 - https://zh-hans.react.dev/learn#conditional-rendering - react - quick start - Conditional rendering 条件渲染
 
-## 📝 notes
+## 📒 notes
 
 - React 中没有类似 vue 中的 v-if、v-else、v-show 的条件渲染指令，React 中的条件渲染是通过在 JSX 使用原始的 JavaScript 条件逻辑来决定要渲染什么内容的，写起来更加原生，更加直观、更加灵活。
 

@@ -8,6 +8,6 @@
 
 - https://github.com/ritz078/transform - transform GitHub 仓库。
 
-## 📝 notes
+## 📒 notes
 
 - 如果你有大量的 HTML 需要移植到 JSX 中，你可以使用 [在线转换器](https://transform.tools/html-to-jsx)。

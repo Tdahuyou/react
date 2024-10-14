@@ -4,7 +4,7 @@
 
 - https://www.npmjs.com/package/dompurify - npm - DOMPurify
 
-## 📝 notes
+## 📒 notes
 
 - 防止注入攻击 - 插入的 html 字符串（可能来自用户输入的内容）会被视作普通的文本处理，而非视作真实 DOM 来处理。
 - dangerouslySetInnerHTML 将 html 字符串视作真实 DOM 来处理。
