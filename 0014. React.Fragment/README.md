@@ -1,15 +1,16 @@
 # 0014. React.Fragment
 
-## 🔗 links
-
-- https://zh-hans.react.dev/reference/react/Fragment - React - Reference - Components - Fragment
-
-## 📝 notes
+## 📝 summary
 
 - `React.Fragment` 是 React 中的一个内置组件，它允许你将多个子元素组合在一起，而 **无需向 DOM 添加额外的节点**。
 - `<React.Fragment></React.Fragment>` 标签可以简写为 `<></>`。
 - `React.Fragment` 并不会生成真实 DOM。
 - 当你在循环中渲染多个元素时，你需要为每一个元素分配一个 key。如果这个元素为 Fragment 时，则需要使用普通的 JSX 语法来提供 key 属性。
+
+## 🔗 links
+
+- https://zh-hans.react.dev/reference/react/Fragment
+  - React - Reference - Components - Fragment
 
 ## 💻 demo - React.Fragment 并不会生成真实 DOM
 
@@ -28,7 +29,7 @@ function App() {
 
 ## 💻 demo - React.Fragment 渲染列表
 
-场景描述：
+- 场景描述：
 
 ```js
 // 现在有这么一组数据
@@ -47,15 +48,12 @@ const items = [
 <p>This is the third item.</p>
 ```
 
-分析：items 是一个数组，包含多个对象，每个对象包含 id、title 和 description 属性 - 这里要用到列表渲染。
-
-问题 - **多根节点** - 在一次渲染的结构中，包含一个 h2 根节点、一个 p 根节点，根节点的数量大于 1。
-
-此时，React.Fragment 就可以解决这个问题。
-1. 可以使用 `<React.Fragment>` 标签来包裹需要渲染的所有根元素。
-2. 在列表渲染时如果没有指定 key 的话会存在问题，Fragment 考虑到了这一点，当我们循环渲染列表时，不能使用简写形式，应该写为 `<React.Fragment key={...}></React.Fragment>`。
-
-示例：
+- 分析：items 是一个数组，包含多个对象，每个对象包含 id、title 和 description 属性 - 这里要用到列表渲染。
+- 问题 - **多根节点** - 在一次渲染的结构中，包含一个 h2 根节点、一个 p 根节点，根节点的数量大于 1。
+- 此时，React.Fragment 就可以解决这个问题。
+  1. 可以使用 `<React.Fragment>` 标签来包裹需要渲染的所有根元素。
+  2. 在列表渲染时如果没有指定 key 的话会存在问题，Fragment 考虑到了这一点，当我们循环渲染列表时，不能使用简写形式，应该写为 `<React.Fragment key={...}></React.Fragment>`。
+- 示例：
 
 ```js
 import React from "react";

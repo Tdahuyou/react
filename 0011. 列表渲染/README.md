@@ -1,16 +1,23 @@
 # 0011. 列表渲染
 
-## 🔗 链接
-
-- https://zh-hans.react.dev/learn#rendering-lists - react - quick start - Rendering lists 列表渲染
-
-## 📝 notes
+## 📝 summary
 
 - 列表渲染中的“列表”指的是“数组”。
 - 如果在 render 中返回一个 `{[1, 2, 3]}` 也是可以正常渲染的。React 会取出数组的每一项进行渲染。你会在页面上看到渲染结果 1 2 3。
 - 如果需要渲染的列表（数组）中包含 React 元素，则必须给元素加上 key，否则会报错。
 - 如果需要渲染的累表（数组）中包含无法渲染的内容，比如 null、undefined，React 会忽略它们。比如 `{[1, 2, 3, null, undefined]}` 最终会渲染 1 2 3。
 - 如果要渲染的列表（数组）中包含普通对象，比如 `{ title: 'Cabbage', isFruit: false, id: 1 }`，那么会报错，对象无法直接渲染。通常会使用 `arr.map` 来对对象数组 `arr` 做一个映射处理，将每一个对象映射为对应的 React 元素，然后渲染 React 元素列表。
+- 单词
+  - cabbage 卷心菜
+  - garlic 蒜
+  - apple 苹果
+  - magenta 洋红
+  - darkgreen 暗绿色
+
+## 🔗 links
+
+- https://zh-hans.react.dev/learn#rendering-lists
+  - react - quick start - Rendering lists 列表渲染
 
 ## 📝 doc - 列表渲染
 
@@ -75,14 +82,6 @@ export default function ShoppingList() {
 
 ![](md-imgs/2024-09-24-14-52-15.png)
 
-## 📝 单词
-
-- cabbage 卷心菜
-- garlic 蒜
-- apple 苹果
-- magenta 洋红
-- darkgreen 暗绿色
-
 ## 📝 notes - “列表渲染”中的“列表”是什么？
 
 **“列表渲染”中的“列表”是【数组】**。
@@ -122,7 +121,7 @@ function App() {
 
 结论：**如果要直接渲染一个列表（数组），那么这个列表中的所有“react 元素项”，都需要加上 key。**
 
-## 🤖 AI - 列表渲染如果没有给定 id，react 会报错，请问 react 是如何识别列表渲染的？
+## 🤖 ai - 列表渲染如果没有给定 id，react 会报错，请问 react 是如何识别列表渲染的？
 
 在 React 中，当你使用数组来渲染列表时，React 需要一种方法来识别每个列表项的身份。这是通过给每个列表项一个唯一的 `key` 属性来实现的。`key` 帮助 React 识别哪些元素改变了、添加了或删除了。这样，React 可以有效地更新和重用 DOM 节点，从而提高性能。
 
@@ -174,7 +173,7 @@ return <ul>{listItems}</ul>;
 
 总之，当你在 React 中渲染列表时，确保为每个列表项提供一个唯一的 `key` 属性。这将帮助 React 更高效地管理组件树，并且能够避免潜在的问题。选择 `key` 时，尽量使用稳定且唯一的标识符。
 
-## 🤖 AI - 如果把每一个 li 都写出来，而不是使用 map，那么不指定 id 会报错吗？
+## 🤖 ai - 如果把每一个 li 都写出来，而不是使用 map，那么不指定 id 会报错吗？
 
 ```jsx
 const numbers = [1, 2, 3, 4, 5];
@@ -235,7 +234,7 @@ return (
 - 即便如此，为每个列表项提供 `key` 仍然是一个好的实践，有助于提高代码的可读性和未来的灵活性。
 - 如果你在任何时候考虑将静态列表转换为动态生成的列表（例如通过 `map` 方法），那么提前使用 `key` 会使这种转换更加平滑。
 
-## 🤖 AI - 如果要渲染的内容是一个数组，并且数组的某些项是 react 元素，那么 react 会要求每一个 react 元素都需要具备 key 对吗？
+## 🤖 ai - 如果要渲染的内容是一个数组，并且数组的某些项是 react 元素，那么 react 会要求每一个 react 元素都需要具备 key 对吗？
 
 是的，如果你要渲染的内容是一个数组，并且数组中的某些项是 React 元素，那么 React 会要求每一个 React 元素都具备 `key` 属性。这是因为当 React 渲染一个数组时，它需要一种方式来识别每个元素的身份，以便在数据变化时能够高效地更新 DOM。
 
