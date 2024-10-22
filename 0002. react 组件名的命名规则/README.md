@@ -1,5 +1,6 @@
 # 0002. react 组件的命名必须以大写字母开头
 
+
 ## 🔗 links
 
 - https://react.dev/learn - react

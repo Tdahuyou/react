@@ -1,7 +1,6 @@
 # 0001. 使用 ReactDOM.render 渲染用 React.createElement 创建的 React 元素
 
 通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World
-
 - 了解 React.createElement 的基本使用
 - 了解 ReactDOM.render 的基本使用
 - 了解 JSX 其实就是 React.createElement 的简写，是一个语法糖。

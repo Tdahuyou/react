@@ -1,7 +1,6 @@
 # title
 
-## 📝 summary
-
+- 📝 summary
 
 
 ## 🔗 links
