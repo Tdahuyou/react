@@ -67,7 +67,7 @@ export default function Profile() {
 ![](md-imgs/2024-09-24-14-17-10.png)
 
 
-## 🤖 AI - Hedy Lamarr 是谁？
+## 🤖 ai - Hedy Lamarr 是谁？
 
 Hedy Lamarr（1914年11月9日—2000年1月19日），原名海德维希·爱娃·玛丽亚·基斯勒（Hedwig Eva Maria Kiesler），是一位奥地利裔美国女演员，同时也是一位发明家。她在电影界的生涯跨越了从无声电影到有声电影的时代，并在好莱坞黄金时代成为了一位著名的影星。
 

@@ -44,7 +44,7 @@ $ npm run dev
 
 ![](md-imgs/2024-09-24-10-05-05.png)
 
-## 🤖 AI - 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
+## 🤖 ai - 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
 
 `npm create vite@latest my-react-app -- --template react` 这条命令是用来创建一个新的 React 项目，使用 Vite 作为构建工具。让我们逐部分解释这条命令：
 

@@ -35,7 +35,7 @@ function App() {
 
 ![](md-imgs/2024-09-29-09-12-33.png)
 
-## 🤖 AI - 在 JSX 中书写内联样式 style
+## 🤖 ai - 在 JSX 中书写内联样式 style
 
 在 React 中使用 JSX 时，你可以通过 `style` 属性来直接应用内联样式到你的组件。与 HTML 不同的是，在 JSX 中 `style` 属性需要一个 JavaScript 对象而不是 CSS 字符串。这个对象的键通常采用驼峰命名法（camelCase），因为它们是作为 JavaScript 对象的属性。
 

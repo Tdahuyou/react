@@ -6,7 +6,7 @@
 - https://www.npmjs.com/package/react-modal?activeTab=readme - npm react-modal
 - https://github.com/reactjs/react-modal - github react-modal
 
-## 🤖 AI - react-modal 中的 contentLabel 属性有什么用？
+## 🤖 ai - react-modal 中的 contentLabel 属性有什么用？
 
 `react-modal` 是一个常用的 React 弹出模态框库，它提供了许多配置选项来定制模态框的行为和样式。其中一个重要的属性是 `contentLabel`，它用于给模态框添加一个可访问性的标签（aria-label），以便屏幕阅读器和其他辅助技术能够更好地理解和描述模态框的内容。
 
