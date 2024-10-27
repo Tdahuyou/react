@@ -52,7 +52,7 @@ function App() {
 
 ![](md-imgs/2024-09-29-08-55-57.png)
 
-## 🤖 ai - 请介绍一下 dangerouslySetInnerHTML
+## 🤖 AI - 请介绍一下 dangerouslySetInnerHTML
 
 `dangerouslySetInnerHTML` 是 React 中的一个特殊属性，它允许你直接设置一个元素的 `innerHTML`。这个名字中的“危险”一词强调了使用这个属性时需要特别小心，因为它可能会导致跨站脚本（XSS）攻击等安全问题。
 

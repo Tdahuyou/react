@@ -4,6 +4,9 @@
 ## 💻 demo - 在 JSX 中书写内联样式 style
 
 ```jsx
+/**
+ * src/App.jsx
+ */
 const myStyle = {
   color: 'blue',
   fontSize: '20px',  // 注意：这里使用的是驼峰命名法，对应于 CSS 中的 font-size
@@ -21,9 +24,12 @@ function App() {
 
 ![](md-imgs/2024-09-29-09-09-42.png)
 
-## ❌ demo - 在 JSX 中的 style 不能写成字符串形式
+## 💻 demo - 在 JSX 中的 style 不能写成字符串形式
 
 ```jsx
+/**
+ * src/App.jsx
+ */
 function App() {
   return <div style='color: red'>Hello, World!</div>
 }
@@ -35,7 +41,7 @@ function App() {
 
 ![](md-imgs/2024-09-29-09-12-33.png)
 
-## 🤖 ai - 在 JSX 中书写内联样式 style
+## 🤖 AI - 在 JSX 中书写内联样式 style
 
 在 React 中使用 JSX 时，你可以通过 `style` 属性来直接应用内联样式到你的组件。与 HTML 不同的是，在 JSX 中 `style` 属性需要一个 JavaScript 对象而不是 CSS 字符串。这个对象的键通常采用驼峰命名法（camelCase），因为它们是作为 JavaScript 对象的属性。
 

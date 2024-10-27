@@ -1,3 +1,6 @@
+/**
+ * src/App.jsx
+ */
 import Comp from './Comp';
 function App() {
   return (

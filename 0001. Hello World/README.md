@@ -76,9 +76,8 @@
 </html>
 ```
 
-demo/1.html 的最终渲染结果如下图所示：
-
-![](md-imgs/2024-09-18-10-37-59.png)
+- demo/1.html 的最终渲染结果如下图所示：
+  - ![](md-imgs/2024-09-18-10-37-59.png)
 
 ## 💻 demo - 熟悉 React.createElement 的参数
 
@@ -131,9 +130,8 @@ demo/1.html 的最终渲染结果如下图所示：
 </html>
 ```
 
-demo/2.html 的最终渲染结果如下图所示：
-
-![](md-imgs/2024-09-18-10-49-30.png)
+- demo/2.html 的最终渲染结果如下图所示：
+  - ![](md-imgs/2024-09-18-10-49-30.png)
 
 ## 💻 demo - 使用 JSX 来简写
 
@@ -187,12 +185,10 @@ demo/2.html 的最终渲染结果如下图所示：
 
 - `<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>` 需要引入 Babel 来编译 JSX。
 - `<script type='text/babel'>` 需要让浏览器知道这部分的 JS 是需要交给 Babel 编译处理的脚本。
+- demo/3.html 的最终渲染结果如下图所示：
+  - ![](md-imgs/2024-09-18-10-49-30.png)
 
-demo/3.html 的最终渲染结果如下图所示：
-
-![](md-imgs/2024-09-18-10-49-30.png)
-
-## 🤖 ai - 请介绍一下 script 标签身上的 type 属性
+## 🤖 AI - 请介绍一下 script 标签身上的 type 属性
 
 `<script>` 标签的 `type` 属性用于指定加载或内嵌的脚本语言的 MIME 类型。在 HTML 中使用 `<script>` 标签时，这个属性可以帮助浏览器理解和处理正确的脚本类型。以下是一些关于 `type` 属性的重要点和常见用法：
 
@@ -220,7 +216,7 @@ demo/3.html 的最终渲染结果如下图所示：
 
 通过合理使用 `<script>` 标签的 `type` 属性，可以更有效地管理和部署 Web 页面上的脚本，提高页面的兼容性和性能。
 
-## 🤖 ai - 请介绍一下 script 标签身上的 crossorigin 属性
+## 🤖 AI - 请介绍一下 script 标签身上的 crossorigin 属性
 
 答：如果 script 标签引用的资源出现了问题，加上 crossorigin 属性可以让浏览器提供的错误报告更加详细，帮助开发者更好地调试问题。
 

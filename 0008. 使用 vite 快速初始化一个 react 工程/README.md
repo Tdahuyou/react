@@ -1,10 +1,14 @@
 # [0008. 使用 vite 快速初始化一个 react 工程](https://github.com/Tdahuyou/react/tree/main/0008.%20%E4%BD%BF%E7%94%A8%20vite%20%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%20react%20%E5%B7%A5%E7%A8%8B)
 
+- 📝 summary
+  - 本节笔记记录了使用 vite 来快速创建一个 react 工程的流程。
 
 ## 🔗 links
 
-- https://vitejs.dev/guide/ - vite 官方文档
-- https://github.com/vitejs/vite - vite github
+- https://vitejs.dev/guide/
+  - vite 官方文档
+- https://github.com/vitejs/vite
+  - vite github
 
 ## 📒 notes
 
@@ -18,7 +22,7 @@
 
 文档中提到的命令 `npm create vite@latest my-react-app -- --template react` 其实就是 1+2+3 的步骤。如果记不住的话，直接运行命令 `pnpm create vite` 然后根据命令行提示来配置即可。
 
-## 📝 使用 vite 创建 react 工程
+## 📒 notes - 使用 vite 创建 react 工程
 
 ```bash
 $ npm create vite@latest my-react-app -- --template react
@@ -32,7 +36,7 @@ $ bun create vite my-react-app --template react
 
 ![](md-imgs/2024-09-24-09-36-52.png)
 
-## 📝 启动用 vite 创建的 react 工程
+## 📒 notes - 启动用 vite 创建的 react 工程
 
 ```bash
 $ cd my-react-app
@@ -44,7 +48,7 @@ $ npm run dev
 
 ![](md-imgs/2024-09-24-10-05-05.png)
 
-## 🤖 ai - 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
+## 🤖 AI - 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
 
 `npm create vite@latest my-react-app -- --template react` 这条命令是用来创建一个新的 React 项目，使用 Vite 作为构建工具。让我们逐部分解释这条命令：
 

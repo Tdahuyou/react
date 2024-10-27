@@ -91,3 +91,4 @@ export default App
     - ![](md-imgs/2024-10-27-12-53-46.png)
   - eslint 报错：
     - ![](md-imgs/2024-10-27-12-54-22.png)
+  - 这些错误提示都是在提醒我们，直接使用 class 的写法在 react 的 jsx 中给元素添加样式的行为是不正确的。

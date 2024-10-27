@@ -1,7 +1,7 @@
 # [0023. 什么是类组件](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6)
 
 
-## 🤖 ai - 什么是类组件
+## 🤖 AI - 什么是类组件
 
 类组件是 React 中定义组件的另一种方式，它基于 ES6 的类（class）语法。类组件扩展了 `React.Component` 类，并且必须实现一个名为 `render` 的方法，该方法返回要渲染到 DOM 的 JSX 代码。类组件可以拥有自己的状态（state）和生命周期方法，这使得它们在处理复杂逻辑时非常有用。
 

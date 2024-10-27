@@ -1,3 +1,6 @@
+/**
+ * src/Comp.jsx
+ */
 import PropTypes from 'prop-types';
 import './Comp.css';
 

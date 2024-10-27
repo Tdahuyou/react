@@ -1,3 +1,6 @@
+/**
+ * src/App.jsx
+ */
 function App() {
   return <div style='color: red'>Hello, World!</div>
 }

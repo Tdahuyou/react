@@ -429,7 +429,7 @@ export default MyEditor;
 
 ![](md-imgs/2024-09-25-11-29-47.png)
 
-## 🤖 ai - 请介绍一下 react-monaco-editor
+## 🤖 AI - 请介绍一下 react-monaco-editor
 
 `react-monaco-editor` 是一个专门为 React 应用程序设计的代码编辑器组件，它基于微软的 Monaco Editor。Monaco Editor 以其强大的功能和良好的用户体验而闻名，是 Visual Studio Code 的核心部分。通过 `react-monaco-editor`，开发者可以在他们的 React 应用中轻松集成一个功能丰富且性能优越的代码编辑环境。
 
@@ -508,7 +508,7 @@ export default MyEditor;
 
 `react-monaco-editor` 是一个强大且灵活的工具，适用于需要嵌入代码编辑功能的任何 React 应用场景。无论是在线代码演示、教学平台还是开发工具，它都能提供坚实的支持。随着社区的发展和维护，这个库将继续成为许多 React 开发者的首选。
 
-## 🤖 ai - monaco 名称的由来
+## 🤖 AI - monaco 名称的由来
 
 Monaco Editor 的名称来源于摩纳哥（Monaco），一个位于欧洲南部的小国。这个名字的选择背后并没有公开的官方解释，但通常软件产品的命名可能会受到多种因素的影响，比如简洁性、易于记忆、与项目特点相关联等。
 

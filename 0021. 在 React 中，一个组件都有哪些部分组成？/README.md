@@ -1,7 +1,7 @@
 # [0021. 在 React 中，一个组件都有哪些部分组成？](https://github.com/Tdahuyou/react/tree/main/0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F)
 
 
-## 🤖 ai - 在 React 中，一个组件都有哪些部分组成？
+## 🤖 AI - 在 React 中，一个组件都有哪些部分组成？
 
 在 React 中，一个组件可以由多个部分组成，这些部分共同定义了组件的行为、外观以及与用户和其他组件的交互方式。以下是构成 React 组件的主要部分：
 
