@@ -1,11 +1,23 @@
 # 0001. 使用 ReactDOM.render 渲染用 React.createElement 创建的 React 元素
 
-通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World
+- 📝 summary
+  - 通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
+
+## 🔗 links
+
+- https://zh-hans.react.dev/reference/react/createElement
+  - react createElement
+- https://zh-hans.react.dev/reference/react-dom/render
+  - react render
+  - 注：在未来 React 发布主要版本时，此 API 将被移除。
+
+## 📒 notes - 知识点
+
 - 了解 React.createElement 的基本使用
 - 了解 ReactDOM.render 的基本使用
 - 了解 JSX 其实就是 React.createElement 的简写，是一个语法糖。
 
-## 📝 通过 CDN 的方式引入相关依赖
+## 📒 notes - 通过 CDN 的方式引入相关依赖
 
 ```html
 <!-- React 的核心库，与宿主环境无关 -->
@@ -14,28 +26,38 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 ```
 
-## 📝 React.createElement API 描述
+- **版本**：这里引入的都是 `v16` 版。
 
-**参数**
+## 📒 notes - API 描述
 
-- 参数1：需要创建的 html 元素的名称，比如 h1 表示 h1 标签
-- 参数2：元素属性，比如 id、class、style、onClick 等等，可以以一个对象的形式传入
-- 参数3 ~ 参数n：子元素列表，比如 h1 标签中的文本内容，可以以一个字符串的形式传入，也可以传入由 React.createElement 创建的 React 元素
-
-**返回值**
-
-返回值是一个 React 元素，这个元素可以作为 ReactDOM.render 的第一个参数，表示要渲染的内容。
-
-## 📝 ReactDOM.render API 描述
-
-**参数**
-
-- 参数1：要渲染的内容，可以是 React 元素，也可以是字符串，也可以是数字，也可以是布尔值，也可以是 null，也可以是 undefined。
-- 参数2：要渲染到哪个容器中，可以是一个 DOM 元素。
+- `React.createElement`
+  - **参数**
+    - 参数1：需要创建的 html 元素的名称，比如 h1 表示 h1 标签
+    - 参数2：元素属性，比如 id、class、style、onClick 等等，可以以一个对象的形式传入
+    - 参数3 ~ 参数n：子元素列表，比如 h1 标签中的文本内容，可以以一个字符串的形式传入，也可以传入由 React.createElement 创建的 React 元素
+  - **返回值**
+    - 返回值是一个 React 元素，这个元素可以作为 ReactDOM.render 的第一个参数，表示要渲染的内容。
+- `ReactDOM.render`
+  - **参数**
+    - 参数1：要渲染的内容，可以是 React 元素，也可以是字符串，也可以是数字，也可以是布尔值，也可以是 null，也可以是 undefined。
+    - 参数2：要渲染到哪个容器中，可以是一个 DOM 元素。
 
 ## 💻 demo - 在页面上渲染出 Hello World
 
 ```html
+<!--
+1.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
 <body>
   <!-- 这是接下来要渲染内容的容器 -->
   <div id="root"></div>
@@ -43,7 +65,6 @@
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <!-- 依赖核心库，将核心的功能与页面结合 -->
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-
   <script>
     // 创建一个 H1 元素
     const h1 = React.createElement("h1", {}, "Hello World");
@@ -51,6 +72,8 @@
     ReactDOM.render(h1, document.getElementById("root"));
   </script>
 </body>
+
+</html>
 ```
 
 demo/1.html 的最终渲染结果如下图所示：
@@ -59,65 +82,107 @@ demo/1.html 的最终渲染结果如下图所示：
 
 ## 💻 demo - 熟悉 React.createElement 的参数
 
-```jsx
-// 创建一个 span 元素
-const span = React.createElement(
-'span',
-{
-    title: '这是一个 span 元素',
-},
-'this is a span element'
-);
+```html
+<!--
+2.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
 
-// 创建一个 img 元素
-const img = React.createElement('img', {
-src: 'https://avatars.githubusercontent.com/u/125541114?v=4',
-width: '100px',
-});
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script>
+      // 创建一个 span 元素
+      const span = React.createElement(
+        'span',
+        {
+          title: '这是一个 span 元素',
+        },
+        'this is a span element'
+      );
 
-// 创建一个 div 元素
-const div = React.createElement('div', {}, '123', img, span);
-// 123、img、span 这些都会成为该 div 的子元素
+      // 创建一个 img 元素
+      const img = React.createElement('img', {
+        src: 'https://avatars.githubusercontent.com/u/125541114?v=4',
+        width: '100px',
+      });
 
-ReactDOM.render(div, document.getElementById('root'));
+      // 创建一个 div 元素
+      const div = React.createElement('div', {}, '123', img, span);
+      // 123、img、span 这些都会成为该 div 的子元素
+
+      ReactDOM.render(div, document.getElementById('root'));
+    </script>
+  </body>
+</html>
 ```
 
 demo/2.html 的最终渲染结果如下图所示：
 
 ![](md-imgs/2024-09-18-10-49-30.png)
 
-## 💻 使用 JSX 来简写
+## 💻 demo - 使用 JSX 来简写
 
 ```html
-<div id="root"></div>
-<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<!--
+3.html
+-->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- 引入 babel，用于编译 JSX，最终效果跟 React.createElement 函数调用的效果是完全一致的。 -->
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
 
-<script type='text/babel'>
-// const span = React.createElement("span", {
-//   title: '这是一个 span 元素'
-// }, "this is a span element");
-// const img = React.createElement('img', { src: 'https://avatars.githubusercontent.com/u/125541114?v=4', width: '100px' });
-// const div = React.createElement("div", {}, "123", img, span);
+<body>
+  <div id="root"></div>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
-// 最终要渲染的元素是由 React.createElement 创建的。
-// 但是使用 React.createElement 创建的话，写起来不是很舒服，和传统的 html 写法不太一样。
-// 因此，React 还给我们提供了 JSX 的语法。
-// 比如上述结构，我们如果改用 JSX 的写法来改写，最终页面上渲染出来的效果是完全等效的。
-// 在实际开发中，我们更多使用的也是 JSX 的语法来写我们的 React 组件。
-const div = (
-    <div>
+  <!-- 引入 babel，用于编译 JSX，最终效果跟 React.createElement 函数调用的效果是完全一致的。 -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <script type='text/babel'>
+    // const span = React.createElement("span", {
+    //   title: '这是一个 span 元素'
+    // }, "this is a span element");
+    // const img = React.createElement('img', { src: 'https://avatars.githubusercontent.com/u/125541114?v=4', width: '100px' });
+    // const div = React.createElement("div", {}, "123", img, span);
+
+    // 最终要渲染的元素是由 React.createElement 创建的。
+    // 但是使用 React.createElement 创建的话，写起来不是很舒服，和传统的 html 写法不太一样。
+    // 因此，React 还给我们提供了 JSX 的语法。
+    // 比如上述结构，我们如果改用 JSX 的写法来改写，最终页面上渲染出来的效果是完全等效的。
+    // 在实际开发中，我们更多使用的也是 JSX 的语法来写我们的 React 组件。
+    const div = (<div>
         123
         <img src="https://avatars.githubusercontent.com/u/125541114?v=4" width="100px" />
         <span title="这是一个 span 元素">this is a span element</span>
-    </div>
-)
+      </div>
+    )
 
-ReactDOM.render(div, document.getElementById("root"));
-</script>
+    ReactDOM.render(div, document.getElementById("root"));
+  </script>
+</body>
+
+</html>
 ```
 
 - `<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>` 需要引入 Babel 来编译 JSX。
@@ -133,7 +198,6 @@ demo/3.html 的最终渲染结果如下图所示：
 
 ### 1. **标准用法**
    - **`text/javascript`**: 这是最常用的值，用于 JavaScript 代码。根据 HTML5 的标准，如果不指定 `type` 属性，浏览器默认处理为 `text/javascript`。因此，在大多数现代网页中，你通常会看到省略 `type` 属性的 `<script>` 标签。
-
 ### 2. **模块**
    - **`module`**: 随着 ES6 模块的引入，如果你想在浏览器中直接使用模块功能（如 `import` 和 `export` 语句），可以将 `type` 设置为 `module`。这样的脚本会被当作 ECMAScript 模块处理。
    ```html
