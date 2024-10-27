@@ -26,7 +26,7 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 ```
 
-- **版本**：这里引入的都是 `v16` 版。
+- **注意版本**：这里引入的都是 `v16` 版。
 
 ## 📒 notes - API 描述
 

@@ -1,3 +1,6 @@
+/**
+ * src/App.jsx
+ */
 import MyButton from './MyButton';
 
 function App() {

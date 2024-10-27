@@ -1,9 +1,14 @@
-/* 在 ./src/App.css 中添加样式 */
+/*
+src/App.css
+在这里边添加样式
+*/
 .card {
-  /* display: inline-block; */
-  padding: 2em;
-  border-radius: 2rem;
-  background-color: #1d1d1d;
+  outline: none;
+  border: none;
+  padding: 1em;
+  border-radius: 1rem;
+  background-color: #f40;
   color: #fff;
   text-align: center;
+  cursor: pointer;
 }

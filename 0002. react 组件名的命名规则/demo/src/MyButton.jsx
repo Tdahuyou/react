@@ -1,5 +1,6 @@
+/**
+ * src/MyButton.jsx
+ */
 export default function MyButton() {
-    return (
-      <button>I'm a button</button>
-    );
-  }
+  return <button>I'm a button</button>
+}
