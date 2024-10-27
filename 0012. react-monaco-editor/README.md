@@ -1,4 +1,4 @@
-# 0012. react-monaco-editor
+# [0012. react-monaco-editor](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor)
 
 通过一些 demo 来快速了解 react-monaco-editor 组件的基本使用。
 

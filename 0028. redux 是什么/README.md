@@ -1,4 +1,4 @@
-# 0028. redux 是什么
+# [0028. redux 是什么](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E6%98%AF%E4%BB%80%E4%B9%88)
 
 
 ## 📝 summary

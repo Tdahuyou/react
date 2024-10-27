@@ -1,4 +1,4 @@
-# 0016. dangerouslySetInnerHTML
+# [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML)
 
 
 ## 🔗 links

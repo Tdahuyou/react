@@ -1,4 +1,4 @@
-# 0029. 为什么说前端的 mvc 已死？
+# [0029. 为什么说前端的 mvc 已死](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB)
 
 
 ## 📝 summary
