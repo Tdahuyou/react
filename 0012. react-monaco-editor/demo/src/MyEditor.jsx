@@ -4,7 +4,8 @@ import Editor, { loader } from '@monaco-editor/react';
 import PropTypes from 'prop-types';
 import './MyEditor.css';
 
-loader.config({ paths: { vs: '/monaco'} })
+loader.config({ paths: { vs: 'http://www.xxiwang.top/monaco'} })
+// loader.config({ paths: { vs: '/monaco'} })
 
 const DEFAULT_CODES = `// some comment
 #include "xxx.h"
