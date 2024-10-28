@@ -33,52 +33,6 @@
 npm i @monaco-editor/react
 ```
 
-## 📒 notes - 坑 - 网络问题导致编辑器无法正常工作的问题
-
-- 现象：页面上看到的效果如下图所示，会一直提示在 loading 中。
-  - ![](md-imgs/2024-10-08-10-36-19.png)
-- 根本原因：有一个核心模块下载失败。
-  - ![](md-imgs/2024-10-08-10-38-02.png)
-  - 在 `node_modules\@monaco-editor\loader\lib\es\config\index.js` 文件中引用到了这个模块。
-
-```js
-// node_modules\@monaco-editor\loader\lib\es\config\index.js
-var config = {
-  paths: {
-    vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs'
-  }
-};
-
-export default config;
-```
-
-- 解决办法 1 - 在线：确保电脑网络环境正常，可以尝试在浏览器地址栏中输入 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 看看能否拿到文件内容。
-  - ![](md-imgs/2024-10-08-10-44-04.png)
-- 解决办法 2 - 离线：手动将 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 文件下载到本地，并修改路径指向本地文件。如何配置 loader 的指向，可以查看官方文档中的 loader 配置 - https://www.npmjs.com/package/@monaco-editor/react#loader-config。
-
-```js
-// from: https://www.npmjs.com/package/@monaco-editor/react#loader-config
-import { loader } from '@monaco-editor/react';
-
-// you can change the source of the monaco files
-loader.config({ paths: { vs: '...' } });
-
-// you can configure the locales
-loader.config({ 'vs/nls': { availableLanguages: { '*': 'de' } } });
-
-// or
-loader.config({
-  paths: {
-    vs: '...',
-  },
-  'vs/nls': {
-    availableLanguages: {
-      '*': 'de',
-    },
-  },
-});
-```
-
 ## 💻 demo - 引入 Editor 组件
 
 ```jsx
@@ -428,6 +382,92 @@ export default MyEditor;
 实际效果：
 
 ![](md-imgs/2024-09-25-11-29-47.png)
+
+## 📒 notes - 坑 - 网络问题导致编辑器无法正常工作的问题
+
+- 现象：页面上看到的效果如下图所示，会一直提示在 loading 中。
+  - ![](md-imgs/2024-10-08-10-36-19.png)
+- 根本原因：有一个核心模块下载失败。
+  - ![](md-imgs/2024-10-08-10-38-02.png)
+  - 在 `node_modules\@monaco-editor\loader\lib\es\config\index.js` 文件中引用到了这个模块。
+
+```js
+// node_modules\@monaco-editor\loader\lib\es\config\index.js
+var config = {
+  paths: {
+    vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs'
+  }
+};
+
+export default config;
+```
+
+- 解决办法 1 - 在线：确保电脑网络环境正常，可以尝试在浏览器地址栏中输入 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 看看能否拿到文件内容。
+  - ![](md-imgs/2024-10-08-10-44-04.png)
+- 解决办法 2 - 离线：手动将 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 文件下载到本地，并修改路径指向本地文件。如何配置 loader 的指向，可以查看官方文档中的 loader 配置 - https://www.npmjs.com/package/@monaco-editor/react#loader-config。
+
+```js
+// from: https://www.npmjs.com/package/@monaco-editor/react#loader-config
+import { loader } from '@monaco-editor/react';
+
+// you can change the source of the monaco files
+loader.config({ paths: { vs: '...' } });
+
+// you can configure the locales
+loader.config({ 'vs/nls': { availableLanguages: { '*': 'de' } } });
+
+// or
+loader.config({
+  paths: {
+    vs: '...',
+  },
+  'vs/nls': {
+    availableLanguages: {
+      '*': 'de',
+    },
+  },
+});
+```
+
+- 手动下载资源的具体步骤：
+  - 首先，使用 `npm i monaco-editor@0.43.0` 获取到源码
+  - 然后将 node_modules/monaco-editor 中的相关代码给搬运到本地项目中
+  - 修改项目构建配置 vite.config.js
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  base: './', // 确保基础路径正确
+  server: {
+    fs: {
+      // 允许访问项目根目录以外的文件
+      allow: ['..']
+    }
+  },
+  resolve: {
+    alias: {
+      // 配置 monaco-editor 别名
+      'monaco-editor': '/monaco/vs/loader.js'
+    }
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        // 如果需要，可以添加更多入口点
+      }
+    }
+  }
+});
+```
+  - 在 MyEditor.jsx 中修改 config 配置。
+    - `loader.config({ paths: { vs: '/monaco'} })`
+- 测试是否配置成功：
+  - 打开 chrome 的 network 调试面板，查看这些资源的 URL，如果是通过本地请求到的话，那么就意味着成功了。
+  - ![](md-imgs/2024-10-28-16-06-48.png)
+- 除了上述做法之外，还可以将资源丢到自己的 CDN 服务中。
 
 ## 🤖 AI - 请介绍一下 react-monaco-editor
 

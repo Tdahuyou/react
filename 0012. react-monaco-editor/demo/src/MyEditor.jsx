@@ -1,8 +1,10 @@
 // src/MyEditor.jsx
 import { useRef, useState } from 'react';
-import Editor from '@monaco-editor/react';
+import Editor, { loader } from '@monaco-editor/react';
 import PropTypes from 'prop-types';
 import './MyEditor.css';
+
+loader.config({ paths: { vs: '/monaco'} })
 
 const DEFAULT_CODES = `// some comment
 #include "xxx.h"
