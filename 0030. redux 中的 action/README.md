@@ -42,6 +42,8 @@ window.store.dispatch(action)
 console.log('打印 window.store.getState() 获取仓库当前状态 =>', window.store.getState())
 ```
 
+- 最终输出结果：
+  - ![](md-imgs/2024-10-28-22-30-43.png)
 - 通过这个 demo，能够发现 redux 和 react 没有直接关联，完全可以脱离 react 单独 redux 来管理状态数据。
 - 本节主要讲解的是 redux 内部的 action 的相关内容，同样的，这里介绍的 action 和 react 也是没有直接关联的。
 
