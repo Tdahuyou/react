@@ -49,7 +49,7 @@ console.log('打印 window.store.getState() 获取仓库当前状态 =>', window
 
 ## 📒 notes - action 是什么？有什么用？
 
-- 从数据类型层面来看，action 就是一个普通的平面对象 plain -object。
+- 从数据类型层面来看，action 就是一个普通的平面对象 plain-object。
   - action 的 `__proto__` 指向 `Object.prototype`。
   - **如果是使用自己定义的类来 new 一个 action 出来，这个 action 是没法使用的。**
 - action 是用来 **描述事件** 的
