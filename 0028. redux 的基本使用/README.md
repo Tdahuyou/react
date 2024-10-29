@@ -63,7 +63,7 @@ mindmap
 (redux 的工具和生态系统)
   React-Redux
     将 React 组件与 Redux store 连接起来的官方库。它提供了 Provider 和 connect 等组件/函数，使得在 React 组件中访问和更新 store 更加方便。
-    语义：这个库名称中的 - 符号，表达的语义是 "连接"，react-redux 表示将 React 与 Redux 连接起来。
+    语义：这个库名称中的 - 符号，表达的语义是“连接”，react-redux 表示将 React 与 Redux 连接起来。
   Redux DevTools
     浏览器扩展，可以帮助你在开发过程中查看和调试 Redux store 的状态变化。
   Redux Toolkit
