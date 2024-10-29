@@ -1,6 +1,8 @@
-# [0012. react-monaco-editor](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor)
+# [0012. react-monaco-editor 基本使用](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
-通过一些 demo 来快速了解 react-monaco-editor 组件的基本使用。
+- 📝 summary
+  - 通过一些 demo 介绍了 react-monaco-editor 组件的基本使用。
+  - 记录了相关的业务背景，为什么会需要用到这个组件，以及在应用过程中踩的坑，同时也记录了相关的解决方案。
 
 ## 🔗 links
 
@@ -16,6 +18,18 @@
   - 坑 - 网络问题导致编辑器无法正常工作的问题
 - https://www.npmjs.com/package/@monaco-editor/react#loader-config
   - loader 配置
+- https://github.com/suren-atoyan/monaco-react?tab=readme-ov-file#use-monaco-editor-as-an-npm-package
+  - github monaco-react 仓库
+- https://github.com/suren-atoyan/monaco-react/issues/571
+  - github monaco-react 问题 Issue 571
+  - 这个问题也是在咨询 CDN 资源下载超时的问题。
+- https://www.npmjs.com/package/monaco-editor-webpack-plugin
+  - npm - monaco-editor-webpack-plugin
+
+## 📒 notes - 先说说结论
+
+- 如果是一个裸工程，只需要做一些简单的配置，就可以很轻易地引入 react-monaco-editor 来使用，即便遇到一些由于 CDN 资源访问耗时较长的问题，也可以通过官方文档的描述来跟着配置快速解决该问题。
+- 如果是一个已经成型的项目，想要引入 react-monaco-editor 的成本可能会有点儿高，主要是解决 CDN 上的资源访问缓慢的问题，这个问题很多人都反馈过 Issue，在 github 上的 Issues 面板，可以搜索不少类似的问题，即便官方在 v4.4.0 版本之后就推出了 `loader.config({ monaco })` 配置的法子来尝试将 CDN 上的资源直接拉到本地来加载以解决此问题，但是这还跟你的项目所使用的构建工具以及相关配置关系密切，很可能你按照文档来走，写好了代码，但是实际运行时会发现 xxx 解析错误，xxx 资源找不到，调试起来蛮费时的。
 
 ## 📒 notes - 单词 monaco
 
@@ -383,14 +397,18 @@ export default MyEditor;
 
 ![](md-imgs/2024-09-25-11-29-47.png)
 
-## 📒 notes - 坑 - 网络问题导致编辑器无法正常工作的问题
 
-- 现象：页面上看到的效果如下图所示，会一直提示在 loading 中。
-  - ![](md-imgs/2024-10-08-10-36-19.png)
-- 根本原因：有一个核心模块下载失败。
-  - ![](md-imgs/2024-10-08-10-38-02.png)
-  - 在 `node_modules\@monaco-editor\loader\lib\es\config\index.js` 文件中引用到了这个模块。
+## 📒 notes - 相关业务背景信息 + 遇到的坑 + 解决方案
 
+- 业务背景：在 scratch 中实现生成的代码的在线预览功能。
+- 技术选型：选择了使用 monaco-react 来实现代码预览的功能。
+- 问题：monaco-react 中依赖的在线 CDN 资源下载缓慢，导致程序打开后首次加载时间过长，甚至打开后报错。
+  - 网络问题导致编辑器无法正常工作的问题。
+  - 现象：页面上看到的效果如下图所示，会一直提示在 loading 中。
+    - ![](md-imgs/2024-10-08-10-36-19.png)
+  - 原因分析：依赖于 CDN 上的 monaco-editor 相关的核心模块下载失败。
+    - ![](md-imgs/2024-10-08-10-38-02.png)
+    - 在 `node_modules\@monaco-editor\loader\lib\es\config\index.js` 文件中引用到了这个模块。
 ```js
 // node_modules\@monaco-editor\loader\lib\es\config\index.js
 var config = {
@@ -402,10 +420,15 @@ var config = {
 export default config;
 ```
 
-- 解决办法 1 - 在线：确保电脑网络环境正常，可以尝试在浏览器地址栏中输入 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 看看能否拿到文件内容。
-  - ![](md-imgs/2024-10-08-10-44-04.png)
-- 解决办法 2 - 离线：手动将 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 文件下载到本地，并修改路径指向本地文件。如何配置 loader 的指向，可以查看官方文档中的 loader 配置 - https://www.npmjs.com/package/@monaco-editor/react#loader-config。
+### 解决办法 1 - 在线 - 使用代理
 
+- 确保电脑网络环境正常，可以尝试在浏览器地址栏中输入 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js 看看能否拿到文件内容。如果你本地开了代理，并且网络环境还算 ok，那么应该可以轻松拿到这个文件内容。但是大部分用户设备上很可能不具备此条件。
+- ![](md-imgs/2024-10-08-10-44-04.png)
+
+### 解决办法 2 - 在线 - 下载资源丢到自己的 CDN 上
+
+- 下载资源丢到自己的 CDN 上，然后配置 `loader.config({ paths: { vs: '...' } });` 其中 `...` 指向你的 CDN 链接。
+- 如何配置 loader 的指向，可以查看官方文档中的 loader 配置 - https://www.npmjs.com/package/@monaco-editor/react#loader-config。
 ```js
 // from: https://www.npmjs.com/package/@monaco-editor/react#loader-config
 import { loader } from '@monaco-editor/react';
@@ -428,46 +451,106 @@ loader.config({
   },
 });
 ```
+- 如果使用自己搭建的 CDN 来解决公有 CDN 访问缓慢的问题，测试时发现虽然从业务需求（实现代码预览功能）角度来看程序可以正常使用了，但是会报如下错误。
+- ![](md-imgs/2024-10-29-22-32-47.png)
 
+### 解决办法 3 - 离线 - 手动下载相关模块
+
+- 手动将 https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0 模块下载到本地，并修改路径指向本地文件。
+- 由于模块数量比较多，除了通过在线访问 CDN 上的资源一个个下载的这种方式之外，还可以直接 `npm i monaco-editor@0.43.0` 通过 npm 将包下到本地，然后将相关模块从 node_modules 中搬运到自己需要的位置，这样会更快一些。
 - 手动下载资源的具体步骤：
   - 首先，使用 `npm i monaco-editor@0.43.0` 获取到源码
   - 然后将 node_modules/monaco-editor 中的相关代码给搬运到本地项目中
   - 修改项目构建配置 vite.config.js
-```js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+    ```js
+    import { defineConfig } from 'vite';
+    import react from '@vitejs/plugin-react';
 
-export default defineConfig({
-  plugins: [react()],
-  base: './', // 确保基础路径正确
-  server: {
-    fs: {
-      // 允许访问项目根目录以外的文件
-      allow: ['..']
-    }
-  },
-  resolve: {
-    alias: {
-      // 配置 monaco-editor 别名
-      'monaco-editor': '/monaco/vs/loader.js'
-    }
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: './index.html',
-        // 如果需要，可以添加更多入口点
+    export default defineConfig({
+      plugins: [react()],
+      base: './', // 确保基础路径正确
+      server: {
+        fs: {
+          // 允许访问项目根目录以外的文件
+          allow: ['..']
+        }
+      },
+      resolve: {
+        alias: {
+          // 配置 monaco-editor 别名
+          'monaco-editor': '/monaco/vs/loader.js'
+        }
+      },
+      build: {
+        rollupOptions: {
+          input: {
+            main: './index.html',
+            // 如果需要，可以添加更多入口点
+          }
+        }
       }
-    }
-  }
-});
-```
+    });
+    ```
   - 在 MyEditor.jsx 中修改 config 配置。
     - `loader.config({ paths: { vs: '/monaco'} })`
-- 测试是否配置成功：
-  - 打开 chrome 的 network 调试面板，查看这些资源的 URL，如果是通过本地请求到的话，那么就意味着成功了。
-  - ![](md-imgs/2024-10-28-16-06-48.png)
-- 除了上述做法之外，还可以将资源丢到自己的 CDN 服务中。
+  - 测试是否配置成功：
+    - 打开 chrome 的 network 调试面板，查看这些资源的 URL，如果是通过本地请求到的话，那么就意味着成功了。
+    - ![](md-imgs/2024-10-28-16-06-48.png)
+- 这种实测可行，不过有一定的额外工作要做，主要是根据工程所使用的构建工具修改相应的配置。
+
+### 解决办法 4 - 离线 - use monaco-editor as an npm package
+
+- 除了上述法子外，官方还介绍了另一种更简洁的方式来处理该问题。
+- 在 monaco-react 的 github 仓库中，搜索 **use monaco-editor as an npm package**
+- ![](md-imgs/2024-10-29-22-44-11.png)
+- 若使用这种方案，官方还强调，需要根据你的项目所使用的构建工具进一步配置一下。比如：
+  - 基于 webpack 的项目，你可能需要安装插件 [monaco-editor-webpack-plugin](https://www.npmjs.com/package/monaco-editor-webpack-plugin) 并做一些简单的配置；
+  - 基于 vite 的项目，官方也提供了配置示例作为参考；
+- 这是一种不用 CDN 的替代方案，但要求版本不能小于 v4.4.0，相当于 monaco-react 帮我们把 CDN 上的资源集成进来了，具体实现步骤如下：
+  - 手动安装 monaco-editor 的 0.43.0 版本：npm i monaco-editor@0.43.0
+  - 将 monaco-editor 引入
+
+```js
+import * as monaco from 'monaco-editor';
+import { loader } from '@monaco-editor/react';
+
+loader.config({ monaco });
+
+// ...
+```
+
+- **在 scratch-gui 中引入 monaco-editor 编辑器实现代码预览功能的一些踩坑经历**
+  - 如果是要在 scratch-gui 中加，还需要在默认的 webpack.config.js 中加上这部分配置。
+    - ![](md-imgs/2024-10-29-22-47-44.png)
+  - 否则会报错：提示 codicon.ttf 这玩意儿解析失败。
+    ```shell
+    ./node_modules/monaco-editor/esm/vs/base/browser/ui/codicons/codicon/codicon.ttf 79.7 KiB [built] [1 error]
+
+    ERROR in ./node_modules/monaco-editor/esm/vs/base/browser/ui/codicons/codicon/codicon.ttf 1:0
+    Module parse failed: Unexpected character '' (1:0)
+    You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+    (Source code omitted for this binary file)
+    @ ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].use[2]!./node_modules/monaco-editor/esm/vs/base/browser/ui/codicons/codicon/codicon.css 5:36-60
+    @ ./node_modules/monaco-editor/esm/vs/base/browser/ui/codicons/codicon/codicon.css 8:6-216 20:17-24 24:7-21 50:25-39 51:36-47 51:50-64 53:4-66:5 55:6-65:7 56:54-65 56:68-82 62:42-53 62:56-70 64:21-28 75:0-186 75:0-186 76:22-29 76:33-47 76:50-64
+    @ ./node_modules/monaco-editor/esm/vs/base/browser/ui/codicons/codiconStyles.js 5:0-31
+    @ ./node_modules/monaco-editor/esm/vs/editor/editor.all.js 64:0-54
+    @ ./node_modules/monaco-editor/esm/vs/editor/edcore.main.js 5:0-25
+    @ ./node_modules/monaco-editor/esm/vs/editor/editor.main.js 7:0-30 7:0-30
+    @ ./src/components/gui/gui.jsx 21:0-40 26:2-8
+    @ ./src/containers/gui.jsx 28:0-53 90:44-56
+    @ ./src/playground/blocks-only.jsx 6:0-40 15:61-64
+
+    webpack 5.93.0 compiled with 1 error in 3594 ms
+    ```
+  - 如果发现 编辑器的样式异常，这有可能是因为有个核心的样式模块解析出错了。
+    - 手动处理方式：
+      - 找到 node_modules\monaco-editor\min\vs\editor\editor.main.css 这个 css 文件
+      - 将其丢到 static 中，和站标 favicon.ico 目录相同。
+        - ![](md-imgs/2024-10-29-22-49-00.png)
+      - 然后在页面模板中加上这个 css 的引用。
+        - ![](md-imgs/2024-10-29-22-49-06.png)
+    - 自动处理方式：自行配置构建工具，完成对这个 css 的解析。
+
 
 ## 🤖 AI - 请介绍一下 react-monaco-editor
 

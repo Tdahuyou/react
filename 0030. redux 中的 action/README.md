@@ -1,4 +1,4 @@
-# 0030. redux 中的 action
+# [0030. redux 中的 action](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action)
 
 - 📝 summary
   - 本节介绍的是 redux 中的 action。
