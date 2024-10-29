@@ -33,40 +33,44 @@
 
 ```mermaid
 mindmap
-Redux 的核心概念
-  {单一数据源}
-  {State 是只读的}
-  {使用纯函数来处理状态}
-  {Actions}
-  {Store}
-  {Middleware}
+  (redux 核心概念)
+    {{单一数据源}}
+      整个应用的状态存储在一个单一的对象树中，称为 store。这使得状态管理变得集中和可预测。
+    {{State 是只读的}}
+      唯一改变 state 的方法是通过 dispatch 一个 action。这意味着你不能直接修改 state，必须通过定义好的 action 来触发状态更新。
+    {{Reducers}}
+      使用 Reducer 纯函数来处理状态，它接收当前的 state 和一个 action，然后返回新的 state。
+    {{Actions}}
+      Actions 是描述发生了什么的对象。它们是唯一可以发送到 store 的信息。Action 对象通常包含一个 type 字段和一些附加的数据 payload。
+    {{Store}}
+      Store 是保存应用状态的地方。你可以通过 **createStore** 函数创建一个 store，并传入 reducer 函数和仓库状态的默认值（可选）。
+      Store 提供了几个重要的方法，如 **getState**、**dispatch** 和 **subscribe**。
+    {{Middleware}}
+      Middleware 是在 action 被 dispatch 到 reducer 之前或之后执行的一些函数。它们可以用来进行日志记录、错误报告、异步操作等。
 ```
 
-1. **单一数据源**：
-   - 整个应用的状态存储在一个单一的对象树中，称为 store。这使得状态管理变得集中和可预测。
-2. **State 是只读的**：
-   - 唯一改变 state 的方法是通过 dispatch 一个 action。这意味着你不能直接修改 state，必须通过定义好的 action 来触发状态更新。
-3. **使用纯函数来处理状态**：
-   - Reducer 是纯函数，它接收当前的 state 和一个 action，然后返回新的 state。
-   - **纯函数**
-     - 相同的输入总是产生相同的输出。
-     - 并且对外界不会造成影响，比如：
-       - 不会改变外界的变量。
-       - 不会影响外界的行为，比如操作 localStorage、改变 DOM 等等。
-4. **Actions**：
-   - Actions 是描述发生了什么的对象。它们是唯一可以发送到 store 的信息。Action 对象通常包含一个 `type` 字段和一些附加的数据 `payload`。
-5. **Store**：
-   - Store 是保存应用状态的地方。你可以通过 `createStore` 函数创建一个 store，并传入 reducer 函数。Store 提供了几个重要的方法，如 `getState`、`dispatch` 和 `subscribe`。
-6. **Middleware**：
-   - Middleware 是在 action 被 dispatch 到 reducer 之前或之后执行的一些函数。它们可以用来进行日志记录、错误报告、异步操作等。
+## 📒 notes - 纯函数
+
+- 相同的输入总是产生相同的输出。
+- 并且对外界不会造成影响，比如：
+  - 不会改变外界的变量。
+  - 不会影响外界的行为，比如操作 localStorage、改变 DOM 等等。
 
 ## 📒 notes - redux 的工具和生态系统
 
-- **React-Redux**：将 React 组件与 Redux store 连接起来的官方库。它提供了 `Provider` 和 `connect` 等组件/函数，使得在 React 组件中访问和更新 store 更加方便。
-  - **语义**：这个库名称中的 `-` 符号，表达的语义是 "连接"，`react-redux` 表示将 React 与 Redux 连接起来。
-- **Redux DevTools**：浏览器扩展，可以帮助你在开发过程中查看和调试 Redux store 的状态变化。
-- **Redux Toolkit**：官方推荐的库，简化了 Redux 的配置和使用，提供了诸如 `createSlice`、`configureStore` 等 API，减少了样板代码。
-- **Thunk** 和 **Saga**：处理异步操作的中间件，使得处理异步逻辑更加简洁和可测试。
+```mermaid
+mindmap
+(redux 的工具和生态系统)
+  React-Redux
+    将 React 组件与 Redux store 连接起来的官方库。它提供了 Provider 和 connect 等组件/函数，使得在 React 组件中访问和更新 store 更加方便。
+    语义：这个库名称中的 - 符号，表达的语义是 "连接"，react-redux 表示将 React 与 Redux 连接起来。
+  Redux DevTools
+    浏览器扩展，可以帮助你在开发过程中查看和调试 Redux store 的状态变化。
+  Redux Toolkit
+    官方推荐的库，简化了 Redux 的配置和使用，提供了诸如 createSlice、configureStore 等 API，减少了样板代码。
+  Thunk 和 Saga
+    处理异步操作的中间件，使得处理异步逻辑更加简洁和可测试。
+```
 
 ## 📒 notes - 本节会用到的一些依赖
 
