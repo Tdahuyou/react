@@ -196,10 +196,10 @@
 
 
 <!-- !====================>分隔符<====================! -->
-### [9999. temolates](https://github.com/Tdahuyou/react/tree/main/9999.%20temolates) <!-- [locale](./9999.%20temolates/README.md) -->
+### [0031. store、reducer、action 三者之间的关系](https://github.com/Tdahuyou/react/tree/main/0031.%20store%E3%80%81reducer%E3%80%81action%20%E4%B8%89%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB) <!-- [locale](./0031.%20store%E3%80%81reducer%E3%80%81action%20%E4%B8%89%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/README.md) -->
 
 - 📝 summary
-
+  - 本节介绍 redux 中的 3 个核心组成部分 store、reducer、action，以及它们之间的关系。
 
 
 <!-- !====================>分隔符<====================! -->
