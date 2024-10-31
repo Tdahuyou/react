@@ -9,12 +9,15 @@
 - https://redux.js.org/api/utils
   - redux 官方文档 - Utility Functions
   - 这部分提到了一个合法的 action 必须是一个平面对象，并且带有一个 string 类型的 type 字段。
-- https://github.com/reduxjs/redux/blob/master/src/utils/isPlainObject.ts
-  - redux 仓库中的一个工具方法 isPlainObject 的源码。
-  - isPlainObject 是用来判断一个对象是否是一个平面对象的工具方法。
-- https://github.com/reduxjs/redux/blob/master/src/utils/isAction.ts
-  - redux 仓库中的一个工具方法 isAction 的源码。
-  - isAction 是用来判断 action 是否合法的工具方法。
+- https://github.com/reduxjs/redux
+  - 搜索：`src/utils/isPlainObject.ts`
+    - redux 仓库中的一个工具方法 isPlainObject 的源码。
+    - isPlainObject 是用来判断一个对象是否是一个平面对象的工具方法。
+  - 搜索：`src/utils/isAction.ts`
+    - redux 仓库中的一个工具方法 isAction 的源码。
+    - isAction 是用来判断 action 是否合法的工具方法。
+  - 搜索：`src/bindActionCreators.ts`
+    - 查看 redux 提供的 API `bindActionCreators` 的实现源码。
 
 ## 💻 demo - 脱离 react 单独使用 redux 来管理状态数据
 
