@@ -1,8 +1,7 @@
 # [0012. react-monaco-editor 基本使用](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
-- 📝 summary
-  - 通过一些 demo 介绍了 react-monaco-editor 组件的基本使用。
-  - 记录了相关的业务背景，为什么会需要用到这个组件，以及在应用过程中踩的坑，同时也记录了相关的解决方案。
+- 通过一些 demo 介绍了 react-monaco-editor 组件的基本使用。
+- 记录了相关的业务背景，为什么会需要用到这个组件，以及在应用过程中踩的坑（公共 CDN 资源加载缓慢的问题），同时也记录了相关的解决方案。其中较大篇幅都在描述坑，以及解决方案。
 
 ## 🔗 links
 

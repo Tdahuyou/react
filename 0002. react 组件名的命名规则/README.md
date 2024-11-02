@@ -1,7 +1,6 @@
 # [0002. react 组件名的命名规则](https://github.com/Tdahuyou/react/tree/main/0002.%20react%20%E7%BB%84%E4%BB%B6%E5%90%8D%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99)
 
-- 📝 summary
-  - 在 React 中，自定义组件名必须以大写字母开头，而 HTML 标签名则必须以小写字母开头，否则将导致错误或警告。
+- 在 React 中，**自定义组件名必须以大写字母开头**，而 **HTML 标签名则必须以小写字母开头**，否则将导致错误或警告。
 
 ## 🔗 links
 

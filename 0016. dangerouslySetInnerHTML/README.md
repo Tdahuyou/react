@@ -1,5 +1,6 @@
 # [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML)
 
+- 在 JSX 中，使用 dangerouslySetInnerHTML 可以在组件中直接插入 html 标签。
 
 ## 🔗 links
 

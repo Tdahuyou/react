@@ -1,8 +1,10 @@
 # [0030. redux 中的 action](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action)
 
-- 📝 summary
-  - 本节介绍的是 redux 中的 action，分别介绍了 action 的本质，以及编写 action 时的一些常见写法，比如使用 action 创建函数，使用 `bindActionCreators` 来简化 action 的分发流程。
-  - 同时还介绍了部分 redux 的源码，比如关于 action 的判断逻辑 `isAction` 的实现、关于 `bindActionCreators` 的实现源码。
+- 理解 action 的本质
+- 编写 action 时的一些常见写法
+- action 的创建函数
+- 学会使用 `bindActionCreators` 来简化 action 的分发流程
+- 学习 redux 的源码，比如：关于 action 的判断逻辑 `isAction` 的实现、关于 `bindActionCreators` 的实现源码。
 
 ## 🔗 links
 

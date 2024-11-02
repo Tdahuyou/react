@@ -1,13 +1,11 @@
 # [0028. redux 的基本使用](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
-- 📝 summary
-  - 介绍了 redux 是什么
-  - 介绍了 redux 与 react 结合使用的两种常见方式
-    - 传统的 createStore 方式
-    - 新版的 redux-toolkit 方式
-  - 介绍了脱离 react 单独使用 redux 来管理状态数据的做法
-- ⏰ todos
-  - 整理 ai 回复。
+- ⏰ TODO
+- 理解 redux 是什么
+- 了解 redux 与 react 结合使用的两种常见方式
+  - 传统的 createStore 方式
+  - 新版的 redux-toolkit 方式
+- 你可以脱离 react，单独使用 redux 来管理状态数据。
 
 ## 🔗 links
 

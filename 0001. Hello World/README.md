@@ -1,7 +1,6 @@
 # [0001. Hello World](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World)
 
-- 📝 summary
-  - 通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
+- 通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
 
 ## 🔗 links
 

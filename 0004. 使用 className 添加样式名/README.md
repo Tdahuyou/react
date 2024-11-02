@@ -1,9 +1,8 @@
 # [0004. 使用 className 添加样式名](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D)
 
-- 📝 summary
-  - 在 React 中，我们通过使用 JSX 语法来定义组件模板，在组件模板中，我们可以使用 className 来指定一个 CSS 的 class。
-    - ✔ `<img className="avatar" />`
-    - ✖ `<img class="avatar" />`
+- 在 React 中，我们通过使用 JSX 语法来定义组件模板，在组件模板中，我们可以使用 className 来指定一个 CSS 的 class。
+  - ✔ `<img className="avatar" />`
+  - ✖ `<img class="avatar" />`
 
 ## 🔗 links
 
