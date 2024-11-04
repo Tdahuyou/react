@@ -14,6 +14,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      vue:
+        specifier: ^2.4.4
+        version: 2.4.4
     devDependencies:
       '@eslint/js':
         specifier: ^9.13.0
@@ -1242,6 +1245,10 @@ packages:
         optional: true
       terser:
         optional: true
+
+  vue@2.4.4:
+    resolution: {integrity: sha512-PCiRmc8ZT1DD5+BN8QUAmnkBefcCLfZVSuhc1u7iu5JoPrSHyyk/+4nehm7k2xVMi8+RFLk5WIHAN14UKF0txw==}
+    deprecated: Vue 2 has reached EOL and is no longer actively maintained. See https://v2.vuejs.org/eol/ for more details.
 
   which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
@@ -2588,6 +2595,8 @@ snapshots:
       rollup: 4.24.4
     optionalDependencies:
       fsevents: 2.3.3
+
+  vue@2.4.4: {}
 
   which-boxed-primitive@1.0.2:
     dependencies:
