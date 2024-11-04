@@ -1,6 +1,11 @@
 ### [0001. Hello World](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World) <!-- [locale](./0001.%20Hello%20World/README.md) -->
 
-- 通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
+- 知识点
+  - 了解 React.createElement 的基本使用
+  - 了解 ReactDOM.render 的基本使用
+  - 了解 JSX 其实就是 React.createElement 的简写，是一个语法糖。
+- 本节通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0002. react 组件名的命名规则](https://github.com/Tdahuyou/react/tree/main/0002.%20react%20%E7%BB%84%E4%BB%B6%E5%90%8D%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99) <!-- [locale](./0002.%20react%20%E7%BB%84%E4%BB%B6%E5%90%8D%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/README.md) -->
@@ -12,6 +17,7 @@
 ### [0003. html to jsx 在线转换](https://github.com/Tdahuyou/react/tree/main/0003.%20html%20to%20jsx%20%E5%9C%A8%E7%BA%BF%E8%BD%AC%E6%8D%A2) <!-- [locale](./0003.%20html%20to%20jsx%20%E5%9C%A8%E7%BA%BF%E8%BD%AC%E6%8D%A2/README.md) -->
 
 - 本节介绍了一个实现 html 转 jsx 的在线工具站点，如果有 html 转 jsx 的需求，可以通过这个工具来快速转换。
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0004. 使用 className 添加样式名](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D) <!-- [locale](./0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D/README.md) -->
@@ -34,6 +40,7 @@
 
 - 一个用于解决弹框问题的 react 第三方库。
 - ⏰ TODO：待整理。（看一眼 ai 回复基本就会了，当时就没整理。）
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0007. ref](https://github.com/Tdahuyou/react/tree/main/0007.%20ref) <!-- [locale](./0007.%20ref/README.md) -->
@@ -59,16 +66,19 @@
 
 - 类似于 vue 中的 v-show、v-if，不过在 react 中，条件渲染是通过纯 js 结合 jsx 语法来实现的，更加的灵活。
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0011. 列表渲染](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93) <!-- [locale](./0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md) -->
 
 - 类似于 vue 中的 v-for，不过在 react 中，列表渲染是通过纯 js 结合 jsx 语法来实现的，更加的灵活。
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0012. react-monaco-editor 基本使用](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8) <!-- [locale](./0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) -->
 
 - 通过一些 demo 介绍了 react-monaco-editor 组件的基本使用。
 - 记录了相关的业务背景，为什么会需要用到这个组件，以及在应用过程中踩的坑（公共 CDN 资源加载缓慢的问题），同时也记录了相关的解决方案。其中较大篇幅都在描述坑，以及解决方案。
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0013. 什么是 JSX](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX) <!-- [locale](./0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md) -->
@@ -84,26 +94,31 @@
 - 并不会实际被渲染到元素结构中，仅仅是起到一个占位的作用。
 - 场景应用场景：使用 `<></>` 见多个“根元素”包裹一层，解决组件的单根问题。
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0015. 在 JSX 中使用注释](https://github.com/Tdahuyou/react/tree/main/0015.%20%E5%9C%A8%20JSX%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%B3%A8%E9%87%8A) <!-- [locale](./0015.%20%E5%9C%A8%20JSX%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%B3%A8%E9%87%8A/README.md) -->
 
 - 在 JSX 中，注释应该被包含在特殊的注释标签中，即 `{/* 这里边是注释内容 */}`。
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML) <!-- [locale](./0016.%20dangerouslySetInnerHTML/README.md) -->
 
 - 在 JSX 中，使用 dangerouslySetInnerHTML 可以在组件中直接插入 html 标签。
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0017. 在 JSX 中书写内联样式 style](https://github.com/Tdahuyou/react/tree/main/0017.%20%E5%9C%A8%20JSX%20%E4%B8%AD%E4%B9%A6%E5%86%99%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F%20style) <!-- [locale](./0017.%20%E5%9C%A8%20JSX%20%E4%B8%AD%E4%B9%A6%E5%86%99%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F%20style/README.md) -->
 
 - 在 JSX 中书写内联样式 style 的一些注意事项。
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0018. demo-图片定时切换](https://github.com/Tdahuyou/react/tree/main/0018.%20demo-%E5%9B%BE%E7%89%87%E5%AE%9A%E6%97%B6%E5%88%87%E6%8D%A2) <!-- [locale](./0018.%20demo-%E5%9B%BE%E7%89%87%E5%AE%9A%E6%97%B6%E5%88%87%E6%8D%A2/README.md) -->
 
 - 实现一个图片定时切换的 demo，类似轮播效果。
 - 通过本节的 demo，强调了一个点 —— 由 `React.createElement` 创建的 react 元素对象是不可变的。
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0019. 组件属性的传递和接收](https://github.com/Tdahuyou/react/tree/main/0019.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BC%A0%E9%80%92%E5%92%8C%E6%8E%A5%E6%94%B6) <!-- [locale](./0019.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BC%A0%E9%80%92%E5%92%8C%E6%8E%A5%E6%94%B6/README.md) -->
@@ -113,15 +128,18 @@
 - 对于函数组件，属性会作为一个对象的属性，传递给函数的参数。
 - 对于类组件，属性会作为一个对象的属性，传递给构造函数的参数。
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0020. 组件属性的校验](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C) <!-- [locale](./0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md) -->
 
 - ⏰ TODO
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0021. 在 React 中，一个组件都有哪些部分组成？](https://github.com/Tdahuyou/react/tree/main/0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F) <!-- [locale](./0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F/README.md) -->
 
 - ⏰ TODO
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0022. 函数组件概述](https://github.com/Tdahuyou/react/tree/main/0022.%20%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6%E6%A6%82%E8%BF%B0) <!-- [locale](./0022.%20%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6%E6%A6%82%E8%BF%B0/README.md) -->
@@ -131,20 +149,24 @@
 - 自从 React 16.8 引入 Hooks 以来，函数组件的功能得到了极大的增强，现在 **它们可以拥有 state 和生命周期方法**，这使得函数组件成为了许多新项目的首选。
 - **函数组件提供了简洁的方式来定义 React 组件，结合 Hooks，它们现在几乎可以做类组件所能做的所有事情**。由于其简单性和性能优势，函数组件已经成为现代 React 开发中的主流选择。
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0023. 什么是类组件](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6) <!-- [locale](./0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md) -->
 
 - ⏰ TODO
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0024. 什么是单向数据流](https://github.com/Tdahuyou/react/tree/main/0024.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%95%E5%90%91%E6%95%B0%E6%8D%AE%E6%B5%81) <!-- [locale](./0024.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%95%E5%90%91%E6%95%B0%E6%8D%AE%E6%B5%81/README.md) -->
 
 - ⏰ TODO
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0025. 什么是布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7) <!-- [locale](./0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md) -->
 
 - ⏰ TODO
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0026. 布尔属性的简写](https://github.com/Tdahuyou/react/tree/main/0026.%20%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E5%86%99) <!-- [locale](./0026.%20%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E5%86%99/README.md) -->
@@ -157,10 +179,12 @@
   - `{true}` 不会渲染出来。
   - `{'true'}` 可以正常渲染。
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0027. 生命周期](https://github.com/Tdahuyou/react/tree/main/0027.%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F) <!-- [locale](./0027.%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/README.md) -->
 
 - ⏰ TODO
+
 
 <!-- !====================>分隔符<====================! -->
 ### [0028. redux 的基本使用](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8) <!-- [locale](./0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) -->
@@ -178,6 +202,7 @@
 
 - 理解为什么前端不适用 mvc 模式。
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0030. redux 中的 action](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action) <!-- [locale](./0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md) -->
 
@@ -187,9 +212,20 @@
 - 学会使用 `bindActionCreators` 来简化 action 的分发流程
 - 学习 redux 的源码，比如：关于 action 的判断逻辑 `isAction` 的实现、关于 `bindActionCreators` 的实现源码。
 
+
 <!-- !====================>分隔符<====================! -->
 ### [0031. store、reducer、action 三者之间的关系](https://github.com/Tdahuyou/react/tree/main/0031.%20store%E3%80%81reducer%E3%80%81action%20%E4%B8%89%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB) <!-- [locale](./0031.%20store%E3%80%81reducer%E3%80%81action%20%E4%B8%89%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/README.md) -->
 
 - 了解 redux 中的 3 个核心组成部分 store、reducer、action，并清楚它们之间的关系。
+
+
+<!-- !====================>分隔符<====================! -->
+### [0032. 什么是 react](https://github.com/Tdahuyou/react/tree/main/0032.%20%E4%BB%80%E4%B9%88%E6%98%AF%20react) <!-- [locale](./0032.%20%E4%BB%80%E4%B9%88%E6%98%AF%20react/README.md) -->
+
+- 了解什么是 react
+- 了解 react 都有哪些特点
+- 理解为什么强调 react 是一个库，而非框架
+  - 对比 vue、react 谈了谈。
+
 
 <!-- !====================>分隔符<====================! -->

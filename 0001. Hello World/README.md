@@ -1,6 +1,10 @@
 # [0001. Hello World](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World)
 
-- 通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
+- 知识点
+  - 了解 React.createElement 的基本使用
+  - 了解 ReactDOM.render 的基本使用
+  - 了解 JSX 其实就是 React.createElement 的简写，是一个语法糖。
+- 本节通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
 
 ## 🔗 links
 
@@ -9,12 +13,6 @@
 - https://zh-hans.react.dev/reference/react-dom/render
   - react render
   - 注：在未来 React 发布主要版本时，此 API 将被移除。
-
-## 📒 notes - 知识点
-
-- 了解 React.createElement 的基本使用
-- 了解 ReactDOM.render 的基本使用
-- 了解 JSX 其实就是 React.createElement 的简写，是一个语法糖。
 
 ## 📒 notes - 通过 CDN 的方式引入相关依赖
 
