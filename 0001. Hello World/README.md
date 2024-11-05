@@ -4,14 +4,14 @@
   - 了解 React.createElement 的基本使用
   - 了解 ReactDOM.render 的基本使用
   - 了解 JSX 其实就是 React.createElement 的简写，是一个语法糖。
-- 本节通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
+- 本节不使用任何脚手架工具，通过 CDN 引入 react、react-dom，直接在（.html）页面上使用 react，渲染出 Hello World。
 
 ## 🔗 links
 
 - https://zh-hans.react.dev/reference/react/createElement
   - react createElement
 - https://zh-hans.react.dev/reference/react-dom/render
-  - react render
+  - react render - `React.render(reactNode, domNode, callback?)`
   - 注：在未来 React 发布主要版本时，此 API 将被移除。
 
 ## 📒 notes - 通过 CDN 的方式引入相关依赖
@@ -185,6 +185,37 @@
 - demo/3.html 的最终渲染结果如下图所示：
   - ![](md-imgs/2024-09-18-10-49-30.png)
 
+## 🤔 思考：`React.createElement` 跟 `document.createElement` 是一样的吗？
+
+- 别想了，不可能是一样的。
+- react 核心库是很纯粹的，里边是不包含任何跟宿主环境（比如，BOM `window`、DOM `document`）相关的 API 的，因此它们不可能是一个玩意儿。
+- 可以认为前者 `React.createElement` 返回的就是一个跟宿主环境无关的普通 js 对象，在这个对象中记录了需要如何在页面上渲染出一个真实的元素节点的相关信息，它需要配合 react-dom 库一起使用，将它的返回结果丢给 react-dom，由 react-dom 去解析这些信息，渲染出真实 dom。
+  - 【扩展】这里提到了 `React.createElement` 的返回值是一个普通的 js 对象，其实这就是 React 的虚拟 dom（virtual dom）。要知道 **虚拟 DOM** 并非啥多么神奇的技术，它实际上就是对实际 DOM 的抽象，它允许 React 在不影响浏览器性能的情况下高效地更新用户界面（更新信息暂时记录到虚拟 DOM 对象身上，最后明确需要修改的具体内容之后，才会转为真实 DOM 操作，触发页面更新）。当应用的状态发生变化时，React 会首先在虚拟 DOM 上进行更新和差异计算（diffing algorithm），然后将实际需要更改的部分批量应用到真实的 DOM 上，从而减少直接操作 DOM 所带来的性能开销。
+
+## 🤔 思考：`react` 核心库和 `react-dom` 库之间的关系是？
+
+- React 核心库提供了构建用户界面所需的所有基本功能，压根就不关心元素具体如何渲染。
+  - `React` 核心库主要负责提供创建和管理组件所需的 API 和工具。它定义了如何声明组件、状态管理和生命周期方法等核心概念。
+  - 它包含了如 `React.Component` 类、`useState`, `useEffect` 等 Hooks 函数以及 `React.createElement` 等用于创建 React 元素的方法。
+  - 这个库不关心组件最终会被渲染到哪里，它可以是浏览器中的 DOM 节点，也可以是原生移动应用的视图组件（如在 React Native 中）。
+- ReactDOM 则专注于将由 React 库创建的 react 元素（虚拟 DOM）渲染到浏览器环境中。`react-dom` 这个中间的 `-` 符号，可以将其理解为“连接”，就是将 react 和 dom 相互连接起来的意思。
+- react 的这种设计，使得它不仅局限于浏览器环境中，还可以应用于其他场景，比如 **React Native** 就是在移动端使用 React 构建原生应用的一个例子。
+
+## 🤔 思考：为什么一旦使用了 `JSX` 语法，就必须要引入 `react` 核心库？
+
+- 比较官方的答复：
+  - JSX 语法，是 react 官方提供的语法，它基于 react 的核心库，所以必须引入 react 核心库。
+  - JSX 允许开发者在 JavaScript 代码中嵌入类似 HTML 的语法，但这种语法并不直接被 JavaScript 引擎理解。JSX 是 React 等库的一种语法糖，背后需要通过工具（如 Babel）进行编译转化成标准的 JavaScript 代码。
+- JSX 不是 es 官方标准吗？
+  - JSX 在最初是由 React 团队提出的，并被 React 社区广泛采用。对于是否将 JSX 纳入 JavaScript 标准，曾有过讨论。截止目前（2024 年 11 月 6 日 07:22:47）ES 官方没有将 JSX 纳入规范标准，如果要使用 JSX 的话，需要在中间加一层 bable 来对 JSX 进行编译。2017年，Babel 发布了支持 JSX 语法的编译器插件，使得使用 JSX 更加方便。
+- 什么叫 JSX 基于 react 核心库？
+  - JSX 经过 babel 编译之后，会变成 `React.createElement` 函数调用，而 `React.createElement` 是 react 核心库中的一个函数。最终会返回一个 react 元素对象（虚拟 DOM），这个对象包含了所有需要渲染的信息，包括标签名、属性、子元素等。
+
+## 🤔 思考：通过脚手架（比如 vite、umi、create-react-app）来搭建工程 vs. 通过（.html）页面的方式来直接引入 react 相关的库
+
+- 如果想要快速搭建一个 react 项目，推荐使用脚手架，因为脚手架会帮我们做更多的工程配置，比如 babel 的配置，webpack 的配置，eslint 的配置等，这些配置都帮我们做了，我们只需要关注业务代码就可以了。
+- 脚手架能做的在页面上也都能做，脚手架解决的问题无非是做了工程的一些初始的模块化处理，让工程结构更清晰，帮我们省去搭建工程的步骤，最终运行的打包产物，依旧是这种传统的 html 页面形式，本质是没变的。通过本节这种页面级的形式来引入 react，省掉中间嵌套的包裹层，或许能更好地帮助我们理解 react 的本质。
+
 ## 🤖 AI - 请介绍一下 script 标签身上的 type 属性
 
 `<script>` 标签的 `type` 属性用于指定加载或内嵌的脚本语言的 MIME 类型。在 HTML 中使用 `<script>` 标签时，这个属性可以帮助浏览器理解和处理正确的脚本类型。以下是一些关于 `type` 属性的重要点和常见用法：
@@ -215,7 +246,7 @@
 
 ## 🤖 AI - 请介绍一下 script 标签身上的 crossorigin 属性
 
-答：如果 script 标签引用的资源出现了问题，加上 crossorigin 属性可以让浏览器提供的错误报告更加详细，帮助开发者更好地调试问题。
+**答：如果 script 标签引用的资源出现了问题，加上 crossorigin 属性可以让浏览器提供的错误报告更加详细，帮助开发者更好地调试问题。**
 
 ---
 

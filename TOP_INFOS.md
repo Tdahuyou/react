@@ -4,7 +4,7 @@
   - 了解 React.createElement 的基本使用
   - 了解 ReactDOM.render 的基本使用
   - 了解 JSX 其实就是 React.createElement 的简写，是一个语法糖。
-- 本节通过 CDN 引入 react、react-dom，并使用 react 的写法，在页面上渲染出 Hello World。
+- 本节不使用任何脚手架工具，通过 CDN 引入 react、react-dom，直接在（.html）页面上使用 react，渲染出 Hello World。
 
 
 <!-- !====================>分隔符<====================! -->
@@ -226,6 +226,10 @@
 - 了解 react 都有哪些特点
 - 理解为什么强调 react 是一个库，而非框架
 - 谈了谈 vue、react 之间的一些差异
+
+
+<!-- !====================>分隔符<====================! -->
+### [0033. react-tooltip 基本使用](https://github.com/Tdahuyou/react/tree/main/0033.%20react-tooltip%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8) <!-- [locale](./0033.%20react-tooltip%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) -->
 
 
 <!-- !====================>分隔符<====================! -->
