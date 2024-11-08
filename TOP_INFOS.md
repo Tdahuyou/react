@@ -233,3 +233,17 @@
 
 
 <!-- !====================>分隔符<====================! -->
+### [0034. eslint 插件](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6) <!-- [locale](./0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md) -->
+
+- 认识 vscode 中的 eslint 插件
+- 知道 eslint 是用来解决什么问题的
+- 知道如何引入并使用 eslint
+
+
+<!-- !====================>分隔符<====================! -->
+### [0035. 在 vscode 中，让 Emmet 语法支持 JSX](https://github.com/Tdahuyou/react/tree/main/0035.%20%E5%9C%A8%20vscode%20%E4%B8%AD%EF%BC%8C%E8%AE%A9%20Emmet%20%E8%AF%AD%E6%B3%95%E6%94%AF%E6%8C%81%20JSX) <!-- [locale](./0035.%20%E5%9C%A8%20vscode%20%E4%B8%AD%EF%BC%8C%E8%AE%A9%20Emmet%20%E8%AF%AD%E6%B3%95%E6%94%AF%E6%8C%81%20JSX/README.md) -->
+
+- 介绍如何配置 VSCode，让 Emmet 语法支持 JSX。
+
+
+<!-- !====================>分隔符<====================! -->

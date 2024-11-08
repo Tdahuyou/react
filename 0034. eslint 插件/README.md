@@ -1,4 +1,4 @@
-# 0034. eslint 插件
+# [0034. eslint 插件](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6)
 
 - 认识 vscode 中的 eslint 插件
 - 知道 eslint 是用来解决什么问题的
