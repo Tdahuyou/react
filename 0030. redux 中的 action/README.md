@@ -1,10 +1,10 @@
-# [0030. redux 中的 action](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action)
+# [0030. redux 中的 action](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)
 - [🔗 links](#-links)
 - [💻 脱离 react 单独使用 redux 来管理状态数据](#-脱离-react-单独使用-redux-来管理状态数据)
-- [📒 action 是什么？有什么用？](#-action-是什么？有什么用？)
+- [📒 action 是什么？有什么用？](#-action-是什么有什么用)
 - [📒 redux 部分源码 - 判断 action 是否合法的逻辑](#-redux-部分源码---判断-action-是否合法的逻辑)
 - [💻 action 必须是一个平面对象](#-action-必须是一个平面对象)
 - [💻 action 的 type 属性必须是 string 类型](#-action-的-type-属性必须是-string-类型)
@@ -12,8 +12,8 @@
 - [📒 action 的创建函数](#-action-的创建函数)
 - [📒 `bindActionCreators`](#-`bindactioncreators`)
 - [💻 action 的创建函数以及工具方法 `bindActionCreators`](#-action-的创建函数以及工具方法-`bindactioncreators`)
-- [🤖 如何验证一个对象是否是 plain-object？](#🤖-如何验证一个对象是否是-plain-object？)
-- [🤖 为什么 type 必须是 string 类型，符号类型不行](#🤖-为什么-type-必须是-string-类型，符号类型不行)
+- [🤖 如何验证一个对象是否是 plain-object？](#🤖-如何验证一个对象是否是-plain-object)
+- [🤖 为什么 type 必须是 string 类型，符号类型不行](#🤖-为什么-type-必须是-string-类型符号类型不行)
 <!-- endregion:toc -->
 
 ## 📝 Summary

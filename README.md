@@ -52,10 +52,10 @@
   - [💻 在页面上渲染出 Hello World](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#-在页面上渲染出-hello-world)
   - [💻 熟悉 React.createElement 的参数](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#-熟悉-reactcreateelement-的参数)
   - [💻 使用 JSX 来简写](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#-使用-jsx-来简写)
-  - [🤔 思考：`React.createElement` 跟 `document.createElement` 是一样的吗？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤔-思考：`reactcreateelement`-跟-`documentcreateelement`-是一样的吗？)
-  - [🤔 思考：`react` 核心库和 `react-dom` 库之间的关系是？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤔-思考：`react`-核心库和-`react-dom`-库之间的关系是？)
-  - [🤔 思考：为什么一旦使用了 `JSX` 语法，就必须要引入 `react` 核心库？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤔-思考：为什么一旦使用了-`jsx`-语法，就必须要引入-`react`-核心库？)
-  - [🤔 思考：通过脚手架（比如 vite、umi、create-react-app）来搭建工程 vs. 通过（.html）页面的方式来直接引入 react 相关的库](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤔-思考：通过脚手架（比如-vite、umi、create-react-app）来搭建工程-vs-通过（html）页面的方式来直接引入-react-相关的库)
+  - [🤔 思考：`React.createElement` 跟 `document.createElement` 是一样的吗？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤔-思考`reactcreateelement`-跟-`documentcreateelement`-是一样的吗)
+  - [🤔 思考：`react` 核心库和 `react-dom` 库之间的关系是？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤔-思考`react`-核心库和-`react-dom`-库之间的关系是)
+  - [🤔 思考：为什么一旦使用了 `JSX` 语法，就必须要引入 `react` 核心库？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤔-思考为什么一旦使用了-`jsx`-语法就必须要引入-`react`-核心库)
+  - [🤔 思考：通过脚手架（比如 vite、umi、create-react-app）来搭建工程 vs. 通过（.html）页面的方式来直接引入 react 相关的库](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤔-思考通过脚手架比如-vite、umi、create-react-app来搭建工程-vs-通过html页面的方式来直接引入-react-相关的库)
   - [🤖 请介绍一下 script 标签身上的 type 属性](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#🤖-请介绍一下-script-标签身上的-type-属性)
     - [**标准用法**](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#**标准用法**)
     - [**模块**](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#**模块**)
@@ -74,10 +74,10 @@
 - [ ] [0034. eslint 插件](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md) <!-- [locale](./0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md) -->  
   <!-- region:toc -->
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md#-summary)
-  - [📒 eslint 是啥？有啥用？](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md#-eslint-是啥？有啥用？)
+  - [📒 eslint 是啥？有啥用？](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md#-eslint-是啥有啥用)
   - [📒 安装 ESLint 插件](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md#-安装-eslint-插件)
   - [📒 配置 ESLint 基本流程](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md#-配置-eslint-基本流程)
-  - [💻 约束只能使用单引号，不能使用双引号](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md#-约束只能使用单引号，不能使用双引号)
+  - [💻 约束只能使用单引号，不能使用双引号](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md#-约束只能使用单引号不能使用双引号)
   - [📒 注意事项](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md#-注意事项)
   <!-- endregion:toc -->
   
@@ -96,7 +96,7 @@
 - [x] [0013. 什么是 JSX](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md) <!-- [locale](./0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md) -->  
   <!-- region:toc -->
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md#-summary)
-  - [📒 JSX 是什么？](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md#-jsx-是什么？)
+  - [📒 JSX 是什么？](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md#-jsx-是什么)
   - [📒 JSX 的本质](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md#-jsx-的本质)
   - [📒 必须单根](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md#-必须单根)
   - [📒 必须要有结束标记](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md#-必须要有结束标记)
@@ -128,7 +128,7 @@
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0009.%20%E5%8A%A8%E6%80%81%E6%8F%92%E5%80%BC%20-%20%E5%9C%A8%20jsx%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%8B%AC%E5%8F%B7%E5%AE%9E%E7%8E%B0/README.md#-summary)
   - [🔗 links](https://github.com/Tdahuyou/react/tree/main/0009.%20%E5%8A%A8%E6%80%81%E6%8F%92%E5%80%BC%20-%20%E5%9C%A8%20jsx%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%8B%AC%E5%8F%B7%E5%AE%9E%E7%8E%B0/README.md#-links)
   - [📒 在 JSX 中使用 JS 表达式](https://github.com/Tdahuyou/react/tree/main/0009.%20%E5%8A%A8%E6%80%81%E6%8F%92%E5%80%BC%20-%20%E5%9C%A8%20jsx%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%8B%AC%E5%8F%B7%E5%AE%9E%E7%8E%B0/README.md#-在-jsx-中使用-js-表达式)
-  - [🤖 Hedy Lamarr 是谁？](https://github.com/Tdahuyou/react/tree/main/0009.%20%E5%8A%A8%E6%80%81%E6%8F%92%E5%80%BC%20-%20%E5%9C%A8%20jsx%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%8B%AC%E5%8F%B7%E5%AE%9E%E7%8E%B0/README.md#🤖-hedy-lamarr-是谁？)
+  - [🤖 Hedy Lamarr 是谁？](https://github.com/Tdahuyou/react/tree/main/0009.%20%E5%8A%A8%E6%80%81%E6%8F%92%E5%80%BC%20-%20%E5%9C%A8%20jsx%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%8B%AC%E5%8F%B7%E5%AE%9E%E7%8E%B0/README.md#🤖-hedy-lamarr-是谁)
   <!-- endregion:toc -->
   
 
@@ -150,7 +150,7 @@
   - [📒 notes](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#-notes)
   - [💻 dangerouslySetInnerHTML 的基本使用](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#-dangerouslysetinnerhtml-的基本使用)
   - [🤖 请介绍一下 dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#🤖-请介绍一下-dangerouslysetinnerhtml)
-    - [为什么需要 `dangerouslySetInnerHTML`？](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#为什么需要-`dangerouslysetinnerhtml`？)
+    - [为什么需要 `dangerouslySetInnerHTML`？](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#为什么需要-`dangerouslysetinnerhtml`)
     - [基本用法](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#基本用法)
     - [安全注意事项](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#安全注意事项)
     - [使用示例](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#使用示例)
@@ -180,7 +180,7 @@
   <!-- region:toc -->
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-summary)
   - [🔗 links](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-links)
-  - [📒 redux 是什么？](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-redux-是什么？)
+  - [📒 redux 是什么？](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-redux-是什么)
   - [📒 redux 核心概念](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-redux-核心概念)
   - [📒 纯函数](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-纯函数)
   - [📒 redux 的工具和生态系统](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-redux-的工具和生态系统)
@@ -188,8 +188,8 @@
   - [💻 脱离 react 单独使用 redux 来管理状态数据](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-脱离-react-单独使用-redux-来管理状态数据)
   - [💻 redux 的基本使用 - createStore 版](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-redux-的基本使用---createstore-版)
   - [💻 redux 的基本使用 - @reduxjs/toolkit 版](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-redux-的基本使用---@reduxjs/toolkit-版)
-  - [💻 redux 的基本使用 - @reduxjs/toolkit 版（模块化）](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-redux-的基本使用---@reduxjs/toolkit-版（模块化）)
-  - [🤖 我想要深入了解有关 redux 的内容，应该问你哪些问题呢？](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#🤖-我想要深入了解有关-redux-的内容，应该问你哪些问题呢？)
+  - [💻 redux 的基本使用 - @reduxjs/toolkit 版（模块化）](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-redux-的基本使用---@reduxjs/toolkit-版模块化)
+  - [🤖 我想要深入了解有关 redux 的内容，应该问你哪些问题呢？](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#🤖-我想要深入了解有关-redux-的内容应该问你哪些问题呢)
     - [基本概念](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#基本概念)
     - [高级概念](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#高级概念)
     - [最佳实践](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#最佳实践)
@@ -203,7 +203,7 @@
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB/README.md#-summary)
   - [🔗 links](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB/README.md#-links)
   - [📒 notes](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB/README.md#-notes)
-  - [🤖 为什么说前端的 mvc 已死？](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB/README.md#🤖-为什么说前端的-mvc-已死？)
+  - [🤖 为什么说前端的 mvc 已死？](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB/README.md#🤖-为什么说前端的-mvc-已死)
     - [1. **复杂的状态管理**](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB/README.md#1-**复杂的状态管理**)
     - [2. **组件化**](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB/README.md#2-**组件化**)
     - [3. **单向数据流**](https://github.com/Tdahuyou/react/tree/main/0029.%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%89%8D%E7%AB%AF%E7%9A%84%20mvc%20%E5%B7%B2%E6%AD%BB/README.md#3-**单向数据流**)
@@ -219,7 +219,7 @@
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-summary)
   - [🔗 links](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-links)
   - [💻 脱离 react 单独使用 redux 来管理状态数据](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-脱离-react-单独使用-redux-来管理状态数据)
-  - [📒 action 是什么？有什么用？](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-action-是什么？有什么用？)
+  - [📒 action 是什么？有什么用？](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-action-是什么有什么用)
   - [📒 redux 部分源码 - 判断 action 是否合法的逻辑](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-redux-部分源码---判断-action-是否合法的逻辑)
   - [💻 action 必须是一个平面对象](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-action-必须是一个平面对象)
   - [💻 action 的 type 属性必须是 string 类型](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-action-的-type-属性必须是-string-类型)
@@ -227,8 +227,8 @@
   - [📒 action 的创建函数](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-action-的创建函数)
   - [📒 `bindActionCreators`](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-`bindactioncreators`)
   - [💻 action 的创建函数以及工具方法 `bindActionCreators`](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#-action-的创建函数以及工具方法-`bindactioncreators`)
-  - [🤖 如何验证一个对象是否是 plain-object？](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#🤖-如何验证一个对象是否是-plain-object？)
-  - [🤖 为什么 type 必须是 string 类型，符号类型不行](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#🤖-为什么-type-必须是-string-类型，符号类型不行)
+  - [🤖 如何验证一个对象是否是 plain-object？](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#🤖-如何验证一个对象是否是-plain-object)
+  - [🤖 为什么 type 必须是 string 类型，符号类型不行](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action/README.md#🤖-为什么-type-必须是-string-类型符号类型不行)
   <!-- endregion:toc -->
   
 
@@ -246,7 +246,7 @@
 - [x] [0021. 在 React 中，一个组件都有哪些部分组成？](https://github.com/Tdahuyou/react/tree/main/0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F/README.md) <!-- [locale](./0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F/README.md) -->  
   <!-- region:toc -->
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F/README.md#-summary)
-  - [🤖 在 React 中，一个组件都有哪些部分组成？](https://github.com/Tdahuyou/react/tree/main/0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F/README.md#🤖-在-react-中，一个组件都有哪些部分组成？)
+  - [🤖 在 React 中，一个组件都有哪些部分组成？](https://github.com/Tdahuyou/react/tree/main/0021.%20%E5%9C%A8%20React%20%E4%B8%AD%EF%BC%8C%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%EF%BC%9F/README.md#🤖-在-react-中一个组件都有哪些部分组成)
   <!-- endregion:toc -->
   
 
@@ -265,7 +265,7 @@
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md#-summary)
   - [🤖 什么是类组件](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md#🤖-什么是类组件)
     - [类组件的基本形式](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md#类组件的基本形式)
-    - [状态（State）](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md#状态（state）)
+    - [状态（State）](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md#状态state)
     - [生命周期方法](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md#生命周期方法)
     - [默认 Props](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md#默认-props)
     - [总结](https://github.com/Tdahuyou/react/tree/main/0023.%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%E7%BB%84%E4%BB%B6/README.md#总结)
@@ -299,7 +299,7 @@
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D/README.md#-summary)
   - [🔗 links](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D/README.md#-links)
   - [📒 添加样式](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D/README.md#-添加样式)
-  - [🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D/README.md#🤔-问：为什么不直接使用-class-来添加样式，而是使用-classname-呢？)
+  - [🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D/README.md#🤔-问为什么不直接使用-class-来添加样式而是使用-classname-呢)
   - [💻 className 基本使用](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D/README.md#-classname-基本使用)
   <!-- endregion:toc -->
   
@@ -312,7 +312,7 @@
   <!-- region:toc -->
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0019.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BC%A0%E9%80%92%E5%92%8C%E6%8E%A5%E6%94%B6/README.md#-summary)
   - [💻 函数组件和类组件的属性传递](https://github.com/Tdahuyou/react/tree/main/0019.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BC%A0%E9%80%92%E5%92%8C%E6%8E%A5%E6%94%B6/README.md#-函数组件和类组件的属性传递)
-  - [🤖 为什么控制台有 4 次输出？](https://github.com/Tdahuyou/react/tree/main/0019.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BC%A0%E9%80%92%E5%92%8C%E6%8E%A5%E6%94%B6/README.md#🤖-为什么控制台有-4-次输出？)
+  - [🤖 为什么控制台有 4 次输出？](https://github.com/Tdahuyou/react/tree/main/0019.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BC%A0%E9%80%92%E5%92%8C%E6%8E%A5%E6%94%B6/README.md#🤖-为什么控制台有-4-次输出)
   <!-- endregion:toc -->
   
 
@@ -397,16 +397,16 @@
   - [🔗 links](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#-links)
   - [📝 doc - 列表渲染](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#-doc---列表渲染)
   - [💻 列表渲染](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#-列表渲染)
-  - [📒 “列表渲染”中的“列表”是什么？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#-“列表渲染”中的“列表”是什么？)
-  - [🤖 列表渲染如果没有给定 id，react 会报错，请问 react 是如何识别列表渲染的？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#🤖-列表渲染如果没有给定-id，react-会报错，请问-react-是如何识别列表渲染的？)
-    - [为什么需要 `key`？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#为什么需要-`key`？)
+  - [📒 “列表渲染”中的“列表”是什么？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#-列表渲染中的列表是什么)
+  - [🤖 列表渲染如果没有给定 id，react 会报错，请问 react 是如何识别列表渲染的？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#🤖-列表渲染如果没有给定-idreact-会报错请问-react-是如何识别列表渲染的)
+    - [为什么需要 `key`？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#为什么需要-`key`)
     - [如何提供 `key`](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#如何提供-`key`)
     - [错误示例](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#错误示例)
     - [总结](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#总结)
-  - [🤖 如果把每一个 li 都写出来，而不是使用 map，那么不指定 id 会报错吗？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#🤖-如果把每一个-li-都写出来，而不是使用-map，那么不指定-id-会报错吗？)
+  - [🤖 如果把每一个 li 都写出来，而不是使用 map，那么不指定 id 会报错吗？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#🤖-如果把每一个-li-都写出来而不是使用-map那么不指定-id-会报错吗)
     - [示例](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#示例)
     - [总结](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#总结)
-  - [🤖 如果要渲染的内容是一个数组，并且数组的某些项是 react 元素，那么 react 会要求每一个 react 元素都需要具备 key 对吗？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#🤖-如果要渲染的内容是一个数组，并且数组的某些项是-react-元素，那么-react-会要求每一个-react-元素都需要具备-key-对吗？)
+  - [🤖 如果要渲染的内容是一个数组，并且数组的某些项是 react 元素，那么 react 会要求每一个 react 元素都需要具备 key 对吗？](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#🤖-如果要渲染的内容是一个数组并且数组的某些项是-react-元素那么-react-会要求每一个-react-元素都需要具备-key-对吗)
     - [为什么需要 `key`](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#为什么需要-`key`)
     - [示例](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#示例)
     - [动态生成的元素](https://github.com/Tdahuyou/react/tree/main/0011.%20%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/README.md#动态生成的元素)
@@ -423,7 +423,7 @@
   - [💻 React.Fragment 并不会生成真实 DOM](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#-reactfragment-并不会生成真实-dom)
   - [💻 React.Fragment 渲染列表](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#-reactfragment-渲染列表)
   - [🤖 请介绍一下 React.Fragment](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#🤖-请介绍一下-reactfragment)
-    - [为什么使用 `React.Fragment`？](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#为什么使用-`reactfragment`？)
+    - [为什么使用 `React.Fragment`？](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#为什么使用-`reactfragment`)
     - [基本用法](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#基本用法)
       - [使用 `<React.Fragment>` 标签](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#使用-`<reactfragment>`-标签)
       - [使用短语法 `<></>`](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#使用短语法-`<></>`)
@@ -437,7 +437,7 @@
   <!-- region:toc -->
   - [📝 Summary](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-summary)
   - [🔗 links](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#-links)
-  - [🤖 react-modal 中的 contentLabel 属性有什么用？](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#🤖-react-modal-中的-contentlabel-属性有什么用？)
+  - [🤖 react-modal 中的 contentLabel 属性有什么用？](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#🤖-react-modal-中的-contentlabel-属性有什么用)
     - [`contentLabel` 的作用](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#`contentlabel`-的作用)
     - [示例代码](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#示例代码)
       - [安装 `react-modal`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#安装-`react-modal`)

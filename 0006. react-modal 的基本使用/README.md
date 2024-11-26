@@ -1,9 +1,9 @@
-# [0006. react-modal 的基本使用](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
+# [0006. react-modal 的基本使用](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)
 - [🔗 links](#-links)
-- [🤖 react-modal 中的 contentLabel 属性有什么用？](#🤖-react-modal-中的-contentlabel-属性有什么用？)
+- [🤖 react-modal 中的 contentLabel 属性有什么用？](#🤖-react-modal-中的-contentlabel-属性有什么用)
   - [`contentLabel` 的作用](#`contentlabel`-的作用)
   - [示例代码](#示例代码)
     - [安装 `react-modal`](#安装-`react-modal`)

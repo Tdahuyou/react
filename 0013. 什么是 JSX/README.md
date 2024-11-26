@@ -1,8 +1,8 @@
-# [0013. 什么是 JSX](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX)
+# [0013. 什么是 JSX](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX/README.md)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)
-- [📒 JSX 是什么？](#-jsx-是什么？)
+- [📒 JSX 是什么？](#-jsx-是什么)
 - [📒 JSX 的本质](#-jsx-的本质)
 - [📒 必须单根](#-必须单根)
 - [📒 必须要有结束标记](#-必须要有结束标记)

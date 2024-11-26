@@ -1,4 +1,4 @@
-# [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML)
+# [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)
@@ -6,7 +6,7 @@
 - [📒 notes](#-notes)
 - [💻 dangerouslySetInnerHTML 的基本使用](#-dangerouslysetinnerhtml-的基本使用)
 - [🤖 请介绍一下 dangerouslySetInnerHTML](#🤖-请介绍一下-dangerouslysetinnerhtml)
-  - [为什么需要 `dangerouslySetInnerHTML`？](#为什么需要-`dangerouslysetinnerhtml`？)
+  - [为什么需要 `dangerouslySetInnerHTML`？](#为什么需要-`dangerouslysetinnerhtml`)
   - [基本用法](#基本用法)
   - [安全注意事项](#安全注意事项)
   - [使用示例](#使用示例)

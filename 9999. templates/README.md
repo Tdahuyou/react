@@ -1,20 +1,10 @@
 # [9999. temolates](https://github.com/Tdahuyou/react/tree/main/9999.%20temolates)
 
-- 📝 summary
+<!-- region:toc -->
 
+<!-- endregion:toc -->
 
-## 🔗 links
+## 📝 Summary
 
-
-
-## 📒 notes
-
-
-
-## 💻 demo
-
-
-
-## 🤖 AI
 
 
