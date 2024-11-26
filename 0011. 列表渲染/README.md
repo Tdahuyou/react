@@ -3,6 +3,7 @@
 <!-- region:toc -->
 - [📝 Summary](#-summary)
 - [🔗 links](#-links)
+- [🔗 en-words](#-en-words)
 - [📝 doc - 列表渲染](#-doc---列表渲染)
 - [💻 列表渲染](#-列表渲染)
 - [📒 “列表渲染”中的“列表”是什么？](#-列表渲染中的列表是什么)
@@ -29,17 +30,24 @@
 - 如果需要渲染的列表（数组）中包含 React 元素，则必须给元素加上 key，否则会报错。
 - 如果需要渲染的累表（数组）中包含无法渲染的内容，比如 null、undefined，React 会忽略它们。比如 `{[1, 2, 3, null, undefined]}` 最终会渲染 1 2 3。
 - 如果要渲染的列表（数组）中包含普通对象，比如 `{ title: 'Cabbage', isFruit: false, id: 1 }`，那么会报错，对象无法直接渲染。通常会使用 `arr.map` 来对对象数组 `arr` 做一个映射处理，将每一个对象映射为对应的 React 元素，然后渲染 React 元素列表。
-- 单词
-  - cabbage 卷心菜
-  - garlic 蒜
-  - apple 苹果
-  - magenta 洋红
-  - darkgreen 暗绿色
 
 ## 🔗 links
 
 - https://zh-hans.react.dev/learn#rendering-lists
   - react - quick start - Rendering lists 列表渲染
+
+## 🔗 en-words
+
+- [cabbage](https://github.com/Tdahuyou/en-words/blob/main/cabbage.md)
+  - 卷心菜
+- [garlic](https://github.com/Tdahuyou/en-words/blob/main/garlic.md)
+  - 蒜
+- [apple](https://github.com/Tdahuyou/en-words/blob/main/apple.md)
+  - 苹果
+- [magenta](https://github.com/Tdahuyou/en-words/blob/main/magenta.md)
+  - 洋红
+- [darkgreen](https://github.com/Tdahuyou/en-words/blob/main/darkgreen.md)
+  - 暗绿色
 
 ## 📝 doc - 列表渲染
 

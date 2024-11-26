@@ -4,11 +4,13 @@
 - [📝 Summary](#-summary)
 - [🔗 links](#-links)
 - [📒 notes](#-notes)
-- [💻 react 组件名的命名规则](#-react-组件名的命名规则)
+- [💻 demo - react 组件名的命名规则](#-demo---react-组件名的命名规则)
 <!-- endregion:toc -->
 
 ## 📝 Summary
 
+- 知识点：
+  - 了解在 React 中，书写标签名的规范。
 - 在 React 中，**自定义组件名必须以大写字母开头**，而 **HTML 标签名则必须以小写字母开头**，否则将导致错误或警告。
 
 ## 🔗 links
@@ -23,7 +25,7 @@
 - React 中的组件名必须以大写字母开头，否则会报错。
 - React 中的 html tags 必须以小写字母开头，否则会报错。
 
-## 💻 react 组件名的命名规则
+## 💻 demo - react 组件名的命名规则
 
 ```jsx
 /**

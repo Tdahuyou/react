@@ -5,7 +5,7 @@
 - [🔗 links](#-links)
 - [📒 添加样式](#-添加样式)
 - [🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？](#🤔-问为什么不直接使用-class-来添加样式而是使用-classname-呢)
-- [💻 className 基本使用](#-classname-基本使用)
+- [💻 demo - className 基本使用](#-demo---classname-基本使用)
 <!-- endregion:toc -->
 
 ## 📝 Summary
@@ -43,7 +43,7 @@ React 并没有规定你如何添加 CSS 文件。最简单的方式是使用 HT
 - 在 React 中，**为了与 JSX 中的 class 关键字区分**，推荐使用 className 来添加 CSS 类名，尽管在某些情况下直接使用 class 也可能正常工作，但这是不规范的做法且可能引发问题。
 - 虽然在一些环境中直接使用 class 属性可能会被编译器正确处理并渲染出来，这可能是因为现代的构建工具（如 Create React App、Vite）和转译器（如 Babel）能够识别并转换这些属性。但是，根据官方文档以及最佳实践，你应该始终使用 className 来指定元素的 CSS 类。这样可以确保代码的一致性和未来的兼容性，并避免潜在的错误或混淆。
 
-## 💻 className 基本使用
+## 💻 demo - className 基本使用
 
 ```css
 /*

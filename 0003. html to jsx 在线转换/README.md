@@ -3,7 +3,7 @@
 <!-- region:toc -->
 - [📝 Summary](#-summary)
 - [🔗 links](#-links)
-- [📒 notes](#-notes)
+- [📒 html-to-jsx 在线转换器](#-html-to-jsx-在线转换器)
 <!-- endregion:toc -->
 
 ## 📝 Summary
@@ -18,6 +18,6 @@
 - https://github.com/ritz078/transform
   - transform GitHub 仓库。
 
-## 📒 notes
+## 📒 html-to-jsx 在线转换器
 
 - 如果你有大量的 HTML 需要移植到 JSX 中，你可以使用 [在线转换器](https://transform.tools/html-to-jsx)。

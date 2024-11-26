@@ -4,7 +4,7 @@
 - [📝 Summary](#-summary)
 - [🔗 links](#-links)
 - [📝 条件渲染](#-条件渲染)
-- [💻 条件渲染](#-条件渲染)
+- [💻 demo - 条件渲染](#-demo---条件渲染)
 - [📝 对比 vue](#-对比-vue)
 <!-- endregion:toc -->
 
@@ -15,7 +15,9 @@
 
 ## 🔗 links
 
-- https://zh-hans.react.dev/learn#conditional-rendering - react - quick start - Conditional rendering 条件渲染
+- https://zh-hans.react.dev/learn#conditional-rendering
+  - react 官方文档
+  - quick start > Conditional rendering 条件渲染
 
 ## 📝 条件渲染
 
@@ -57,7 +59,7 @@ return (
 
 所有这些方法也适用于有条件地指定属性。如果你对 JavaScript 语法不熟悉，你可以先使用 if...else。
 
-## 💻 条件渲染
+## 💻 demo - 条件渲染
 
 ```jsx
 import { useState } from 'react'

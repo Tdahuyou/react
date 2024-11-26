@@ -14,7 +14,8 @@
 
 ## 📝 Summary
 
-- `npm create vite@latest my-react-app -- --template react`
+- 简单说就是一句话：`npm create vite@latest my-react-app -- --template react`
+- 如果不清楚这条命令的含义，可以参考一下本节中记录的内容。
 
 ## 🔗 links
 
