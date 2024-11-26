@@ -1,5 +1,24 @@
 # [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML)
 
+<!-- region:toc -->
+- [📝 Summary](#-summary)
+- [🔗 links](#-links)
+- [📒 notes](#-notes)
+- [💻 dangerouslySetInnerHTML 的基本使用](#-dangerouslysetinnerhtml-的基本使用)
+- [🤖 请介绍一下 dangerouslySetInnerHTML](#🤖-请介绍一下-dangerouslysetinnerhtml)
+  - [为什么需要 `dangerouslySetInnerHTML`？](#为什么需要-`dangerouslysetinnerhtml`？)
+  - [基本用法](#基本用法)
+  - [安全注意事项](#安全注意事项)
+  - [使用示例](#使用示例)
+    - [安装 `DOMPurify`](#安装-`dompurify`)
+    - [示例代码](#示例代码)
+  - [解释](#解释)
+  - [运行结果](#运行结果)
+  - [总结](#总结)
+<!-- endregion:toc -->
+
+## 📝 Summary
+
 - 在 JSX 中，使用 dangerouslySetInnerHTML 可以在组件中直接插入 html 标签。
 
 ## 🔗 links
@@ -11,7 +30,7 @@
 - 防止注入攻击 - 插入的 html 字符串（可能来自用户输入的内容）会被视作普通的文本处理，而非视作真实 DOM 来处理。
 - dangerouslySetInnerHTML 将 html 字符串视作真实 DOM 来处理。
 
-## 💻 demo - dangerouslySetInnerHTML 的基本使用
+## 💻 dangerouslySetInnerHTML 的基本使用
 
 ```jsx
 function App() {
@@ -53,7 +72,7 @@ function App() {
 
 ![](md-imgs/2024-09-29-08-55-57.png)
 
-## 🤖 AI - 请介绍一下 dangerouslySetInnerHTML
+## 🤖 请介绍一下 dangerouslySetInnerHTML
 
 `dangerouslySetInnerHTML` 是 React 中的一个特殊属性，它允许你直接设置一个元素的 `innerHTML`。这个名字中的“危险”一词强调了使用这个属性时需要特别小心，因为它可能会导致跨站脚本（XSS）攻击等安全问题。
 

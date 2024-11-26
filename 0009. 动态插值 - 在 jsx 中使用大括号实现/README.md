@@ -1,7 +1,19 @@
 # [0009. 动态插值 - 在 jsx 中使用大括号实现](https://github.com/Tdahuyou/react/tree/main/0009.%20%E5%8A%A8%E6%80%81%E6%8F%92%E5%80%BC%20-%20%E5%9C%A8%20jsx%20%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%8B%AC%E5%8F%B7%E5%AE%9E%E7%8E%B0)
 
+<!-- region:toc -->
+- [📝 Summary](#-summary)
+- [🔗 links](#-links)
+- [📒 在 JSX 中使用 JS 表达式](#-在-jsx-中使用-js-表达式)
+- [🤖 Hedy Lamarr 是谁？](#🤖-hedy-lamarr-是谁？)
+<!-- endregion:toc -->
+
+## 📝 Summary
+
 - 在 jsx 中可以使用 `{}` 语法来动态插入 js 表达式。
 - 类似于 vue 中的指令 v-bind 的作用。
+- JSX 让你可以在 Jaavascript 中嵌入 HTML 语法。而大括号可以让你在 JSX 中 “回到” JavaScript 中，这样你就可以从你的代码中嵌入一些变量并展示给用户。
+- 在 JSX 的大括号中插入 null、undefined、false 这些值，是不会显示的，如果要显示的话则不应该丢到大括号中，应该直接书写，将其事做普通的字符串来显示。
+- 在 JSX 的大括号中插入普通对象（比如 `{ foo: 123, bar: 'abc' }`）是无法渲染的，会报错。
 
 ## 🔗 links
 
@@ -10,13 +22,8 @@
 - https://en.wikipedia.org/wiki/Hedy_Lamarr
   - wiki - Hedy Lamarr
 
-## 📒 notes
 
-- JSX 让你可以在 Jaavascript 中嵌入 HTML 语法。而大括号可以让你在 JSX 中 “回到” JavaScript 中，这样你就可以从你的代码中嵌入一些变量并展示给用户。
-- 在 JSX 的大括号中插入 null、undefined、false 这些值，是不会显示的，如果要显示的话则不应该丢到大括号中，应该直接书写，将其事做普通的字符串来显示。
-- 在 JSX 的大括号中插入普通对象（比如 `{ foo: 123, bar: 'abc' }`）是无法渲染的，会报错。
-
-## 📒 notes - 在 JSX 中使用 JS 表达式
+## 📒 在 JSX 中使用 JS 表达式
 
 JSX 让你可以在 Jaavascript 中嵌入 HTML 语法。而大括号可以让你在 JSX 中 “回到” JavaScript 中，这样你就可以从你的代码中嵌入一些变量并展示给用户。例如，这将显示 user.name：
 
@@ -71,7 +78,7 @@ export default function Profile() {
 ![](md-imgs/2024-09-24-14-17-10.png)
 
 
-## 🤖 AI - Hedy Lamarr 是谁？
+## 🤖 Hedy Lamarr 是谁？
 
 Hedy Lamarr（1914年11月9日—2000年1月19日），原名海德维希·爱娃·玛丽亚·基斯勒（Hedwig Eva Maria Kiesler），是一位奥地利裔美国女演员，同时也是一位发明家。她在电影界的生涯跨越了从无声电影到有声电影的时代，并在好莱坞黄金时代成为了一位著名的影星。
 

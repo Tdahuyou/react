@@ -1,5 +1,31 @@
 # [0001. Hello World](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World)
 
+<!-- region:toc -->
+- [📝 Summary](#-summary)
+- [🔗 links](#-links)
+- [📒 通过 CDN 的方式引入相关依赖](#-通过-cdn-的方式引入相关依赖)
+- [📒 API 描述](#-api-描述)
+- [💻 在页面上渲染出 Hello World](#-在页面上渲染出-hello-world)
+- [💻 熟悉 React.createElement 的参数](#-熟悉-reactcreateelement-的参数)
+- [💻 使用 JSX 来简写](#-使用-jsx-来简写)
+- [🤔 思考：`React.createElement` 跟 `document.createElement` 是一样的吗？](#🤔-思考：`reactcreateelement`-跟-`documentcreateelement`-是一样的吗？)
+- [🤔 思考：`react` 核心库和 `react-dom` 库之间的关系是？](#🤔-思考：`react`-核心库和-`react-dom`-库之间的关系是？)
+- [🤔 思考：为什么一旦使用了 `JSX` 语法，就必须要引入 `react` 核心库？](#🤔-思考：为什么一旦使用了-`jsx`-语法，就必须要引入-`react`-核心库？)
+- [🤔 思考：通过脚手架（比如 vite、umi、create-react-app）来搭建工程 vs. 通过（.html）页面的方式来直接引入 react 相关的库](#🤔-思考：通过脚手架（比如-vite、umi、create-react-app）来搭建工程-vs-通过（html）页面的方式来直接引入-react-相关的库)
+- [🤖 请介绍一下 script 标签身上的 type 属性](#🤖-请介绍一下-script-标签身上的-type-属性)
+  - [**标准用法**](#**标准用法**)
+  - [**模块**](#**模块**)
+  - [**非 JavaScript 类型**](#**非-javascript-类型**)
+  - [**历史用法**](#**历史用法**)
+  - [**实用考虑**](#**实用考虑**)
+- [🤖 请介绍一下 script 标签身上的 crossorigin 属性](#🤖-请介绍一下-script-标签身上的-crossorigin-属性)
+  - [值](#值)
+  - [作用](#作用)
+  - [示例](#示例)
+<!-- endregion:toc -->
+
+## 📝 Summary
+
 - 知识点
   - 了解 React.createElement 的基本使用
   - 了解 ReactDOM.render 的基本使用
@@ -14,7 +40,7 @@
   - react render - `React.render(reactNode, domNode, callback?)`
   - 注：在未来 React 发布主要版本时，此 API 将被移除。
 
-## 📒 notes - 通过 CDN 的方式引入相关依赖
+## 📒 通过 CDN 的方式引入相关依赖
 
 ```html
 <!-- React 的核心库，与宿主环境无关 -->
@@ -26,7 +52,7 @@
 - **注意版本**：这里引入的都是 `v16` 版。
   - 这是早期写的 react 笔记，从现在这个时间点（🗓 24 年 11 月 6 日 08:28 周三）来看，最新的 react 版本应该是 v18 了，没记错的话 v16 应该是两年前左右（当时大学还没毕业）发布的。用 v16 还是 v18 其实对本节介绍的内容没啥影响，就不替换版本了。
 
-## 📒 notes - API 描述
+## 📒 API 描述
 
 - `React.createElement`
   - **参数**
@@ -40,7 +66,7 @@
     - 参数1：要渲染的内容，可以是 React 元素，也可以是字符串，也可以是数字，也可以是布尔值，也可以是 null，也可以是 undefined。
     - 参数2：要渲染到哪个容器中，可以是一个 DOM 元素。
 
-## 💻 demo - 在页面上渲染出 Hello World
+## 💻 在页面上渲染出 Hello World
 
 ```html
 <!--
@@ -77,7 +103,7 @@
 - demo/1.html 的最终渲染结果如下图所示：
   - ![](md-imgs/2024-09-18-10-37-59.png)
 
-## 💻 demo - 熟悉 React.createElement 的参数
+## 💻 熟悉 React.createElement 的参数
 
 ```html
 <!--
@@ -131,7 +157,7 @@
 - demo/2.html 的最终渲染结果如下图所示：
   - ![](md-imgs/2024-09-18-10-49-30.png)
 
-## 💻 demo - 使用 JSX 来简写
+## 💻 使用 JSX 来简写
 
 ```html
 <!--
@@ -217,13 +243,13 @@
 - 如果想要快速搭建一个 react 项目，推荐使用脚手架，因为脚手架会帮我们做更多的工程配置，比如 babel 的配置，webpack 的配置，eslint 的配置等，这些配置都帮我们做了，我们只需要关注业务代码就可以了。
 - 脚手架能做的在页面上也都能做，脚手架解决的问题无非是做了工程的一些初始的模块化处理，让工程结构更清晰，帮我们省去搭建工程的步骤，最终运行的打包产物，依旧是这种传统的 html 页面形式，本质是没变的。通过本节这种页面级的形式来引入 react，省掉中间嵌套的包裹层，或许能更好地帮助我们理解 react 的本质。
 
-## 🤖 AI - 请介绍一下 script 标签身上的 type 属性
+## 🤖 请介绍一下 script 标签身上的 type 属性
 
 `<script>` 标签的 `type` 属性用于指定加载或内嵌的脚本语言的 MIME 类型。在 HTML 中使用 `<script>` 标签时，这个属性可以帮助浏览器理解和处理正确的脚本类型。以下是一些关于 `type` 属性的重要点和常见用法：
 
-### 1. **标准用法**
+### **标准用法**
    - **`text/javascript`**: 这是最常用的值，用于 JavaScript 代码。根据 HTML5 的标准，如果不指定 `type` 属性，浏览器默认处理为 `text/javascript`。因此，在大多数现代网页中，你通常会看到省略 `type` 属性的 `<script>` 标签。
-### 2. **模块**
+### **模块**
    - **`module`**: 随着 ES6 模块的引入，如果你想在浏览器中直接使用模块功能（如 `import` 和 `export` 语句），可以将 `type` 设置为 `module`。这样的脚本会被当作 ECMAScript 模块处理。
    ```html
    <script type="module">
@@ -232,20 +258,20 @@
    </script>
    ```
 
-### 3. **非 JavaScript 类型**
+### **非 JavaScript 类型**
    - **其他 MIME 类型**: 如果 `type` 设置为非 `text/javascript` 的其他值，如 `text/plain` 或自定义类型，浏览器不会执行这些脚本，这可以用于内嵌数据或在 JavaScript 库或应用中延迟处理的脚本。
    - **`text/babel`**: 这是社区中的一种约定，用于表示脚本内容是用 Babel 编写的 JSX 或 ES6+ 代码，需要在浏览器中动态编译。通常与 Babel 的浏览器版本一起使用，以允许在客户端动态编译 JSX 或最新的 JavaScript 特性。
 
-### 4. **历史用法**
+### **历史用法**
    - 在早期的 HTML 版本中，`type` 属性曾用来区分不同的脚本语言，如 `text/vbscript`。但随着 JavaScript 成为 Web 开发的标准，其他脚本语言的使用逐渐减少。
 
-### 5. **实用考虑**
+### **实用考虑**
    - 在开发中，正确使用 `type` 属性可以控制脚本的解析和执行，特别是在使用现代 JavaScript 框架和工具（如模块化或 Babel）时。
    - 使用 `type="module"` 还可以提供一些额外好处，比如自动严格模式、更好的浏览器缓存处理和跨域脚本的支持。
 
 通过合理使用 `<script>` 标签的 `type` 属性，可以更有效地管理和部署 Web 页面上的脚本，提高页面的兼容性和性能。
 
-## 🤖 AI - 请介绍一下 script 标签身上的 crossorigin 属性
+## 🤖 请介绍一下 script 标签身上的 crossorigin 属性
 
 **答：如果 script 标签引用的资源出现了问题，加上 crossorigin 属性可以让浏览器提供的错误报告更加详细，帮助开发者更好地调试问题。**
 

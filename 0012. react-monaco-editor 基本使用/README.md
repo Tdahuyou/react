@@ -1,5 +1,33 @@
 # [0012. react-monaco-editor 基本使用](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
+<!-- region:toc -->
+- [📝 Summary](#-summary)
+- [🔗 links](#-links)
+- [📒 先说说结论](#-先说说结论)
+- [📒 单词 monaco](#-单词-monaco)
+- [📒 安装 @monaco-editor/react](#-安装-@monaco-editor/react)
+- [💻 引入 Editor 组件](#-引入-editor-组件)
+- [💻 Editor 组件的一些钩子 onChange、onMount、beforeMount、onValidate](#-editor-组件的一些钩子-onchange、onmount、beforemount、onvalidate)
+- [💻 获取编辑器的当前值的两种方式](#-获取编辑器的当前值的两种方式)
+- [💻 将 Editor 组件设置为只读的](#-将-editor-组件设置为只读的)
+- [💻 通过 editor 实例读写编辑器中的内容](#-通过-editor-实例读写编辑器中的内容)
+- [💻 实战练习 - 模仿 matatastudio 的代码预览效果封装一个代码预览组件](#-实战练习---模仿-matatastudio-的代码预览效果封装一个代码预览组件)
+- [📒 相关业务背景信息 + 遇到的坑 + 解决方案](#-相关业务背景信息-+-遇到的坑-+-解决方案)
+  - [解决办法 1 - 在线 - 使用代理](#解决办法-1---在线---使用代理)
+  - [解决办法 2 - 在线 - 下载资源丢到自己的 CDN 上](#解决办法-2---在线---下载资源丢到自己的-cdn-上)
+  - [解决办法 3 - 离线 - 手动下载相关模块](#解决办法-3---离线---手动下载相关模块)
+  - [解决办法 4 - 离线 - use monaco-editor as an npm package](#解决办法-4---离线---use-monaco-editor-as-an-npm-package)
+- [🤖 请介绍一下 react-monaco-editor](#🤖-请介绍一下-react-monaco-editor)
+  - [功能特点](#功能特点)
+  - [安装](#安装)
+  - [基本用法](#基本用法)
+  - [高级配置](#高级配置)
+  - [结论](#结论)
+- [🤖 monaco 名称的由来](#🤖-monaco-名称的由来)
+<!-- endregion:toc -->
+
+## 📝 Summary
+
 - 通过一些 demo 介绍了 react-monaco-editor 组件的基本使用。
 - 记录了相关的业务背景，为什么会需要用到这个组件，以及在应用过程中踩的坑（公共 CDN 资源加载缓慢的问题），同时也记录了相关的解决方案。其中较大篇幅都在描述坑，以及解决方案。
 
@@ -25,12 +53,12 @@
 - https://www.npmjs.com/package/monaco-editor-webpack-plugin
   - npm - monaco-editor-webpack-plugin
 
-## 📒 notes - 先说说结论
+## 📒 先说说结论
 
 - 如果是一个裸工程，只需要做一些简单的配置，就可以很轻易地引入 react-monaco-editor 来使用，即便遇到一些由于 CDN 资源访问耗时较长的问题，也可以通过官方文档的描述来跟着配置快速解决该问题。
 - 如果是一个已经成型的项目，想要引入 react-monaco-editor 的成本可能会有点儿高，主要是解决 CDN 上的资源访问缓慢的问题，这个问题很多人都反馈过 Issue，在 github 上的 Issues 面板，可以搜索不少类似的问题，即便官方在 v4.4.0 版本之后就推出了 `loader.config({ monaco })` 配置的法子来尝试将 CDN 上的资源直接拉到本地来加载以解决此问题，但是这还跟你的项目所使用的构建工具以及相关配置关系密切，很可能你按照文档来走，写好了代码，但是实际运行时会发现 xxx 解析错误，xxx 资源找不到，调试起来蛮费时的。
 
-## 📒 notes - 单词 monaco
+## 📒 单词 monaco
 
 - monaco n. 摩纳哥（欧洲西南部国家）
   - 英 `/ ˈmɒnəkəʊ /`
@@ -39,14 +67,14 @@
 
 ![](md-imgs/2024-09-25-10-23-31.png)
 
-## 📒 notes - 安装 @monaco-editor/react
+## 📒 安装 @monaco-editor/react
 
 ```bash
 # 执行 npm 命令安装  @monaco-editor/react
 npm i @monaco-editor/react
 ```
 
-## 💻 demo - 引入 Editor 组件
+## 💻 引入 Editor 组件
 
 ```jsx
 import Editor from '@monaco-editor/react';
@@ -60,7 +88,7 @@ export default App
 
 ![](md-imgs/2024-09-25-09-31-27.png)
 
-## 💻 demo - Editor 组件的一些钩子 onChange、onMount、beforeMount、onValidate
+## 💻 Editor 组件的一些钩子 onChange、onMount、beforeMount、onValidate
 
 ```jsx
 import React from 'react';
@@ -108,7 +136,7 @@ ReactDOM.render(<App />, rootElement);
 
 可以通过这些钩子触发时被注入的参数获取到 editor 编辑器实例、monaco 实例等数据。
 
-## 💻 demo - 获取编辑器的当前值的两种方式
+## 💻 获取编辑器的当前值的两种方式
 
 1. 通过 onChange 钩子获取，一旦编辑器的内容发生变化，就会触发 handleEditorChange 函数，并将编辑器的当前值作为参数传递给 handleEditorChange 函数。如果编辑器是只读的，那么这种方式将无法使用。
 2. 通过编辑器实例 editor 来获取，`editor.getValue()` 方法可以获取到当前值。如果将编辑器设置为只读的，仍旧可以通过 `editor.getValue()` 方法获取到当前值。
@@ -160,7 +188,7 @@ export default App;
 
 ![](md-imgs/2024-09-25-09-49-00.png)
 
-## 💻 demo - 将 Editor 组件设置为只读的
+## 💻 将 Editor 组件设置为只读的
 
 ```jsx
 // src/App.jsx
@@ -197,7 +225,7 @@ export default App;
 
 ![](md-imgs/2024-09-25-10-11-41.png)
 
-## 💻 demo - 通过 editor 实例读写编辑器中的内容
+## 💻 通过 editor 实例读写编辑器中的内容
 
 ```jsx
 // src/App.jsx
@@ -246,7 +274,7 @@ export default App;
 - `editorRef.current.getValue()` 方法获取到当前值。
 - `editorRef.current.setValue(newValue)` 方法修改编辑器的内容。
 
-## 💻 demo - 实战练习 - 模仿 matatastudio 的代码预览效果封装一个代码预览组件
+## 💻 实战练习 - 模仿 matatastudio 的代码预览效果封装一个代码预览组件
 
 可以在 https://vinci.matatastudio.com/ 中查看参考的代码预览效果示例：
 
@@ -397,7 +425,7 @@ export default MyEditor;
 ![](md-imgs/2024-09-25-11-29-47.png)
 
 
-## 📒 notes - 相关业务背景信息 + 遇到的坑 + 解决方案
+## 📒 相关业务背景信息 + 遇到的坑 + 解决方案
 
 - 业务背景：在 scratch 中实现生成的代码的在线预览功能。
 - 技术选型：选择了使用 monaco-react 来实现代码预览的功能。
@@ -551,7 +579,7 @@ loader.config({ monaco });
     - 自动处理方式：自行配置构建工具，完成对这个 css 的解析。
 
 
-## 🤖 AI - 请介绍一下 react-monaco-editor
+## 🤖 请介绍一下 react-monaco-editor
 
 `react-monaco-editor` 是一个专门为 React 应用程序设计的代码编辑器组件，它基于微软的 Monaco Editor。Monaco Editor 以其强大的功能和良好的用户体验而闻名，是 Visual Studio Code 的核心部分。通过 `react-monaco-editor`，开发者可以在他们的 React 应用中轻松集成一个功能丰富且性能优越的代码编辑环境。
 
@@ -630,7 +658,7 @@ export default MyEditor;
 
 `react-monaco-editor` 是一个强大且灵活的工具，适用于需要嵌入代码编辑功能的任何 React 应用场景。无论是在线代码演示、教学平台还是开发工具，它都能提供坚实的支持。随着社区的发展和维护，这个库将继续成为许多 React 开发者的首选。
 
-## 🤖 AI - monaco 名称的由来
+## 🤖 monaco 名称的由来
 
 Monaco Editor 的名称来源于摩纳哥（Monaco），一个位于欧洲南部的小国。这个名字的选择背后并没有公开的官方解释，但通常软件产品的命名可能会受到多种因素的影响，比如简洁性、易于记忆、与项目特点相关联等。
 

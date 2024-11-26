@@ -1,5 +1,20 @@
 # [0006. react-modal 的基本使用](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
+<!-- region:toc -->
+- [📝 Summary](#-summary)
+- [🔗 links](#-links)
+- [🤖 react-modal 中的 contentLabel 属性有什么用？](#🤖-react-modal-中的-contentlabel-属性有什么用？)
+  - [`contentLabel` 的作用](#`contentlabel`-的作用)
+  - [示例代码](#示例代码)
+    - [安装 `react-modal`](#安装-`react-modal`)
+    - [使用 `contentLabel`](#使用-`contentlabel`)
+  - [解释](#解释)
+  - [为什么 `contentLabel` 很重要](#为什么-`contentlabel`-很重要)
+  - [结论](#结论)
+<!-- endregion:toc -->
+
+## 📝 Summary
+
 - 一个用于解决弹框问题的 react 第三方库。
 - ⏰ TODO：待整理。（看一眼 ai 回复基本就会了，当时就没整理。）
 
@@ -8,7 +23,7 @@
 - https://www.npmjs.com/package/react-modal?activeTab=readme - npm react-modal
 - https://github.com/reactjs/react-modal - github react-modal
 
-## 🤖 AI - react-modal 中的 contentLabel 属性有什么用？
+## 🤖 react-modal 中的 contentLabel 属性有什么用？
 
 `react-modal` 是一个常用的 React 弹出模态框库，它提供了许多配置选项来定制模态框的行为和样式。其中一个重要的属性是 `contentLabel`，它用于给模态框添加一个可访问性的标签（aria-label），以便屏幕阅读器和其他辅助技术能够更好地理解和描述模态框的内容。
 

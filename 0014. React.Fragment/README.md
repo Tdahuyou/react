@@ -1,11 +1,23 @@
 # [0014. React.Fragment](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment)
 
+<!-- region:toc -->
+- [📝 Summary](#-summary)
+- [🔗 links](#-links)
+- [💻 React.Fragment 并不会生成真实 DOM](#-reactfragment-并不会生成真实-dom)
+- [💻 React.Fragment 渲染列表](#-reactfragment-渲染列表)
+- [🤖 请介绍一下 React.Fragment](#🤖-请介绍一下-reactfragment)
+  - [为什么使用 `React.Fragment`？](#为什么使用-`reactfragment`？)
+  - [基本用法](#基本用法)
+    - [使用 `<React.Fragment>` 标签](#使用-`<reactfragment>`-标签)
+    - [使用短语法 `<></>`](#使用短语法-`<></>`)
+  - [传递属性](#传递属性)
+<!-- endregion:toc -->
+
+## 📝 Summary
+
 - 简写形式：`<></>`
 - 并不会实际被渲染到元素结构中，仅仅是起到一个占位的作用。
 - 场景应用场景：使用 `<></>` 见多个“根元素”包裹一层，解决组件的单根问题。
-
-## 📝 summary
-
 - `React.Fragment` 是 React 中的一个内置组件，它允许你将多个子元素组合在一起，而 **无需向 DOM 添加额外的节点**。
 - `<React.Fragment></React.Fragment>` 标签可以简写为 `<></>`。
 - `React.Fragment` 并不会生成真实 DOM。
@@ -16,7 +28,7 @@
 - https://zh-hans.react.dev/reference/react/Fragment
   - React - Reference - Components - Fragment
 
-## 💻 demo - React.Fragment 并不会生成真实 DOM
+## 💻 React.Fragment 并不会生成真实 DOM
 
 ```jsx
 function App() {
@@ -31,7 +43,7 @@ function App() {
 
 ![](md-imgs/2024-09-27-16-08-13.png)
 
-## 💻 demo - React.Fragment 渲染列表
+## 💻 React.Fragment 渲染列表
 
 - 场景描述：
 
