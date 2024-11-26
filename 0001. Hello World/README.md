@@ -1,4 +1,4 @@
-# [0001. Hello World](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md)
+# [0001. Hello World](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)

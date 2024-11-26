@@ -1,4 +1,4 @@
-# [0034. eslint 插件](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6/README.md)
+# [0034. eslint 插件](https://github.com/Tdahuyou/react/tree/main/0034.%20eslint%20%E6%8F%92%E4%BB%B6)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)

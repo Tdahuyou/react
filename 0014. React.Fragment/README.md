@@ -1,4 +1,4 @@
-# [0014. React.Fragment](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md)
+# [0014. React.Fragment](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)

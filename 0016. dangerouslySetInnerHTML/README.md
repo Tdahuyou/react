@@ -1,4 +1,4 @@
-# [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md)
+# [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)

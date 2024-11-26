@@ -1,4 +1,4 @@
-# [0007. ref](https://github.com/Tdahuyou/react/tree/main/0007.%20ref/README.md)
+# [0007. ref](https://github.com/Tdahuyou/react/tree/main/0007.%20ref)
 
 <!-- region:toc -->
 - [📝 Summary](#-summary)
