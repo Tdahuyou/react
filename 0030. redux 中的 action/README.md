@@ -12,8 +12,8 @@
 - [9. 📒 action 的创建函数](#9--action-的创建函数)
 - [10. 📒 `bindActionCreators`](#10--`bindactioncreators`)
 - [11. 💻 action 的创建函数以及工具方法 `bindActionCreators`](#11--action-的创建函数以及工具方法-`bindactioncreators`)
-- [12. 🤖 如何验证一个对象是否是 plain-object？](#12-🤖-如何验证一个对象是否是-plain-object)
-- [13. 🤖 为什么 type 必须是 string 类型，符号类型不行](#13-🤖-为什么-type-必须是-string-类型符号类型不行)
+- [12. 🤖 如何验证一个对象是否是 plain-object？](#12--如何验证一个对象是否是-plain-object)
+- [13. 🤖 为什么 type 必须是 string 类型，符号类型不行](#13--为什么-type-必须是-string-类型符号类型不行)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

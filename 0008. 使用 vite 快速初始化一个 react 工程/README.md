@@ -7,7 +7,7 @@
 - [3. 📒 notes](#3--notes)
 - [4. 📒 使用 vite 创建 react 工程](#4--使用-vite-创建-react-工程)
 - [5. 📒 启动用 vite 创建的 react 工程](#5--启动用-vite-创建的-react-工程)
-- [6. 🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令](#6-🤖-请解释一下-`npm-create-vite@latest-my-react-app------template-react`-这条命令)
+- [6. 🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令](#6--请解释一下-`npm-create-vite@latest-my-react-app------template-react`-这条命令)
   - [6.1. 整体流程](#61-整体流程)
   - [6.2. 总结](#62-总结)
 <!-- endregion:toc -->

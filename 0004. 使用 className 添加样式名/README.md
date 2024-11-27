@@ -4,7 +4,7 @@
 - [1. 📝 Summary](#1--summary)
 - [2. 🔗 links](#2--links)
 - [3. 📒 添加样式](#3--添加样式)
-- [4. 🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？](#4-🤔-问为什么不直接使用-class-来添加样式而是使用-classname-呢)
+- [4. 🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？](#4--问为什么不直接使用-class-来添加样式而是使用-classname-呢)
 - [5. 💻 demo - className 基本使用](#5--demo---classname-基本使用)
 <!-- endregion:toc -->
 

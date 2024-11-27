@@ -5,13 +5,13 @@
 - [2. 🔗 links](#2--links)
 - [3. 📒 notes](#3--notes)
 - [4. 💻 dangerouslySetInnerHTML 的基本使用](#4--dangerouslysetinnerhtml-的基本使用)
-- [5. 🤖 请介绍一下 dangerouslySetInnerHTML](#5-🤖-请介绍一下-dangerouslysetinnerhtml)
+- [5. 🤖 请介绍一下 dangerouslySetInnerHTML](#5--请介绍一下-dangerouslysetinnerhtml)
   - [5.1. 为什么需要 `dangerouslySetInnerHTML`？](#51-为什么需要-`dangerouslysetinnerhtml`)
   - [5.2. 基本用法](#52-基本用法)
   - [5.3. 安全注意事项](#53-安全注意事项)
   - [5.4. 使用示例](#54-使用示例)
-    - [5.4.1. 1. 1. 安装 `DOMPurify`](#541-1-1-安装-`dompurify`)
-    - [5.4.2. 2. 2. 示例代码](#542-2-2-示例代码)
+    - [5.4.1. 1. 1. 1. 安装 `DOMPurify`](#541-1-1-1-安装-`dompurify`)
+    - [5.4.2. 2. 2. 2. 示例代码](#542-2-2-2-示例代码)
   - [5.5. 解释](#55-解释)
   - [5.6. 运行结果](#56-运行结果)
   - [5.7. 总结](#57-总结)
@@ -116,7 +116,7 @@ export default MyComponent;
 
 下面是一个更完整的示例，展示如何使用 `dangerouslySetInnerHTML` 并结合 `DOMPurify` 来确保内容的安全性：
 
-#### 5.4.1. 1. 1. 安装 `DOMPurify`
+#### 5.4.1. 1. 1. 1. 安装 `DOMPurify`
 
 首先，安装 `DOMPurify` 库：
 
@@ -124,7 +124,7 @@ export default MyComponent;
 npm install dompurify
 ```
 
-#### 5.4.2. 2. 2. 示例代码
+#### 5.4.2. 2. 2. 2. 示例代码
 
 ```jsx
 import React from 'react';

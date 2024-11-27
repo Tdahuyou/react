@@ -6,7 +6,7 @@
 - [3. 🔗 links](#3--links)
 - [4. 📒 notes](#4--notes)
 - [5. 💻 demo](#5--demo)
-- [6. 🤖 AI](#6-🤖-ai)
+- [6. 🤖 AI](#6--ai)
 <!-- endregion:toc -->
 
 ## 1. ⏰ TODO

@@ -4,7 +4,7 @@
 - [1. 📝 Summary](#1--summary)
 - [2. 🔗 links](#2--links)
 - [3. 📒 在 JSX 中使用 JS 表达式](#3--在-jsx-中使用-js-表达式)
-- [4. 🤖 Hedy Lamarr 是谁？](#4-🤖-hedy-lamarr-是谁)
+- [4. 🤖 Hedy Lamarr 是谁？](#4--hedy-lamarr-是谁)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

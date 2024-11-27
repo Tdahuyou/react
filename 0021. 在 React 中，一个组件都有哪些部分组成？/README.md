@@ -2,7 +2,7 @@
 
 <!-- region:toc -->
 - [1. 📝 Summary](#1--summary)
-- [2. 🤖 在 React 中，一个组件都有哪些部分组成？](#2-🤖-在-react-中一个组件都有哪些部分组成)
+- [2. 🤖 在 React 中，一个组件都有哪些部分组成？](#2--在-react-中一个组件都有哪些部分组成)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary
