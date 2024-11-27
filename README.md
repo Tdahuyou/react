@@ -7,7 +7,7 @@
     - [1.2. 推荐安装的 VSCode 插件](#12-推荐安装的-vscode-插件)
     - [1.3. 第一个 react 应用](#13-第一个-react-应用)
     - [1.4. jsx](#14-jsx)
-      - [1.4.1. 条件渲染、列表渲染](#141-条件渲染、列表渲染)
+      - [1.4.1. 1. 条件渲染、列表渲染](#141-1-条件渲染列表渲染)
   - [2. dangerouslySetInnerHTML](#2-dangerouslysetinnerhtml)
   - [3. ref](#3-ref)
   - [4. 组件篇](#4-组件篇)
@@ -82,7 +82,7 @@
   - [8. 🤔 思考：`React.createElement` 跟 `document.createElement` 是一样的吗？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#8--思考`reactcreateelement`-跟-`documentcreateelement`-是一样的吗)
   - [9. 🤔 思考：`react` 核心库和 `react-dom` 库之间的关系是？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#9--思考`react`-核心库和-`react-dom`-库之间的关系是)
   - [10. 🤔 思考：为什么一旦使用了 `JSX` 语法，就必须要引入 `react` 核心库？](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#10--思考为什么一旦使用了-`jsx`-语法就必须要引入-`react`-核心库)
-  - [11. 🤔 思考：通过脚手架（比如 vite、umi、create-react-app）来搭建工程 vs. 通过（.html）页面的方式来直接引入 react 相关的库](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#11--思考通过脚手架比如-vite、umi、create-react-app来搭建工程-vs-通过html页面的方式来直接引入-react-相关的库)
+  - [11. 🤔 思考：通过脚手架（比如 vite、umi、create-react-app）来搭建工程 vs. 通过（.html）页面的方式来直接引入 react 相关的库](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#11--思考通过脚手架比如-viteumicreate-react-app来搭建工程-vs-通过html页面的方式来直接引入-react-相关的库)
   - [12. 🤖 请介绍一下 script 标签身上的 type 属性](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#12--请介绍一下-script-标签身上的-type-属性)
     - [12.1. **标准用法**](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#121-**标准用法**)
     - [12.2. **模块**](https://github.com/Tdahuyou/react/tree/main/0001.%20Hello%20World/README.md#122-**模块**)
@@ -146,7 +146,7 @@
   <!-- endregion:toc -->
   
 
-#### 1.4.1. 条件渲染、列表渲染
+#### 1.4.1. 1. 条件渲染、列表渲染
 
 - [ ] [0010. 条件渲染](https://github.com/Tdahuyou/react/tree/main/0010.%20%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/README.md) <!-- [locale](./0010.%20%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/README.md) -->  
   <!-- region:toc -->
@@ -195,8 +195,8 @@
     - [5.2. 基本用法](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#52-基本用法)
     - [5.3. 安全注意事项](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#53-安全注意事项)
     - [5.4. 使用示例](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#54-使用示例)
-      - [5.4.1. 1. 1. 1. 安装 `DOMPurify`](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#541-1-1-1-安装-`dompurify`)
-      - [5.4.2. 2. 2. 2. 示例代码](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#542-2-2-2-示例代码)
+      - [5.4.1. 1. 1. 1. 1. 安装 `DOMPurify`](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#541-1-1-1-1-安装-`dompurify`)
+      - [5.4.2. 2. 2. 2. 2. 示例代码](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#542-2-2-2-2-示例代码)
     - [5.5. 解释](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#55-解释)
     - [5.6. 运行结果](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#56-运行结果)
     - [5.7. 总结](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#57-总结)
@@ -309,9 +309,9 @@
   - [3. 🤖 布尔属性名称的由来](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#3--布尔属性名称的由来)
   - [4. 🤖 请介绍一下 React 中组件的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#4--请介绍一下-react-中组件的布尔属性)
     - [4.1. 布尔属性在 React 中的应用](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#41-布尔属性在-react-中的应用)
-      - [4.1.1. 1. 1. 1. 简单示例](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#411-1-1-1-简单示例)
-      - [4.1.2. 2. 2. 2. 使用条件渲染](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#412-2-2-2-使用条件渲染)
-      - [4.1.3. 3. 3. 3. 自定义组件中的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#413-3-3-3-自定义组件中的布尔属性)
+      - [4.1.1. 1. 1. 1. 1. 简单示例](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#411-1-1-1-1-简单示例)
+      - [4.1.2. 2. 2. 2. 2. 使用条件渲染](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#412-2-2-2-2-使用条件渲染)
+      - [4.1.3. 3. 3. 3. 3. 自定义组件中的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#413-3-3-3-3-自定义组件中的布尔属性)
     - [4.2. 注意事项](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#42-注意事项)
   <!-- endregion:toc -->
   
@@ -367,8 +367,8 @@
   - [5. 🤖 请介绍一下 React.Fragment](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#5--请介绍一下-reactfragment)
     - [5.1. 为什么使用 `React.Fragment`？](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#51-为什么使用-`reactfragment`)
     - [5.2. 基本用法](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#52-基本用法)
-      - [5.2.1. 1. 1. 1. 使用 `<React.Fragment>` 标签](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#521-1-1-1-使用-`<reactfragment>`-标签)
-      - [5.2.2. 2. 2. 2. 使用短语法 `<></>`](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#522-2-2-2-使用短语法-`<></>`)
+      - [5.2.1. 1. 1. 1. 1. 使用 `<React.Fragment>` 标签](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#521-1-1-1-1-使用-`<reactfragment>`-标签)
+      - [5.2.2. 2. 2. 2. 2. 使用短语法 `<></>`](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#522-2-2-2-2-使用短语法-`<></>`)
     - [5.3. 传递属性](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#53-传递属性)
   <!-- endregion:toc -->
   
@@ -451,8 +451,8 @@
   - [3. 🤖 react-modal 中的 contentLabel 属性有什么用？](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#3--react-modal-中的-contentlabel-属性有什么用)
     - [3.1. `contentLabel` 的作用](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#31-`contentlabel`-的作用)
     - [3.2. 示例代码](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#32-示例代码)
-      - [3.2.1. 1. 1. 1. 安装 `react-modal`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#321-1-1-1-安装-`react-modal`)
-      - [3.2.2. 2. 2. 2. 使用 `contentLabel`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#322-2-2-2-使用-`contentlabel`)
+      - [3.2.1. 1. 1. 1. 1. 安装 `react-modal`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#321-1-1-1-1-安装-`react-modal`)
+      - [3.2.2. 2. 2. 2. 2. 使用 `contentLabel`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#322-2-2-2-2-使用-`contentlabel`)
     - [3.3. 解释](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#33-解释)
     - [3.4. 为什么 `contentLabel` 很重要](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#34-为什么-`contentlabel`-很重要)
     - [3.5. 结论](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#35-结论)
@@ -467,7 +467,7 @@
   - [4. 📒 单词 monaco](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#4--单词-monaco)
   - [5. 📒 安装 @monaco-editor/react](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#5--安装-@monaco-editor/react)
   - [6. 💻 引入 Editor 组件](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#6--引入-editor-组件)
-  - [7. 💻 Editor 组件的一些钩子 onChange、onMount、beforeMount、onValidate](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#7--editor-组件的一些钩子-onchange、onmount、beforemount、onvalidate)
+  - [7. 💻 Editor 组件的一些钩子 onChange、onMount、beforeMount、onValidate](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#7--editor-组件的一些钩子-onchangeonmountbeforemountonvalidate)
   - [8. 💻 获取编辑器的当前值的两种方式](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#8--获取编辑器的当前值的两种方式)
   - [9. 💻 将 Editor 组件设置为只读的](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#9--将-editor-组件设置为只读的)
   - [10. 💻 通过 editor 实例读写编辑器中的内容](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#10--通过-editor-实例读写编辑器中的内容)
