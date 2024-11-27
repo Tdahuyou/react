@@ -154,8 +154,8 @@
     - [5.2. 基本用法](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#52-基本用法)
     - [5.3. 安全注意事项](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#53-安全注意事项)
     - [5.4. 使用示例](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#54-使用示例)
-      - [5.4.1. 1. 安装 `DOMPurify`](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#541-1-安装-`dompurify`)
-      - [5.4.2. 2. 示例代码](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#542-2-示例代码)
+      - [5.4.1. 1. 1. 安装 `DOMPurify`](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#541-1-1-安装-`dompurify`)
+      - [5.4.2. 2. 2. 示例代码](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#542-2-2-示例代码)
     - [5.5. 解释](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#55-解释)
     - [5.6. 运行结果](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#56-运行结果)
     - [5.7. 总结](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML/README.md#57-总结)
@@ -337,9 +337,9 @@
   - [3. 🤖 布尔属性名称的由来](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#3-🤖-布尔属性名称的由来)
   - [4. 🤖 请介绍一下 React 中组件的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#4-🤖-请介绍一下-react-中组件的布尔属性)
     - [4.1. 布尔属性在 React 中的应用](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#41-布尔属性在-react-中的应用)
-      - [4.1.1. 1. 简单示例](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#411-1-简单示例)
-      - [4.1.2. 2. 使用条件渲染](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#412-2-使用条件渲染)
-      - [4.1.3. 3. 自定义组件中的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#413-3-自定义组件中的布尔属性)
+      - [4.1.1. 1. 1. 简单示例](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#411-1-1-简单示例)
+      - [4.1.2. 2. 2. 使用条件渲染](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#412-2-2-使用条件渲染)
+      - [4.1.3. 3. 3. 自定义组件中的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#413-3-3-自定义组件中的布尔属性)
     - [4.2. 注意事项](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#42-注意事项)
   <!-- endregion:toc -->
   
@@ -354,11 +354,12 @@
 ### 13.4. 属性校验
 - [ ] [0020. 组件属性的校验](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md) <!-- [locale](./0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md) -->  
   <!-- region:toc -->
-  - [1. 📝 Summary](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#1--summary)
-  - [2. 🔗 links](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#2--links)
-  - [3. 📒 notes](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#3--notes)
-  - [4. 💻 demo](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#4--demo)
-  - [5. 🤖 AI](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#5-🤖-ai)
+  - [1. ⏰ TODO](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#1-⏰-todo)
+  - [2. 📝 Summary](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#2--summary)
+  - [3. 🔗 links](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#3--links)
+  - [4. 📒 notes](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#4--notes)
+  - [5. 💻 demo](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#5--demo)
+  - [6. 🤖 AI](https://github.com/Tdahuyou/react/tree/main/0020.%20%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E6%A0%A1%E9%AA%8C/README.md#6-🤖-ai)
   <!-- endregion:toc -->
   
 
@@ -426,8 +427,8 @@
   - [5. 🤖 请介绍一下 React.Fragment](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#5-🤖-请介绍一下-reactfragment)
     - [5.1. 为什么使用 `React.Fragment`？](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#51-为什么使用-`reactfragment`)
     - [5.2. 基本用法](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#52-基本用法)
-      - [5.2.1. 1. 使用 `<React.Fragment>` 标签](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#521-1-使用-`<reactfragment>`-标签)
-      - [5.2.2. 2. 使用短语法 `<></>`](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#522-2-使用短语法-`<></>`)
+      - [5.2.1. 1. 1. 使用 `<React.Fragment>` 标签](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#521-1-1-使用-`<reactfragment>`-标签)
+      - [5.2.2. 2. 2. 使用短语法 `<></>`](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#522-2-2-使用短语法-`<></>`)
     - [5.3. 传递属性](https://github.com/Tdahuyou/react/tree/main/0014.%20React.Fragment/README.md#53-传递属性)
   <!-- endregion:toc -->
   
@@ -441,8 +442,8 @@
   - [3. 🤖 react-modal 中的 contentLabel 属性有什么用？](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#3-🤖-react-modal-中的-contentlabel-属性有什么用)
     - [3.1. `contentLabel` 的作用](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#31-`contentlabel`-的作用)
     - [3.2. 示例代码](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#32-示例代码)
-      - [3.2.1. 1. 安装 `react-modal`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#321-1-安装-`react-modal`)
-      - [3.2.2. 2. 使用 `contentLabel`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#322-2-使用-`contentlabel`)
+      - [3.2.1. 1. 1. 安装 `react-modal`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#321-1-1-安装-`react-modal`)
+      - [3.2.2. 2. 2. 使用 `contentLabel`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#322-2-2-使用-`contentlabel`)
     - [3.3. 解释](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#33-解释)
     - [3.4. 为什么 `contentLabel` 很重要](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#34-为什么-`contentlabel`-很重要)
     - [3.5. 结论](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#35-结论)

@@ -6,8 +6,8 @@
 - [3. 🤖 react-modal 中的 contentLabel 属性有什么用？](#3-🤖-react-modal-中的-contentlabel-属性有什么用)
   - [3.1. `contentLabel` 的作用](#31-`contentlabel`-的作用)
   - [3.2. 示例代码](#32-示例代码)
-    - [3.2.1. 1. 安装 `react-modal`](#321-1-安装-`react-modal`)
-    - [3.2.2. 2. 使用 `contentLabel`](#322-2-使用-`contentlabel`)
+    - [3.2.1. 1. 1. 安装 `react-modal`](#321-1-1-安装-`react-modal`)
+    - [3.2.2. 2. 2. 使用 `contentLabel`](#322-2-2-使用-`contentlabel`)
   - [3.3. 解释](#33-解释)
   - [3.4. 为什么 `contentLabel` 很重要](#34-为什么-`contentlabel`-很重要)
   - [3.5. 结论](#35-结论)
@@ -36,7 +36,7 @@
 
 下面是一个使用 `react-modal` 的示例，展示了如何使用 `contentLabel` 属性：
 
-#### 3.2.1. 1. 安装 `react-modal`
+#### 3.2.1. 1. 1. 安装 `react-modal`
 
 首先，确保你已经安装了 `react-modal`：
 
@@ -44,7 +44,7 @@
 npm install react-modal
 ```
 
-#### 3.2.2. 2. 使用 `contentLabel`
+#### 3.2.2. 2. 2. 使用 `contentLabel`
 
 ```jsx
 import React from 'react';
