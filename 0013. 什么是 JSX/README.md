@@ -1,42 +1,42 @@
 # [0013. 什么是 JSX](https://github.com/Tdahuyou/react/tree/main/0013.%20%E4%BB%80%E4%B9%88%E6%98%AF%20JSX)
 
 <!-- region:toc -->
-- [📝 Summary](#-summary)
-- [📒 JSX 是什么？](#-jsx-是什么)
-- [📒 JSX 的本质](#-jsx-的本质)
-- [📒 必须单根](#-必须单根)
-- [📒 必须要有结束标记](#-必须要有结束标记)
-- [📒 JSX 的基本特点](#-jsx-的基本特点)
-- [💻 一个简单的 React 组件示例](#-一个简单的-react-组件示例)
+- [1. 📝 Summary](#1--summary)
+- [2. 📒 JSX 是什么？](#2--jsx-是什么)
+- [3. 📒 JSX 的本质](#3--jsx-的本质)
+- [4. 📒 必须单根](#4--必须单根)
+- [5. 📒 必须要有结束标记](#5--必须要有结束标记)
+- [6. 📒 JSX 的基本特点](#6--jsx-的基本特点)
+- [7. 💻 一个简单的 React 组件示例](#7--一个简单的-react-组件示例)
 <!-- endregion:toc -->
 
-## 📝 Summary
+## 1. 📝 Summary
 
 简单介绍了 JSX 的一些基础知识点。
 
-## 📒 JSX 是什么？
+## 2. 📒 JSX 是什么？
 
 - JSX 是 JavaScript XML 的缩写，它是 React 中用于描述用户界面的一种语法扩展。
 - JSX 是由 Facebook 起草的 JS 扩展语法，是一种将 HTML 和 JavaScript 混合使用的扩展语法。
 - 虽然 JSX 看起来很像 HTML，但实际上它是 JavaScript 的一部分，并且最终会被编译成纯 JavaScript 代码。
 - JSX 允许开发者在 JavaScript 代码中直接编写类似 HTML 的结构，这样可以更直观地将 UI 与逻辑结合起来。
 
-## 📒 JSX 的本质
+## 3. 📒 JSX 的本质
 
 - 从数据类型层面来看，JSX 本质上是一个 JS 对象。
 - JSX 会被 babel 编译，最终会被转换为 React.createElement 函数调用，是一个 React Element 对象。
 
-## 📒 必须单根
+## 4. 📒 必须单根
 
 - 每个 JSX 表达式，有且仅有一个根节点。
 - 如果有多个根，可以使用 `<React.Fragment></React.Fragment>` 来包裹这些根节点。
 - `<React.Fragment></React.Fragment>` 可以简写为 `<></>`。
 
-## 📒 必须要有结束标记
+## 5. 📒 必须要有结束标记
 
 - 每个 JSX 元素必须有结束标记（XML 规范）。
 
-## 📒 JSX 的基本特点
+## 6. 📒 JSX 的基本特点
 
 1. **声明式**：JSX 是声明式的，这意味着你可以描述你的应用应该显示什么，而不是如何进行 DOM 操作来改变应用的状态。这使得代码更容易理解和维护。
 2. **嵌入表达式**：你可以在 JSX 中使用大括号 `{}` 来嵌入任何有效的 JavaScript 表达式。例如，变量、函数调用或计算结果都可以被嵌入到 JSX 中。
@@ -45,7 +45,7 @@
 5. **自闭合标签**：对于没有内容的元素，如 `<img>` 或 `<input>`，JSX 支持自闭合标签，即 `<img src={imageSrc} />`。
 6. **注释**：在 JSX 中添加注释需要使用花括号 `{/* ... */}`。
 
-## 💻 一个简单的 React 组件示例
+## 7. 💻 一个简单的 React 组件示例
 
 下面是一个简单的 React 组件示例，展示了 JSX 的使用：
 

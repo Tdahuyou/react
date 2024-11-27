@@ -2,29 +2,29 @@
 
 
 <!-- region:toc -->
-- [📝 Summary](#-summary)
-- [🔗 links](#-links)
-- [📒 notes](#-notes)
-- [📒 使用 vite 创建 react 工程](#-使用-vite-创建-react-工程)
-- [📒 启动用 vite 创建的 react 工程](#-启动用-vite-创建的-react-工程)
-- [🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令](#🤖-请解释一下-`npm-create-vite@latest-my-react-app------template-react`-这条命令)
-  - [整体流程](#整体流程)
-  - [总结](#总结)
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 📒 使用 vite 创建 react 工程](#4--使用-vite-创建-react-工程)
+- [5. 📒 启动用 vite 创建的 react 工程](#5--启动用-vite-创建的-react-工程)
+- [6. 🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令](#6-🤖-请解释一下-`npm-create-vite@latest-my-react-app------template-react`-这条命令)
+  - [6.1. 整体流程](#61-整体流程)
+  - [6.2. 总结](#62-总结)
 <!-- endregion:toc -->
 
-## 📝 Summary
+## 1. 📝 Summary
 
 - 简单说就是一句话：`npm create vite@latest my-react-app -- --template react`
 - 如果不清楚这条命令的含义，可以参考一下本节中记录的内容。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://vitejs.dev/guide/
   - vite 官方文档
 - https://github.com/vitejs/vite
   - vite github
 
-## 📒 notes
+## 3. 📒 notes
 
 实际操作流程：
 1. pnpm create vite
@@ -36,7 +36,7 @@
 
 文档中提到的命令 `npm create vite@latest my-react-app -- --template react` 其实就是 1+2+3 的步骤。如果记不住的话，直接运行命令 `pnpm create vite` 然后根据命令行提示来配置即可。
 
-## 📒 使用 vite 创建 react 工程
+## 4. 📒 使用 vite 创建 react 工程
 
 ```bash
 $ npm create vite@latest my-react-app -- --template react
@@ -50,7 +50,7 @@ $ bun create vite my-react-app --template react
 
 ![](md-imgs/2024-09-24-09-36-52.png)
 
-## 📒 启动用 vite 创建的 react 工程
+## 5. 📒 启动用 vite 创建的 react 工程
 
 ```bash
 $ cd my-react-app
@@ -62,7 +62,7 @@ $ npm run dev
 
 ![](md-imgs/2024-09-24-10-05-05.png)
 
-## 🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
+## 6. 🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
 
 `npm create vite@latest my-react-app -- --template react` 这条命令是用来创建一个新的 React 项目，使用 Vite 作为构建工具。让我们逐部分解释这条命令：
 
@@ -83,7 +83,7 @@ $ npm run dev
    - 在这个例子中，`react` 模板会被用来创建一个基于 React 的项目。
    - Vite 支持多种模板，包括但不限于 `vanilla`, `vue`, `react`, `preact`, `lit`, `svelte` 等。
 
-### 整体流程
+### 6.1. 整体流程
 
 当你运行 `npm create vite@latest my-react-app -- --template react` 时，会发生以下步骤：
 
@@ -98,6 +98,6 @@ $ npm run dev
 5. **启动开发服务器**:
    - 通常情况下，Vite 会提示你进入项目目录并运行 `npm install` 来安装依赖项，然后你可以通过 `npm run dev` 来启动开发服务器。
 
-### 总结
+### 6.2. 总结
 
 这条命令是一个快速创建 React 项目的方法，利用了 Vite 提供的高效开发环境。通过这种方式，你可以迅速开始一个新的 React 项目，并且享受到 Vite 带来的快速热更新和其他优化功能。

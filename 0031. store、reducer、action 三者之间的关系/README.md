@@ -1,17 +1,17 @@
 # [0031. store、reducer、action 三者之间的关系](https://github.com/Tdahuyou/react/tree/main/0031.%20store%E3%80%81reducer%E3%80%81action%20%E4%B8%89%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB)
 
 <!-- region:toc -->
-- [📝 Summary](#-summary)
-- [📒 store](#-store)
-- [📒 reducer](#-reducer)
-- [📒 action](#-action)
+- [1. 📝 Summary](#1--summary)
+- [2. 📒 store](#2--store)
+- [3. 📒 reducer](#3--reducer)
+- [4. 📒 action](#4--action)
 <!-- endregion:toc -->
 
-## 📝 Summary
+## 1. 📝 Summary
 
 - 了解 redux 中的 3 个核心组成部分 store、reducer、action，并清楚它们之间的关系。
 
-## 📒 store
+## 2. 📒 store
 
 - craeteStore 是用来创建仓库的方法，它接收两个参数 reducer、defaultState，返回一个仓库对象 store。
   - reducer 是封装了一系列处理 action 逻辑的纯函数，它会根据传入的 action 匹配不同的分支来改变仓库状态。
@@ -24,7 +24,7 @@ flowchart TD
 	  craeteStore  	-->  store
 ```
 
-## 📒 reducer
+## 3. 📒 reducer
 
 - reducer 是用来改变状态的，它需要接收两个参数 oldState、action，返回新的状态。
   - oldState 表示旧的状态值。
@@ -37,7 +37,7 @@ flowchart TD
 		reducer   -->  newState
 ```
 
-## 📒 action
+## 4. 📒 action
 
 - action 用于描述需要执行什么操作的平面对象 plain-object。
 - 通过分发 action 来改变仓库的状态。

@@ -1,17 +1,17 @@
 # [0017. 在 JSX 中书写内联样式 style](https://github.com/Tdahuyou/react/tree/main/0017.%20%E5%9C%A8%20JSX%20%E4%B8%AD%E4%B9%A6%E5%86%99%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F%20style)
 
 <!-- region:toc -->
-- [📝 Summary](#-summary)
-- [💻 demo - 在 JSX 中书写内联样式 style](#-demo---在-jsx-中书写内联样式-style)
-- [💻 demo - 在 JSX 中的 style 不能写成字符串形式](#-demo---在-jsx-中的-style-不能写成字符串形式)
-- [🤖 在 JSX 中书写内联样式 style](#🤖-在-jsx-中书写内联样式-style)
+- [1. 📝 Summary](#1--summary)
+- [2. 💻 demo - 在 JSX 中书写内联样式 style](#2--demo---在-jsx-中书写内联样式-style)
+- [3. 💻 demo - 在 JSX 中的 style 不能写成字符串形式](#3--demo---在-jsx-中的-style-不能写成字符串形式)
+- [4. 🤖 在 JSX 中书写内联样式 style](#4-🤖-在-jsx-中书写内联样式-style)
 <!-- endregion:toc -->
 
-## 📝 Summary
+## 1. 📝 Summary
 
 - 本文介绍了在 JSX 中书写内联样式 style 的一些注意事项。
 
-## 💻 demo - 在 JSX 中书写内联样式 style
+## 2. 💻 demo - 在 JSX 中书写内联样式 style
 
 ```jsx
 /**
@@ -34,7 +34,7 @@ function App() {
 
 ![](md-imgs/2024-09-29-09-09-42.png)
 
-## 💻 demo - 在 JSX 中的 style 不能写成字符串形式
+## 3. 💻 demo - 在 JSX 中的 style 不能写成字符串形式
 
 ```jsx
 /**
@@ -51,7 +51,7 @@ function App() {
 
 ![](md-imgs/2024-09-29-09-12-33.png)
 
-## 🤖 在 JSX 中书写内联样式 style
+## 4. 🤖 在 JSX 中书写内联样式 style
 
 在 React 中使用 JSX 时，你可以通过 `style` 属性来直接应用内联样式到你的组件。与 HTML 不同的是，在 JSX 中 `style` 属性需要一个 JavaScript 对象而不是 CSS 字符串。这个对象的键通常采用驼峰命名法（camelCase），因为它们是作为 JavaScript 对象的属性。
 

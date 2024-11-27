@@ -1,22 +1,22 @@
 # [0018. demo-图片定时切换](https://github.com/Tdahuyou/react/tree/main/0018.%20demo-%E5%9B%BE%E7%89%87%E5%AE%9A%E6%97%B6%E5%88%87%E6%8D%A2)
 
 <!-- region:toc -->
-- [📝 Summary](#-summary)
-- [🔗 links](#-links)
-- [💻 demo](#-demo)
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 💻 demo](#3--demo)
 <!-- endregion:toc -->
 
-## 📝 Summary
+## 1. 📝 Summary
 
 - 实现一个图片定时切换的 demo，类似轮播效果。
 - 通过本节的 demo，强调了一个点 —— 由 `React.createElement` 创建的 react 元素对象是不可变的。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://react.dev/reference/react/createElement
   - react createElement
 
-## 💻 demo
+## 3. 💻 demo
 
 - 功能
   - 间隔 2s 切换图片

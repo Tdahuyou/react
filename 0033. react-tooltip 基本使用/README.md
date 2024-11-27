@@ -1,20 +1,20 @@
 # [0033. react-tooltip 基本使用](https://github.com/Tdahuyou/react/tree/main/0033.%20react-tooltip%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
 <!-- region:toc -->
-- [📝 Summary](#-summary)
-- [🔗 links](#-links)
-- [📒 react-tooltip 概述](#-react-tooltip-概述)
-- [📒 安装 react-tooltip](#-安装-react-tooltip)
-- [📒 核心依赖的版本](#-核心依赖的版本)
-- [📒 引入 react-tooltip](#-引入-react-tooltip)
-- [📒 关于 css 引入的一些注意事项](#-关于-css-引入的一些注意事项)
-- [💻 了解 react-tooltip 的基本使用](#-了解-react-tooltip-的基本使用)
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 react-tooltip 概述](#3--react-tooltip-概述)
+- [4. 📒 安装 react-tooltip](#4--安装-react-tooltip)
+- [5. 📒 核心依赖的版本](#5--核心依赖的版本)
+- [6. 📒 引入 react-tooltip](#6--引入-react-tooltip)
+- [7. 📒 关于 css 引入的一些注意事项](#7--关于-css-引入的一些注意事项)
+- [8. 💻 了解 react-tooltip 的基本使用](#8--了解-react-tooltip-的基本使用)
 <!-- endregion:toc -->
 
-## 📝 Summary
+## 1. 📝 Summary
 
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://github.com/ReactTooltip/react-tooltip
   - github react-tooltip 源码仓库
@@ -22,18 +22,18 @@
   - React Tooltip 官方文档
   - 关于 React Tooltip 的具体配置和更多用法，请查阅官方文档。
 
-## 📒 react-tooltip 概述
+## 3. 📒 react-tooltip 概述
 
 -  `react-tooltip` 是一个基于 react 的第三方组件，用于给指定的元素添加帮助信息，当用户将鼠标悬停在元素上时，会展示我们指定的帮助信息。
 -  `react-tooltip` 用于在 React 应用中轻松创建和管理工具提示（tooltip），它提供了简单的 API，允许开发者在鼠标悬停或聚焦元素时显示信息，增强用户体验并提供上下文帮助。通过自定义样式和位置设置，开发者可以灵活地控制工具提示的外观和行为。
 
-## 📒 安装 react-tooltip
+## 4. 📒 安装 react-tooltip
 
 ```bash
 pnpm i react-tooltip
 ```
 
-## 📒 核心依赖的版本
+## 5. 📒 核心依赖的版本
 
 - 可以在 package.json 中查看相关依赖的版本信息。
   - `"react": "^18.3.1"`
@@ -73,7 +73,7 @@ pnpm i react-tooltip
 }
 ```
 
-## 📒 引入 react-tooltip
+## 6. 📒 引入 react-tooltip
 
 ```jsx
 // 必须
@@ -85,12 +85,12 @@ import 'react-tooltip/dist/react-tooltip.css';
 // If you are using v5.13.0 or newer, you don't need to import the css file manually, the styles will be injected into the page by default.
 ```
 
-## 📒 关于 css 引入的一些注意事项
+## 7. 📒 关于 css 引入的一些注意事项
 
 - ![](md-imgs/2024-11-01-14-30-54.png)
   - from: https://react-tooltip.com/docs/getting-started#set-the-default-styling
 
-## 💻 了解 react-tooltip 的基本使用
+## 8. 💻 了解 react-tooltip 的基本使用
 
 ```jsx
 import './style.css';

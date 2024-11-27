@@ -1,41 +1,41 @@
 # [0027. 生命周期](https://github.com/Tdahuyou/react/tree/main/0027.%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F)
 
 <!-- region:toc -->
-- [📝 Summary](#-summary)
-- [📝 Summary](#-summary)
-- [🔗 links](#-links)
-- [📒 notes](#-notes)
-- [💻 demo](#-demo)
-- [🤖 AI](#🤖-ai)
+- [1. 📝 Summary](#1--summary)
+- [2. 📝 Summary](#2--summary)
+- [3. 🔗 links](#3--links)
+- [4. 📒 notes](#4--notes)
+- [5. 💻 demo](#5--demo)
+- [6. 🤖 AI](#6-🤖-ai)
 <!-- endregion:toc -->
 
-## 📝 Summary
+## 1. 📝 Summary
 
 - ⏰ TODO
 
-## 📝 Summary
+## 2. 📝 Summary
 
 
 
-## 🔗 links
-
-
-
-
-
-## 📒 notes
+## 3. 🔗 links
 
 
 
 
 
-## 💻 demo
+## 4. 📒 notes
 
 
 
 
 
-## 🤖 AI
+## 5. 💻 demo
+
+
+
+
+
+## 6. 🤖 AI
 
 
 
