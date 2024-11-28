@@ -7,7 +7,7 @@
     - [1.2. 推荐安装的 VSCode 插件](#12-推荐安装的-vscode-插件)
     - [1.3. 第一个 react 应用](#13-第一个-react-应用)
     - [1.4. jsx](#14-jsx)
-      - [1.4.1. 1. 条件渲染、列表渲染](#141-1-条件渲染列表渲染)
+      - [1.4.1. 条件渲染、列表渲染](#141-条件渲染列表渲染)
   - [2. dangerouslySetInnerHTML](#2-dangerouslysetinnerhtml)
   - [3. ref](#3-ref)
   - [4. 组件篇](#4-组件篇)
@@ -146,7 +146,7 @@
   <!-- endregion:toc -->
   
 
-#### 1.4.1. 1. 条件渲染、列表渲染
+#### 1.4.1. 条件渲染、列表渲染
 
 - [ ] [0010. 条件渲染](https://github.com/Tdahuyou/react/tree/main/0010.%20%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/README.md) <!-- [locale](./0010.%20%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/README.md) -->  
   <!-- region:toc -->
@@ -301,18 +301,13 @@
 ### 4.7. 布尔属性
 - [x] [0025. 什么是布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md) <!-- [locale](./0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md) -->  
   <!-- region:toc -->
-  - [1. 📝 Summary](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#1--summary)
-  - [2. 🤖 什么是布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#2--什么是布尔属性)
-    - [2.1. 常见的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#21-常见的布尔属性)
-    - [2.2. 使用示例](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#22-使用示例)
-    - [2.3. 在 JavaScript 中处理布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#23-在-javascript-中处理布尔属性)
-  - [3. 🤖 布尔属性名称的由来](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#3--布尔属性名称的由来)
-  - [4. 🤖 请介绍一下 React 中组件的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#4--请介绍一下-react-中组件的布尔属性)
-    - [4.1. 布尔属性在 React 中的应用](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#41-布尔属性在-react-中的应用)
-      - [4.1.1. 1. 1. 1. 1. 简单示例](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#411-1-1-1-1-简单示例)
-      - [4.1.2. 2. 2. 2. 2. 使用条件渲染](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#412-2-2-2-2-使用条件渲染)
-      - [4.1.3. 3. 3. 3. 3. 自定义组件中的布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#413-3-3-3-3-自定义组件中的布尔属性)
-    - [4.2. 注意事项](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#42-注意事项)
+  - [1. 📒 什么是布尔属性](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#1--什么是布尔属性)
+  - [2. 📒 布尔属性名称的由来](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#2--布尔属性名称的由来)
+  - [3. 📒 布尔属性的特点](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#3--布尔属性的特点)
+  - [4. 📒 常见的布尔属性示例](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#4--常见的布尔属性示例)
+  - [5. 💻 布尔属性使用示例](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#5--布尔属性使用示例)
+  - [6. 💻 布尔属性在 React 中的应用](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#6--布尔属性在-react-中的应用)
+    - [6.1. 注意事项](https://github.com/Tdahuyou/react/tree/main/0025.%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E5%B0%94%E5%B1%9E%E6%80%A7/README.md#61-注意事项)
   <!-- endregion:toc -->
   
 
