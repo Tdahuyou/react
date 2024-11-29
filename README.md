@@ -443,14 +443,7 @@
   <!-- region:toc -->
   - [1. 📝 Summary](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#1--summary)
   - [2. 🔗 links](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#2--links)
-  - [3. 🤖 react-modal 中的 contentLabel 属性有什么用？](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#3--react-modal-中的-contentlabel-属性有什么用)
-    - [3.1. `contentLabel` 的作用](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#31-contentlabel-的作用)
-    - [3.2. 示例代码](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#32-示例代码)
-      - [3.2.1. 1. 1. 1. 1. 安装 `react-modal`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#321-1-1-1-1-安装-react-modal)
-      - [3.2.2. 2. 2. 2. 2. 使用 `contentLabel`](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#322-2-2-2-2-使用-contentlabel)
-    - [3.3. 解释](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#33-解释)
-    - [3.4. 为什么 `contentLabel` 很重要](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#34-为什么-contentlabel-很重要)
-    - [3.5. 结论](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#35-结论)
+  - [3. 📒 认识 contentLabel 属性](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#3--认识-contentlabel-属性)
   <!-- endregion:toc -->
   
 

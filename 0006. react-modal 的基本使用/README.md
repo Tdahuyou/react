@@ -3,48 +3,30 @@
 <!-- region:toc -->
 - [1. 📝 Summary](#1--summary)
 - [2. 🔗 links](#2--links)
-- [3. 🤖 react-modal 中的 contentLabel 属性有什么用？](#3--react-modal-中的-contentlabel-属性有什么用)
-  - [3.1. `contentLabel` 的作用](#31-contentlabel-的作用)
-  - [3.2. 示例代码](#32-示例代码)
-    - [3.2.1. 1. 1. 1. 1. 安装 `react-modal`](#321-1-1-1-1-安装-react-modal)
-    - [3.2.2. 2. 2. 2. 2. 使用 `contentLabel`](#322-2-2-2-2-使用-contentlabel)
-  - [3.3. 解释](#33-解释)
-  - [3.4. 为什么 `contentLabel` 很重要](#34-为什么-contentlabel-很重要)
-  - [3.5. 结论](#35-结论)
+- [3. 📒 认识 contentLabel 属性](#3--认识-contentlabel-属性)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary
 
-- 一个用于解决弹框问题的 react 第三方库。
-- ⏰ TODO：待整理。（看一眼 ai 回复基本就会了，当时就没整理。）
+- `react-modal` 是一个常用的 React 弹出模态框库，它提供了许多配置选项来定制模态框的行为和样式。
+- 使用起来非常简单的一个第三方组件，结合官方文档描述来使用即可。
+- 笔记中记录了在使用这个组件时比较模糊的一些点，比如 contentLabel 属性（是用来做特殊用户的阅读体验优化的）。
 
 ## 2. 🔗 links
 
 - https://www.npmjs.com/package/react-modal?activeTab=readme - npm react-modal
 - https://github.com/reactjs/react-modal - github react-modal
 
-## 3. 🤖 react-modal 中的 contentLabel 属性有什么用？
+## 3. 📒 认识 contentLabel 属性
 
-`react-modal` 是一个常用的 React 弹出模态框库，它提供了许多配置选项来定制模态框的行为和样式。其中一个重要的属性是 `contentLabel`，它用于给模态框添加一个可访问性的标签（aria-label），以便屏幕阅读器和其他辅助技术能够更好地理解和描述模态框的内容。
-
-### 3.1. `contentLabel` 的作用
-
-1. **可访问性（Accessibility）**：`contentLabel` 用于为模态框添加一个描述性的标签，这个标签会被屏幕阅读器读取，帮助视障用户理解模态框的内容。这对于提高应用的可访问性非常重要。
-2. **ARIA 标签**：在 HTML 中，`aria-labelledby` 和 `aria-label` 属性用于提供额外的信息，帮助辅助技术（如屏幕阅读器）更好地理解和描述页面上的元素。`contentLabel` 会在模态框的 `role="dialog"` 元素上设置 `aria-label` 属性。
-
-### 3.2. 示例代码
-
-下面是一个使用 `react-modal` 的示例，展示了如何使用 `contentLabel` 属性：
-
-#### 3.2.1. 1. 1. 1. 1. 安装 `react-modal`
-
-首先，确保你已经安装了 `react-modal`：
-
-```sh
-npm install react-modal
-```
-
-#### 3.2.2. 2. 2. 2. 2. 使用 `contentLabel`
+`contentLabel` 用于给模态框添加一个可访问性的标签（aria-label），以便屏幕阅读器和其他辅助技术能够更好地理解和描述模态框的内容。
+  1. **可访问性（Accessibility）**：`contentLabel` 用于为模态框添加一个描述性的标签，这个标签会被屏幕阅读器读取，帮助视障用户理解模态框的内容。这对于提高应用的可访问性非常重要。
+  2. **ARIA 标签**：在 HTML 中，`aria-labelledby` 和 `aria-label` 属性用于提供额外的信息，帮助辅助技术（如屏幕阅读器）更好地理解和描述页面上的元素。`contentLabel` 会在模态框的 `role="dialog"` 元素上设置 `aria-label` 属性。
+- 为什么 `contentLabel` 很重要
+  1. **辅助技术兼容性**：`contentLabel` 使得模态框更加兼容辅助技术，如屏幕阅读器。
+  2. **用户体验**：对于依赖屏幕阅读器的用户来说，清晰的标签可以提高用户体验。
+  3. **合规性**：遵循无障碍设计的最佳实践，确保你的应用符合 WCAG（Web Content Accessibility Guidelines）的要求。
+- 下面是一个使用 react-modal 的简单示例：
 
 ```jsx
 import React from 'react';
@@ -78,20 +60,7 @@ const App = () => {
 export default App;
 ```
 
-### 3.3. 解释
-
-在上面的示例中：
-
-- `contentLabel="Example modal dialog"` 为模态框提供了一个描述性的标签，告诉屏幕阅读器这是一个“示例模态对话框”。
-- 当模态框打开时，屏幕阅读器会读取这个描述性的标签，帮助视障用户理解模态框的作用。
-- `Modal.setAppElement('#root')` 设置了应用的根元素，这对于确保模态框的正确渲染和可访问性非常重要。
-
-### 3.4. 为什么 `contentLabel` 很重要
-
-1. **辅助技术兼容性**：`contentLabel` 使得模态框更加兼容辅助技术，如屏幕阅读器。
-2. **用户体验**：对于依赖屏幕阅读器的用户来说，清晰的标签可以提高用户体验。
-3. **合规性**：遵循无障碍设计的最佳实践，确保你的应用符合 WCAG（Web Content Accessibility Guidelines）的要求。
-
-### 3.5. 结论
-
-`contentLabel` 属性在 `react-modal` 中是一个重要的可访问性特性，它通过提供一个描述性的标签来增强模态框的可访问性。正确使用 `contentLabel` 可以帮助确保所有用户，包括那些依赖辅助技术的用户，都能够理解和使用你的模态框。
+- 在这个的示例中：
+  - `contentLabel="Example modal dialog"` 为模态框提供了一个描述性的标签，告诉屏幕阅读器这是一个“示例模态对话框”。
+  - 当模态框打开时，屏幕阅读器会读取这个描述性的标签，帮助视障用户理解模态框的作用。
+  - `Modal.setAppElement('#root')` 设置了应用的根元素，这对于确保模态框的正确渲染和可访问性非常重要。
