@@ -37,6 +37,6 @@
 6. React 开发者社区
 7. React 博客：用于发布一些重要通知。
 8. 主题切换：亮色/暗色
-9. 语言切换：英文/中文
+9. 语言切换：英文/中文/……
 10. github 链接：https://github.com/facebook/react/releases
 
