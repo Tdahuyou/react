@@ -3,30 +3,30 @@
 
 <!-- region:toc -->
 - [1. 📝 Summary](#1--summary)
-- [2. 🔗 links](#2--links)
-- [3. 📒 notes](#3--notes)
+- [2. 🔗 vite 官网](#2--vite-官网)
+- [3. 📒 使用 pnpm 的实际操作流程](#3--使用-pnpm-的实际操作流程)
 - [4. 📒 使用 vite 创建 react 工程](#4--使用-vite-创建-react-工程)
 - [5. 📒 启动用 vite 创建的 react 工程](#5--启动用-vite-创建的-react-工程)
-- [6. 🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令](#6--请解释一下-npm-create-vite@latest-my-react-app------template-react-这条命令)
+- [6. 🤖 解释命令 - `npm create vite@latest my-react-app -- --template react`](#6--解释命令---npm-create-vite@latest-my-react-app------template-react)
   - [6.1. 整体流程](#61-整体流程)
   - [6.2. 总结](#62-总结)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary
 
-- 简单说就是一句话：`npm create vite@latest my-react-app -- --template react`
-- 如果不清楚这条命令的含义，可以参考一下本节中记录的内容。
+- `npm create vite@latest my-react-app -- --template react` 这是 vite 官方提供的命令，用于创建一个 react 项目。
+  - 如果不清楚这条命令的含义，可以参考一下本节中记录的 AI 对此的解释。
+- 上面这条命令太长了，不好记，其实只需要记住：`npm create vite` 即可，其他项目参数（比如项目名称、模板等）根据命令提示自行配置。
 
-## 2. 🔗 links
+## 2. 🔗 vite 官网
 
 - https://vitejs.dev/guide/
   - vite 官方文档
 - https://github.com/vitejs/vite
   - vite github
 
-## 3. 📒 notes
+## 3. 📒 使用 pnpm 的实际操作流程
 
-实际操作流程：
 1. pnpm create vite
 2. 输入项目名称，比如 demo
 3. 选择模板，比如 React
@@ -34,7 +34,7 @@
 5. pnpm i
 6. pnpm run dev
 
-文档中提到的命令 `npm create vite@latest my-react-app -- --template react` 其实就是 1+2+3 的步骤。如果记不住的话，直接运行命令 `pnpm create vite` 然后根据命令行提示来配置即可。
+文档中提到的命令 `pnpm create vite@latest my-react-app -- --template react` 其实就是 1+2+3 的步骤。如果记不住的话，直接运行命令 `pnpm create vite` 然后根据命令行提示来配置即可。
 
 ## 4. 📒 使用 vite 创建 react 工程
 
@@ -62,7 +62,7 @@ $ npm run dev
 
 ![](md-imgs/2024-09-24-10-05-05.png)
 
-## 6. 🤖 请解释一下 `npm create vite@latest my-react-app -- --template react` 这条命令
+## 6. 🤖 解释命令 - `npm create vite@latest my-react-app -- --template react`
 
 `npm create vite@latest my-react-app -- --template react` 这条命令是用来创建一个新的 React 项目，使用 Vite 作为构建工具。让我们逐部分解释这条命令：
 
