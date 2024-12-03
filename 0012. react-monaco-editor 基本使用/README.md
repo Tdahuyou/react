@@ -5,7 +5,7 @@
 - [2. 🔗 links](#2--links)
 - [3. 📒 先说说结论](#3--先说说结论)
 - [4. 📒 单词 monaco](#4--单词-monaco)
-- [5. 📒 安装 @monaco-editor/react](#5--安装-@monaco-editor/react)
+- [5. 📒 安装 @monaco-editor/react](#5--安装-@monaco-editorreact)
 - [6. 💻 引入 Editor 组件](#6--引入-editor-组件)
 - [7. 💻 Editor 组件的一些钩子 onChange、onMount、beforeMount、onValidate](#7--editor-组件的一些钩子-onchangeonmountbeforemountonvalidate)
 - [8. 💻 获取编辑器的当前值的两种方式](#8--获取编辑器的当前值的两种方式)
