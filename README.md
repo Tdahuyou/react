@@ -339,17 +339,10 @@
   - [5. 📒 纯函数](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#5--纯函数)
   - [6. 📒 redux 的工具和生态系统](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#6--redux-的工具和生态系统)
   - [7. 📒 本节会用到的一些依赖](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#7--本节会用到的一些依赖)
-<<<<<<< HEAD
-  - [8. 💻 脱离 react 单独使用 redux 来管理状态数据](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#8--脱离-react-单独使用-redux-来管理状态数据)
-  - [9. 💻 redux 的基本使用 - createStore 版](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#9--redux-的基本使用---createstore-版)
-  - [10. 💻 redux 的基本使用 - @reduxjs/toolkit 版](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#10--redux-的基本使用---@reduxjstoolkit-版)
-  - [11. 💻 redux 的基本使用 - @reduxjs/toolkit 版（模块化）](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#11--redux-的基本使用---@reduxjstoolkit-版模块化)
-=======
   - [8. 💻 demos.1 - 脱离 react 单独使用 redux 来管理状态数据](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#8--demos1---脱离-react-单独使用-redux-来管理状态数据)
   - [9. 💻 demos.2 - redux 的基本使用 - createStore 版](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#9--demos2---redux-的基本使用---createstore-版)
   - [10. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#10--demos2---redux-的基本使用---@reduxjstoolkit-版)
   - [11. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版（模块化）](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#11--demos2---redux-的基本使用---@reduxjstoolkit-版模块化)
->>>>>>> bddbcc378203f6d1fb8a95ae79cab90b92697455
   - [12. 🤖 我想要深入了解有关 redux 的内容，应该问你哪些问题呢？](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#12--我想要深入了解有关-redux-的内容应该问你哪些问题呢)
     - [12.1. 基本概念](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#121-基本概念)
     - [12.2. 高级概念](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#122-高级概念)
@@ -455,11 +448,9 @@
   
 
 - [ ] [0036. 快速搭建一个基于 vite、antd 的 react 项目](https://github.com/Tdahuyou/react/tree/main/0036.%20%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%20vite%E3%80%81antd%20%E7%9A%84%20react%20%E9%A1%B9%E7%9B%AE/README.md) <!-- [locale](./0036.%20%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%20vite%E3%80%81antd%20%E7%9A%84%20react%20%E9%A1%B9%E7%9B%AE/README.md) -->  
-  <!-- region:toc -->
   - [1. 🔗 antd 官方文档 - 在 vite 中使用 antd](https://github.com/Tdahuyou/react/tree/main/0036.%20%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%20vite%E3%80%81antd%20%E7%9A%84%20react%20%E9%A1%B9%E7%9B%AE/README.md#1--antd-官方文档---在-vite-中使用-antd)
   - [2. 📒 使用 pnpm 实现安装和初始化的流程](https://github.com/Tdahuyou/react/tree/main/0036.%20%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%20vite%E3%80%81antd%20%E7%9A%84%20react%20%E9%A1%B9%E7%9B%AE/README.md#2--使用-pnpm-实现安装和初始化的流程)
   - [3. 💻 demos.1 - 测试按钮组件的使用](https://github.com/Tdahuyou/react/tree/main/0036.%20%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%20vite%E3%80%81antd%20%E7%9A%84%20react%20%E9%A1%B9%E7%9B%AE/README.md#3--demos1---测试按钮组件的使用)
-  <!-- endregion:toc -->
   
 
 ## 8. 小练习
@@ -473,10 +464,8 @@
 ## 9. ⏰ 待分组
 
 - [ ] [0037. 学习 antd Message 组件的使用](https://github.com/Tdahuyou/react/tree/main/0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md) <!-- [locale](./0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md) -->  
-  <!-- region:toc -->
   - [1. 🔗 Message 全局提示](https://github.com/Tdahuyou/react/tree/main/0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md#1--message-全局提示)
   - [2. 💻 demos.1 - 了解 Message 的基本使用](https://github.com/Tdahuyou/react/tree/main/0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md#2--demos1---了解-message-的基本使用)
   - [3. 💻 demos.2 - 理解 contextHolder 的作用](https://github.com/Tdahuyou/react/tree/main/0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md#3--demos2---理解-contextholder-的作用)
   - [4. 🔗 来自官方文档的回复：为什么 message 不能获取 context、redux 的内容和 ConfigProvider 的 locale/prefixCls/theme 等配置？](https://github.com/Tdahuyou/react/tree/main/0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md#4--来自官方文档的回复为什么-message-不能获取-contextredux-的内容和-configprovider-的-localeprefixclstheme-等配置)
-  <!-- endregion:toc -->
   
