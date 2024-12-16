@@ -1,8 +1,16 @@
 {
-    "scripts": {
-        "merge": "      node ./node_modules/tnotes   --mergeREADME         --repoName=react",
-        "update": "     node ./node_modules/tnotes   --updateREADME        --repoName=react",
-        "distribute": " node ./node_modules/tnotes   --distributeREADME    --repoName=react",
-        "sync": "       node ./node_modules/tnotes   --syncREADME          --repoName=react"
-    }
+  "scripts": {
+    "merge": "      node ./node_modules/tnotes   --mergeREADME         --repoName=react",
+    "update": "     node ./node_modules/tnotes   --updateREADME        --repoName=react",
+    "distribute": " node ./node_modules/tnotes   --distributeREADME    --repoName=react",
+    "sync": "       node ./node_modules/tnotes   --syncREADME          --repoName=react"
+  },
+  "tnotesConfig": {
+    "ignoreDirs": [
+      ".vscode",
+      ".git",
+      "md-imgs",
+      "9999. templates"
+    ]
+  }
 }
