@@ -390,10 +390,15 @@
 
 ## 6. 第三方库
 
-- [ ] [0006. react-modal 的基本使用](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) <!-- [locale](./0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) -->  
-  - [1. 📝 Summary](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#1--summary)
-  - [2. 🔗 links](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#2--links)
-  - [3. 📒 认识 contentLabel 属性](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#3--认识-contentlabel-属性)
+- [ ] [0006. react-modal](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal/README.md) <!-- [locale](./0006.%20react-modal/README.md) -->  
+  - [1. 💻 demos.1 - 认识 contentLabel 属性](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal/README.md#1--demos1---认识-contentlabel-属性)
+  - [2. 💻 demos.2 - 封装一个简单的 dialog 组件](https://github.com/Tdahuyou/react/tree/main/0006.%20react-modal/README.md#2--demos2---封装一个简单的-dialog-组件)
+  - `react-modal` 是一个常用的 React 弹出模态框库，它提供了许多配置选项来定制模态框的行为和样式。
+  - `react-modal` 使用起来非常简单的一个第三方组件，结合官方文档描述来使用即可。
+  - 笔记中记录了一些 `react-modal` 的基本使用示例，以及在使用这个组件时比较模糊的一些点，比如 contentLabel 属性（是用来做特殊用户的阅读体验优化的）。
+  - links
+    - https://www.npmjs.com/package/react-modal?activeTab=readme - npm react-modal
+    - https://github.com/reactjs/react-modal - github react-modal
   
 
 - [x] [0012. react-monaco-editor 基本使用](https://github.com/Tdahuyou/react/tree/main/0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) <!-- [locale](./0012.%20react-monaco-editor%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) -->  
