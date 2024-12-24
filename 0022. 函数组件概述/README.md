@@ -33,7 +33,7 @@ function Welcome(props) {
 - 你也可以使用 ES6 的箭头函数来定义函数组件：
 
 ```jsx
-const Welcome = (props) => <h1>Hello, {props.name}</h2>;
+const Welcome = (props) => <h1>Hello, {props.name}</h1>;
 ```
 
 ## 4. 📒 默认 Props
