@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "merge": "      node ./node_modules/tnotes   --mergeREADME         --repoName=react",
-    "update": "     node ./node_modules/tnotes   --updateREADME        --repoName=react",
-    "distribute": " node ./node_modules/tnotes   --distributeREADME    --repoName=react",
-    "sync": "       node ./node_modules/tnotes   --syncREADME          --repoName=react"
+    "merge": "           node ./node_modules/tnotes   --mergeREADME         --repoName=react",
+    "update": "          node ./node_modules/tnotes   --updateREADME        --repoName=react",
+    "distribute": "      node ./node_modules/tnotes   --distributeREADME    --repoName=react",
+    "sync": "            node ./node_modules/tnotes   --syncREADME          --repoName=react",
+    "docs:publish": "    node ./node_modules/tnotes/scripts/docs-publish.js"
   },
   "tnotesConfig": {
     "ignoreDirs": [
