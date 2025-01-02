@@ -1,25 +1,21 @@
 # [0010. 条件渲染](https://github.com/Tdahuyou/react/tree/main/0010.%20%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93)
 
 <!-- region:toc -->
-- [1. 📝 Summary](#1--summary)
-- [2. 🔗 links](#2--links)
-- [3. 📝 条件渲染](#3--条件渲染)
-- [4. 💻 demo - 条件渲染](#4--demo---条件渲染)
-- [5. 📝 对比 vue](#5--对比-vue)
+- [1. 🔗 links](#1--links)
+- [2. 📝 条件渲染](#2--条件渲染)
+- [3. 💻 demo - 条件渲染](#3--demo---条件渲染)
+- [4. 📝 对比 vue](#4--对比-vue)
 <!-- endregion:toc -->
-
-## 1. 📝 Summary
-
 - 类似于 vue 中的 v-show、v-if，不过在 react 中，条件渲染是通过纯 js 结合 jsx 语法来实现的，更加的灵活。
 - React 中没有类似 vue 中的 v-if、v-else、v-show 的条件渲染指令，React 中的条件渲染是通过在 JSX 使用原始的 JavaScript 条件逻辑来决定要渲染什么内容的，写起来更加原生，更加直观、更加灵活。
 
-## 2. 🔗 links
+## 1. 🔗 links
 
 - https://zh-hans.react.dev/learn#conditional-rendering
   - react 官方文档
   - quick start > Conditional rendering 条件渲染
 
-## 3. 📝 条件渲染
+## 2. 📝 条件渲染
 
 React 没有特殊的语法来编写条件语句，因此你使用的就是普通的 JavaScript 代码。例如使用 if 语句根据条件引入 JSX：
 
@@ -59,7 +55,7 @@ return (
 
 所有这些方法也适用于有条件地指定属性。如果你对 JavaScript 语法不熟悉，你可以先使用 if...else。
 
-## 4. 💻 demo - 条件渲染
+## 3. 💻 demo - 条件渲染
 
 ```jsx
 import { useState } from 'react'
@@ -85,7 +81,7 @@ function App() {
 export default App
 ```
 
-## 5. 📝 对比 vue
+## 4. 📝 对比 vue
 
 在 vue 中，有俩内置指令：
 
@@ -95,3 +91,4 @@ export default App
 它们是用来做条件渲染用的，当条件满足时才会渲染对应的内容。
 
 在 react 中，并不存在类似的概念，由于 react 中的组件模板（html 标签）是通过 JSX 语法，直接跟 js 写在一起的，并不像 vue 那样，将 template 和 script 分离，所以在 react 中，对于条件渲染的处理逻辑会更加灵活，走 js 那套就行，无论是使用 if 语句还是三木运算符还是逻辑短路的写法，都是 ok 的。
+

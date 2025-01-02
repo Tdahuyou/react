@@ -1,25 +1,21 @@
 # [0004. 使用 className 添加样式名](https://github.com/Tdahuyou/react/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20className%20%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%90%8D)
 
 <!-- region:toc -->
-- [1. 📝 Summary](#1--summary)
-- [2. 🔗 links](#2--links)
-- [3. 📒 添加样式](#3--添加样式)
-- [4. 🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？](#4--问为什么不直接使用-class-来添加样式而是使用-classname-呢)
-- [5. 💻 demo - className 基本使用](#5--demo---classname-基本使用)
+- [1. 🔗 links](#1--links)
+- [2. 📒 添加样式](#2--添加样式)
+- [3. 🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？](#3--问为什么不直接使用-class-来添加样式而是使用-classname-呢)
+- [4. 💻 demo - className 基本使用](#4--demo---classname-基本使用)
 <!-- endregion:toc -->
-
-## 1. 📝 Summary
-
 - 在 React 中，我们通过使用 JSX 语法来定义组件模板，在组件模板中，我们可以使用 className 来指定一个 CSS 的 class。
   - ✔ `<img className="avatar" />`
   - ✖ `<img class="avatar" />`
 
-## 2. 🔗 links
+## 1. 🔗 links
 
 - https://zh-hans.react.dev/learn#adding-styles
   - react 官网，quick start，adding-styles
 
-## 3. 📒 添加样式
+## 2. 📒 添加样式
 
 在 React 中，你可以使用 className 来指定一个 CSS 的 class。它与 HTML 的 class 属性的工作方式相同：
 
@@ -38,12 +34,12 @@
 
 React 并没有规定你如何添加 CSS 文件。最简单的方式是使用 HTML 的 `<link>` 标签。如果你使用了构建工具或框架，请阅读其文档来了解如何将 CSS 文件添加到你的项目中。
 
-## 4. 🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？
+## 3. 🤔 问：为什么不直接使用 class 来添加样式，而是使用 className 呢？
 
 - 在 React 中，**为了与 JSX 中的 class 关键字区分**，推荐使用 className 来添加 CSS 类名，尽管在某些情况下直接使用 class 也可能正常工作，但这是不规范的做法且可能引发问题。
 - 虽然在一些环境中直接使用 class 属性可能会被编译器正确处理并渲染出来，这可能是因为现代的构建工具（如 Create React App、Vite）和转译器（如 Babel）能够识别并转换这些属性。但是，根据官方文档以及最佳实践，你应该始终使用 className 来指定元素的 CSS 类。这样可以确保代码的一致性和未来的兼容性，并避免潜在的错误或混淆。
 
-## 5. 💻 demo - className 基本使用
+## 4. 💻 demo - className 基本使用
 
 ```css
 /*
@@ -101,3 +97,4 @@ export default App
   - eslint 报错：
     - ![](md-imgs/2024-10-27-12-54-22.png)
   - 这些错误提示都是在提醒我们，直接使用 class 的写法在 react 的 jsx 中给元素添加样式的行为是不正确的。
+

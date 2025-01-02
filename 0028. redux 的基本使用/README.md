@@ -1,41 +1,37 @@
 # [0028. redux 的基本使用](https://github.com/Tdahuyou/react/tree/main/0028.%20redux%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
 <!-- region:toc -->
-- [1. 📝 Summary](#1--summary)
-- [2. 🔗 redux 官方文档](#2--redux-官方文档)
-- [3. 📒 redux 是什么？](#3--redux-是什么)
-- [4. 📒 redux 核心概念](#4--redux-核心概念)
-- [5. 📒 纯函数](#5--纯函数)
-- [6. 📒 redux 的工具和生态系统](#6--redux-的工具和生态系统)
-- [7. 📒 本节会用到的一些依赖](#7--本节会用到的一些依赖)
-- [8. 💻 demos.1 - 脱离 react 单独使用 redux 来管理状态数据](#8--demos1---脱离-react-单独使用-redux-来管理状态数据)
-- [9. 💻 demos.2 - redux 的基本使用 - createStore 版](#9--demos2---redux-的基本使用---createstore-版)
-- [10. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版](#10--demos2---redux-的基本使用---@reduxjstoolkit-版)
-- [11. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版（模块化）](#11--demos2---redux-的基本使用---@reduxjstoolkit-版模块化)
-- [12. 🤖 我想要深入了解有关 redux 的内容，应该问你哪些问题呢？](#12--我想要深入了解有关-redux-的内容应该问你哪些问题呢)
-  - [12.1. 基本概念](#121-基本概念)
-  - [12.2. 高级概念](#122-高级概念)
-  - [12.3. 最佳实践](#123-最佳实践)
-  - [12.4. 实际应用](#124-实际应用)
-  - [12.5. 其他问题](#125-其他问题)
+- [1. 🔗 redux 官方文档](#1--redux-官方文档)
+- [2. 📒 redux 是什么？](#2--redux-是什么)
+- [3. 📒 redux 核心概念](#3--redux-核心概念)
+- [4. 📒 纯函数](#4--纯函数)
+- [5. 📒 redux 的工具和生态系统](#5--redux-的工具和生态系统)
+- [6. 📒 本节会用到的一些依赖](#6--本节会用到的一些依赖)
+- [7. 💻 demos.1 - 脱离 react 单独使用 redux 来管理状态数据](#7--demos1---脱离-react-单独使用-redux-来管理状态数据)
+- [8. 💻 demos.2 - redux 的基本使用 - createStore 版](#8--demos2---redux-的基本使用---createstore-版)
+- [9. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版](#9--demos2---redux-的基本使用---@reduxjstoolkit-版)
+- [10. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版（模块化）](#10--demos2---redux-的基本使用---@reduxjstoolkit-版模块化)
+- [11. 🤖 我想要深入了解有关 redux 的内容，应该问你哪些问题呢？](#11--我想要深入了解有关-redux-的内容应该问你哪些问题呢)
+  - [11.1. 基本概念](#111-基本概念)
+  - [11.2. 高级概念](#112-高级概念)
+  - [11.3. 最佳实践](#113-最佳实践)
+  - [11.4. 实际应用](#114-实际应用)
+  - [11.5. 其他问题](#115-其他问题)
 <!-- endregion:toc -->
-
-## 1. 📝 Summary
-
 - 理解 redux 是什么
 - 了解 redux 与 react 结合使用的两种常见方式
   - 传统的 createStore 方式
   - 新版的 redux-toolkit 方式
 - 你可以脱离 react，单独使用 redux 来管理状态数据。
 
-## 2. 🔗 redux 官方文档
+## 1. 🔗 redux 官方文档
 
 - https://www.npmjs.com/package/redux
   - npm redux
 - https://redux-toolkit.js.org/introduction/getting-started
   - Getting Started with Redux Toolkit
 
-## 3. 📒 redux 是什么？
+## 2. 📒 redux 是什么？
 
 - Redux 是一个用于 JavaScript 应用的状态管理库，尤其适用于单页应用程序（SPA）。它由 Dan Abramov 和 Andrew Clark 在 2015 年创建，并且受到了 Flux 架构的启发。**Redux 的主要目的是提供一个可预测的状态容器，使得应用的状态管理和调试变得更加容易。**
 - **React 中的 redux 类似于 vue 中的 vuex、pinia**，redux 是 React 生态中的一个重要组成部分。
@@ -48,7 +44,7 @@
   - 由此可见 redux 的定位和边界是很清晰的，它就是用来管理状态的，和具体的框架并没有直接关联。
   - 不要误以为 redux 只能在 react 中使用。
 
-## 4. 📒 redux 核心概念
+## 3. 📒 redux 核心概念
 
 ```mermaid
 mindmap
@@ -68,14 +64,14 @@ mindmap
       Middleware 是在 action 被 dispatch 到 reducer 之前或之后执行的一些函数。它们可以用来进行日志记录、错误报告、异步操作等。
 ```
 
-## 5. 📒 纯函数
+## 4. 📒 纯函数
 
 - 相同的输入总是产生相同的输出。
 - 并且对外界不会造成影响，比如：
   - 不会改变外界的变量。
   - 不会影响外界的行为，比如操作 localStorage、改变 DOM 等等。
 
-## 6. 📒 redux 的工具和生态系统
+## 5. 📒 redux 的工具和生态系统
 
 ```mermaid
 mindmap
@@ -91,13 +87,13 @@ mindmap
     处理异步操作的中间件，使得处理异步逻辑更加简洁和可测试。
 ```
 
-## 7. 📒 本节会用到的一些依赖
+## 6. 📒 本节会用到的一些依赖
 
 ```bash
 npm install redux react-redux @reduxjs/toolkit
 ```
 
-## 8. 💻 demos.1 - 脱离 react 单独使用 redux 来管理状态数据
+## 7. 💻 demos.1 - 脱离 react 单独使用 redux 来管理状态数据
 
 ```js
 /**
@@ -139,7 +135,7 @@ console.log('打印 window.store.getState() 获取仓库当前状态 =>', window
 - 最终输出结果：
   - ![](md-imgs/2024-10-28-22-30-43.png)
 
-## 9. 💻 demos.2 - redux 的基本使用 - createStore 版
+## 8. 💻 demos.2 - redux 的基本使用 - createStore 版
 
 ```javascript
 /**
@@ -244,7 +240,7 @@ function App() {
 export default App
 ```
 
-## 10. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版
+## 9. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版
 
 - 当你在程序中引入 createStore 的时候，会提示这玩意儿已经被废弃了。
   - ![](md-imgs/2024-10-27-18-14-35.png)
@@ -311,7 +307,7 @@ function App() {
 export default App
 ```
 
-## 11. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版（模块化）
+## 10. 💻 demos.2 - redux 的基本使用 - @reduxjs/toolkit 版（模块化）
 
 - 这个示例介绍在实际开发中，常见的规划模块（也就是 store、reducer 这些逻辑一般封装在啥位置）的一种做法。
 - 最终效果
@@ -418,11 +414,11 @@ export const { addTodo } = todoSlice.actions
 export default todoSlice.reducer
 ```
 
-## 12. 🤖 我想要深入了解有关 redux 的内容，应该问你哪些问题呢？
+## 11. 🤖 我想要深入了解有关 redux 的内容，应该问你哪些问题呢？
 
 深入了解 Redux 可以帮助你更好地掌握其核心概念、最佳实践以及如何在实际项目中有效地使用它。以下是一些你可以问的问题，这些问题将帮助你全面了解 Redux：
 
-### 12.1. 基本概念
+### 11.1. 基本概念
 
 1. **什么是 Redux？**
    - 你能详细解释一下 Redux 的基本原理和用途吗？
@@ -447,7 +443,7 @@ export default todoSlice.reducer
 8. **Store 的主要方法有哪些？**
    - `getState`、`dispatch` 和 `subscribe` 分别做什么？
 
-### 12.2. 高级概念
+### 11.2. 高级概念
 
 9. **Middleware 在 Redux 中的作用是什么？**
    - 为什么需要 Middleware？常见的 Middleware 有哪些？
@@ -464,7 +460,7 @@ export default todoSlice.reducer
 13. **Redux Toolkit 是什么？**
     - 它如何简化 Redux 的配置和使用？`createSlice` 和 `configureStore` 有什么好处？
 
-### 12.3. 最佳实践
+### 11.3. 最佳实践
 
 14. **如何组织和管理大型 Redux 应用的状态？**
     - 有哪些推荐的文件结构和命名约定？
@@ -478,7 +474,7 @@ export default todoSlice.reducer
 17. **如何测试 Redux 应用？**
     - 有哪些工具和方法可以用来测试 Reducers、Actions 和 Middleware？
 
-### 12.4. 实际应用
+### 11.4. 实际应用
 
 18. **如何在现有项目中引入 Redux？**
     - 有哪些步骤和注意事项？
@@ -495,7 +491,7 @@ export default todoSlice.reducer
 22. **如何在 Redux 中实现路由管理？**
     - 有哪些库和方法可以用来管理应用的路由状态？
 
-### 12.5. 其他问题
+### 11.5. 其他问题
 
 23. **Redux 与其他状态管理库（如 MobX、Vuex）相比有什么优缺点？**
     - 什么时候选择 Redux，什么时候选择其他库？
@@ -504,4 +500,6 @@ export default todoSlice.reducer
     - 社区和官方对 Redux 未来的规划和发展方向是什么？
 
 通过这些问题，你可以更深入地了解 Redux 的各个方面，并在实际项目中更好地应用它。如果你有具体的问题或需要进一步的解释，请随时告诉我！
+
+
 

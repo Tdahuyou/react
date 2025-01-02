@@ -1,30 +1,26 @@
 # [0030. redux 中的 action](https://github.com/Tdahuyou/react/tree/main/0030.%20redux%20%E4%B8%AD%E7%9A%84%20action)
 
 <!-- region:toc -->
-- [1. 📝 Summary](#1--summary)
-- [2. 🔗 links](#2--links)
-- [3. 💻 脱离 react 单独使用 redux 来管理状态数据](#3--脱离-react-单独使用-redux-来管理状态数据)
-- [4. 📒 action 是什么？有什么用？](#4--action-是什么有什么用)
-- [5. 📒 redux 部分源码 - 判断 action 是否合法的逻辑](#5--redux-部分源码---判断-action-是否合法的逻辑)
-- [6. 💻 action 必须是一个平面对象](#6--action-必须是一个平面对象)
-- [7. 💻 action 的 type 属性必须是 string 类型](#7--action-的-type-属性必须是-string-类型)
-- [8. 📒 type 的硬编码问题](#8--type-的硬编码问题)
-- [9. 📒 action 的创建函数](#9--action-的创建函数)
-- [10. 📒 `bindActionCreators`](#10--bindactioncreators)
-- [11. 💻 action 的创建函数以及工具方法 `bindActionCreators`](#11--action-的创建函数以及工具方法-bindactioncreators)
-- [12. 🤖 如何验证一个对象是否是 plain-object？](#12--如何验证一个对象是否是-plain-object)
-- [13. 🤖 为什么 type 必须是 string 类型，符号类型不行](#13--为什么-type-必须是-string-类型符号类型不行)
+- [1. 🔗 links](#1--links)
+- [2. 💻 脱离 react 单独使用 redux 来管理状态数据](#2--脱离-react-单独使用-redux-来管理状态数据)
+- [3. 📒 action 是什么？有什么用？](#3--action-是什么有什么用)
+- [4. 📒 redux 部分源码 - 判断 action 是否合法的逻辑](#4--redux-部分源码---判断-action-是否合法的逻辑)
+- [5. 💻 action 必须是一个平面对象](#5--action-必须是一个平面对象)
+- [6. 💻 action 的 type 属性必须是 string 类型](#6--action-的-type-属性必须是-string-类型)
+- [7. 📒 type 的硬编码问题](#7--type-的硬编码问题)
+- [8. 📒 action 的创建函数](#8--action-的创建函数)
+- [9. 📒 `bindActionCreators`](#9--bindactioncreators)
+- [10. 💻 action 的创建函数以及工具方法 `bindActionCreators`](#10--action-的创建函数以及工具方法-bindactioncreators)
+- [11. 🤖 如何验证一个对象是否是 plain-object？](#11--如何验证一个对象是否是-plain-object)
+- [12. 🤖 为什么 type 必须是 string 类型，符号类型不行](#12--为什么-type-必须是-string-类型符号类型不行)
 <!-- endregion:toc -->
-
-## 1. 📝 Summary
-
 - 理解 action 的本质
 - 编写 action 时的一些常见写法
 - action 的创建函数
 - 学会使用 `bindActionCreators` 来简化 action 的分发流程
 - 学习 redux 的源码，比如：关于 action 的判断逻辑 `isAction` 的实现、关于 `bindActionCreators` 的实现源码。
 
-## 2. 🔗 links
+## 1. 🔗 links
 
 - https://redux.js.org/api/utils
   - redux 官方文档 - Utility Functions
@@ -39,7 +35,7 @@
   - 搜索：`src/bindActionCreators.ts`
     - 查看 redux 提供的 API `bindActionCreators` 的实现源码。
 
-## 3. 💻 脱离 react 单独使用 redux 来管理状态数据
+## 2. 💻 脱离 react 单独使用 redux 来管理状态数据
 
 ```js
 /**
@@ -83,7 +79,7 @@ console.log('打印 window.store.getState() 获取仓库当前状态 =>', window
 - 通过这个 demo，能够发现 redux 和 react 没有直接关联，完全可以脱离 react 单独 redux 来管理状态数据。
 - 本节主要讲解的是 redux 内部的 action 的相关内容，同样的，这里介绍的 action 和 react 也是没有直接关联的。
 
-## 4. 📒 action 是什么？有什么用？
+## 3. 📒 action 是什么？有什么用？
 
 - 从数据类型层面来看，action 就是一个普通的平面对象 plain-object。
   - action 的 `__proto__` 指向 `Object.prototype`。
@@ -102,7 +98,7 @@ mindmap
       payload：使用 payload 属性表示附加数据。这一点没有强制要求，但通常都是这么做的
 ```
 
-## 5. 📒 redux 部分源码 - 判断 action 是否合法的逻辑
+## 4. 📒 redux 部分源码 - 判断 action 是否合法的逻辑
 
 ```ts
 // version: v5.0.1
@@ -153,7 +149,7 @@ function isAction(action: unknown): action is Action<string> {
 }
 ```
 
-## 6. 💻 action 必须是一个平面对象
+## 5. 💻 action 必须是一个平面对象
 
 ```js
 import * as redux from 'redux'
@@ -202,7 +198,7 @@ console.log('打印 window.store.getState() 获取仓库当前状态 =>', window
 // 打印 window.store.getState() 获取仓库当前状态 => 11
 ```
 
-## 7. 💻 action 的 type 属性必须是 string 类型
+## 6. 💻 action 的 type 属性必须是 string 类型
 
 ```js
 import * as redux from 'redux'
@@ -232,7 +228,7 @@ store.dispatch(action)
 
 ![](md-imgs/2024-10-30-07-14-35.png)
 
-## 8. 📒 type 的硬编码问题
+## 7. 📒 type 的硬编码问题
 
 - 在大型项目，由于操作类型非常多，为了避免硬编码（hard code），会将 action 的类型存放到一个或一些单独的文件中(样板代码)。
 - 举一反三
@@ -257,7 +253,7 @@ export default {
 };
 ```
 
-## 9. 📒 action 的创建函数
+## 8. 📒 action 的创建函数
 
 - 为了方便传递 action，通常会使用 action 创建函数（action creator）来创建 action。
 - action 的创建函数应为无副作用的 **纯函数**。
@@ -266,11 +262,11 @@ export default {
   - 不可以有异步
   - 不可以对外部环境中的数据造成影响
 
-## 10. 📒 `bindActionCreators`
+## 9. 📒 `bindActionCreators`
 
 - 为了方便利用 action 创建函数来分发（触发）action，redux 提供了一个函数 `bindActionCreators`，该函数用于增强 action 创建函数的功能，使它不仅可以创建 action，并且创建后会自动完成分发。
 
-## 11. 💻 action 的创建函数以及工具方法 `bindActionCreators`
+## 10. 💻 action 的创建函数以及工具方法 `bindActionCreators`
 
 ```js
 /**
@@ -529,7 +525,7 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 ```
 
-## 12. 🤖 如何验证一个对象是否是 plain-object？
+## 11. 🤖 如何验证一个对象是否是 plain-object？
 
 “plain object”，即通过对象字面量或 `new Object()` 创建的对象，而不是通过构造函数（如 `Array`, `Date`, `Map` 等）创建的实例。一个 plain object 只包含自己的属性，没有额外的方法和原型链上的其他属性。
 
@@ -596,7 +592,7 @@ console.log(_.isPlainObject(functionObj));  // 输出: false
 
 `lodash` 的 `_.isPlainObject` 函数会进行更复杂的检查，包括处理一些特殊情况，例如 `arguments` 对象等。如果你已经在项目中使用了 `lodash`，那么直接使用 `_.isPlainObject` 会更加方便和可靠。
 
-## 13. 🤖 为什么 type 必须是 string 类型，符号类型不行
+## 12. 🤖 为什么 type 必须是 string 类型，符号类型不行
 
 ```
 isAction
@@ -616,3 +612,4 @@ Returns true if the parameter is a valid Redux action object (a plain object wit
 6. **简单性**：字符串足够简单且强大，能够满足大多数应用的需求。对于简单的应用程序来说，没有必要引入符号这样的复杂性。
 
 当然，如果你确实有需求，并且清楚上述限制，你可以在你的 Redux 应用中自定义 action 类型为符号。不过你需要确保所有的中间件、store 配置以及与之交互的其他部分都能正确处理这种情况。此外，你还需要自己实现或者调整相关的工具以适应符号类型的使用。
+
