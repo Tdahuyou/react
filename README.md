@@ -30,7 +30,7 @@
   - [6. 第三方库](#6-第三方库)
   - [7. 工程化](#7-工程化)
   - [8. 小练习](#8-小练习)
-  - [9. ⏰ 待分组](#9--待分组)
+  - [9. UI 组件库](#9-ui-组件库)
 <!-- endregion:toc -->
 
 ## 1. 快速入门
@@ -492,6 +492,10 @@
   
   
 
+- [ ] [0038. react-intl 基本使用](https://github.com/Tdahuyou/react/tree/main/0038.%20react-intl%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) <!-- [locale](./0038.%20react-intl%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md) -->  
+  - [1. ⏰](https://github.com/Tdahuyou/react/tree/main/0038.%20react-intl%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md#1-)
+  
+
 ## 7. 工程化
 
 - [ ] [0008. 使用 vite 快速初始化一个 react 工程](https://github.com/Tdahuyou/react/tree/main/0008.%20%E4%BD%BF%E7%94%A8%20vite%20%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%20react%20%E5%B7%A5%E7%A8%8B/README.md) <!-- [locale](./0008.%20%E4%BD%BF%E7%94%A8%20vite%20%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%20react%20%E5%B7%A5%E7%A8%8B/README.md) -->  
@@ -523,7 +527,7 @@
   - 通过本节的 demo，强调了一个点 —— 由 `React.createElement` 创建的 react 元素对象是不可变的。
   
 
-## 9. ⏰ 待分组
+## 9. UI 组件库
 
 - [ ] [0037. 学习 antd Message 组件的使用](https://github.com/Tdahuyou/react/tree/main/0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md) <!-- [locale](./0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md) -->  
   - [1. 🔗 Message 全局提示](https://github.com/Tdahuyou/react/tree/main/0037.%20%E5%AD%A6%E4%B9%A0%20antd%20Message%20%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/README.md#1--message-全局提示)
