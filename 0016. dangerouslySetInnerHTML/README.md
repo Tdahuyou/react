@@ -1,12 +1,12 @@
 # [0016. dangerouslySetInnerHTML](https://github.com/Tdahuyou/react/tree/main/0016.%20dangerouslySetInnerHTML)
 
 <!-- region:toc -->
-- [1. 🔗 links](#1--links)
-- [2. 📒 notes](#2--notes)
+- [1. 🔗 links](#1--links-10)
+- [2. 📒 notes](#2--notes-1)
 - [3. 💻 dangerouslySetInnerHTML 的基本使用](#3--dangerouslysetinnerhtml-的基本使用)
 - [4. 🤖 请介绍一下 dangerouslySetInnerHTML](#4--请介绍一下-dangerouslysetinnerhtml)
   - [4.1. 为什么需要 `dangerouslySetInnerHTML`？](#41-为什么需要-dangerouslysetinnerhtml)
-  - [4.2. 基本用法](#42-基本用法)
+  - [4.2. 基本用法](#42-基本用法-1)
   - [4.3. 安全注意事项](#43-安全注意事项)
   - [4.4. 使用示例](#44-使用示例)
     - [4.4.1. 1. 1. 1. 1. 安装 `DOMPurify`](#441-1-1-1-1-安装-dompurify)

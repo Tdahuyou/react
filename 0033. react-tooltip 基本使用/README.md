@@ -1,7 +1,7 @@
 # [0033. react-tooltip 基本使用](https://github.com/Tdahuyou/react/tree/main/0033.%20react-tooltip%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
 <!-- region:toc -->
-- [1. 🔗 links](#1--links)
+- [1. 🔗 links](#1--links-15)
 - [2. 📒 react-tooltip 概述](#2--react-tooltip-概述)
 - [3. 📒 安装 react-tooltip](#3--安装-react-tooltip)
 - [4. 📒 核心依赖的版本](#4--核心依赖的版本)

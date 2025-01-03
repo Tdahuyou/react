@@ -6,7 +6,7 @@
 - [2. 📒 使用 pnpm 的实际操作流程](#2--使用-pnpm-的实际操作流程)
 - [3. 📒 使用 vite 创建 react 工程](#3--使用-vite-创建-react-工程)
 - [4. 📒 启动用 vite 创建的 react 工程](#4--启动用-vite-创建的-react-工程)
-- [5. 🤖 解释命令 - `npm create vite@latest my-react-app -- --template react`](#5--解释命令---npm-create-vite@latest-my-react-app------template-react)
+- [5. 🤖 解释命令 - `npm create vite@latest my-react-app -- --template react`](#5--解释命令---npm-create-vitelatest-my-react-app------template-react)
   - [5.1. 整体流程](#51-整体流程)
   - [5.2. 总结](#52-总结)
 <!-- endregion:toc -->

@@ -1,7 +1,7 @@
 # [0002. react 组件名的命名规则](https://github.com/Tdahuyou/react/tree/main/0002.%20react%20%E7%BB%84%E4%BB%B6%E5%90%8D%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99)
 
 <!-- region:toc -->
-- [1. 🔗 links](#1--links)
+- [1. 🔗 links](#1--links-1)
 - [2. 📒 notes](#2--notes)
 - [3. 💻 demo - react 组件名的命名规则](#3--demo---react-组件名的命名规则)
 <!-- endregion:toc -->
