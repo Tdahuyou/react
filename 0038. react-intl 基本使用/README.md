@@ -1,36 +1,70 @@
 # [0038. react-intl 基本使用](https://github.com/Tdahuyou/react/tree/main/0038.%20react-intl%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
 
 <!-- region:toc -->
-- [1. 🔗 react-intl 官方文档](#1--react-intl-官方文档)
-- [2. 🔍 Message Syntax](#2--message-syntax)
-- [3. 📒 react-intl 简介](#3--react-intl-简介)
-- [4. 📒 认识 ICU (International Components for Unicode)](#4--认识-icu-(international-components-for-unicode))
-- [5. 💻 demos.1 - react-intl 基本使用](#5--demos1---react-intl-基本使用)
-- [6. 🔍 如何判断传入的 locale 是否是合法值](#6--如何判断传入的-locale-是否是合法值)
+- [1. 🔗 links](#1--links)
+- [2. 📒 react-intl 简介](#2--react-intl-简介)
+- [3. 🤔 ICU (International Components for Unicode) 是什么？有什么用？](#3--icu-(international-components-for-unicode)-是什么有什么用)
+- [4. 💻 demos.1 - react-intl 基本使用](#4--demos1---react-intl-基本使用)
+- [5. 🔍 如何判断传入的 locale 是否是合法值](#5--如何判断传入的-locale-是否是合法值)
+- [6. 💻 demos.1 - 特殊的 locale 值](#6--demos1---特殊的-locale-值)
+- [7. 💻 demos.1 - useIntl、injectIntl - 使用 defineMessages 定义消息](#7--demos1---useintlinjectintl---使用-definemessages-定义消息)
+- [8. 💻 demos.1 - 通过 intl 对象来获取国际化消息数据](#8--demos1---通过-intl-对象来获取国际化消息数据)
+- [9. 💻 demos.2 - IntlShape 在 .ts 中的应用](#9--demos2---intlshape-在-ts-中的应用)
 <!-- endregion:toc -->
 - React-Intl 是一个强大的工具，可帮助开发人员轻松管理和本地化他们的 React 应用程序。
 
-## 1. 🔗 react-intl 官方文档
+## 1. 🔗 links
 
 - https://formatjs.github.io/docs/getting-started/installation/
-
-## 2. 🔍 Message Syntax
-
+  - react-intl 官方文档
 - https://formatjs.github.io/docs/core-concepts/icu-syntax/
-- Message Syntax 是一种用于格式化消息的语法，它支持嵌入式的文本替换和格式化，并且可以处理不同语言的特殊规则。
-- 和 ICU Message Syntax 类似。
-- 比如，我们可以使用 Message Syntax 来创建一条包含日期和时间的消息。
-  - 通过使用 `{key, type, format}` 格式，我们可以根据不同的条件选择输出不同的字符串，从而实现更灵活的消息显示方式。
-  - 
+  - react-intl 官方文档 - 核心概念 - Message Syntax
+- https://icu.unicode.org/
+  - ICU-TC Home Page
+  - ICU (International Components for Unicode)
+- https://unicode-org.github.io/icu/
+  - ICU Documentation
+- https://unicode-org.github.io/icu/userguide/format_parse/messages/
+  - 用于查阅 ICU Message syntax
 
-## 3. 📒 react-intl 简介
+## 2. 📒 react-intl 简介
 
 - React-Intl 是一个开源 JavaScript 库，用于在 React 应用程序中实现国际化。它提供了一组工具来处理应用程序中的本地化需求，包括日期、时间、货币和消息等。
 - React-Intl 的主要功能之一是支持多语言翻译。它允许开发人员将应用程序的文本和消息存储在一个外部文件中，并使用相应的语言代码来加载正确的翻译版本。这使得开发人员可以轻松地为不同的语言环境创建本地化的应用程序，而无需手动编写每个字符串的翻译。
 - 除了多语言翻译外，React-Intl 还提供了其他有用的特性，例如格式化日期和时间、货币转换以及自定义消息解析器。这些功能可以帮助开发人员更轻松地管理应用程序中的本地化需求，并确保它们正确地显示给用户。
 - React-Intl 还与许多流行的前端框架（如 Next.js 和 Gatsby）集成良好，使其成为构建现代 Web 应用程序的理想选择。
+- React-Intl 是基于 ICU 的国际化标准和功能构建的。
+- Message Syntax
+  - Message Syntax 是一种用于格式化消息的语法，它支持嵌入式的文本替换和格式化，并且可以处理不同语言的特殊规则。
+  - 和 ICU Message Syntax 类似。
+    - 比如，我们可以使用 Message Syntax 来创建一条包含日期和时间的消息。
+      - `"当前时间：今天是 {ts, date, ::yyyy年M月d日 hh:mm:ss}"`
+      - 其中的 `{ts, date, ::yyyy年M月d日 hh:mm:ss}` 就是一个 ICU Message Syntax 的格式，它表示一个日期格式，其中 `ts` 是一个占位符，表示日期和时间的值，`date` 是一个类型，表示一个日期，`::yyyy年M月d日 hh:mm:ss` 是一个格式，表示日期的格式。
+    - 通过使用 `{key, type, format}` 格式，我们可以根据不同的条件选择输出不同的字符串，从而实现更灵活的消息显示方式。
+- react-intl 库中的一些常用模块
+  - **IntlProvider**
+    - 这是一个高阶组件，用于为应用程序提供国际化（i18n）环境。
+    - 它需要一个 `locale` 属性来指定语言环境，并且可以包含 `messages` 属性来提供翻译信息。
+    - **IntlProvider 组件是用来提供数据的。**
+  - **FormattedMessage**
+    - 用于在 JSX 中插入已格式化的消息。
+    - 通过 id 属性来指定使用 IntlProvider 提供的 messages 中的哪条消息。
+    - 通过 values 属性来提供消息的参数。
+  - **defineMessages**
+    - 用于定义多个消息对象，通常在一个单独的文件中定义并导出，以便集中管理所有的国际化消息。
+    - 在 node_modules/react-intl/index.js 中可以查看到 defineMessages 的实现源码：
+      - `function defineMessages(msgs) { return msgs; }`
+      - 源代码非常简单，就是将传入的 `msgs` 对象直接返回，没有做任何处理。
+  - **injectIntl**
+    - 这是一个高阶组件，用于将 `intl` 对象注入到组件的 props 中。这使得组件可以直接访问 `intl` 提供的方法和属性。
+    - 在导出组件 `MyComponent` 的时候，使用 `injectIntl` 高阶组件包裹一下 `export default injectIntl(MyComponent);`，这会将 `intl` 对象注入到组件的 props 中。
+  - **IntlShape**、**intlShape**
+    - 定义了 `intl` 对象的形状（shape），通常用于类型检查或 prop 类型验证，确保传递给组件的 `intl` 对象符合预期结构。
+    - `MyComponent.propTypes = { intl: intlShape.isRequired };`
+    - `intlShape` 是一个相对早期（比如 v2.x）的 API，在当前（2025年1月3日13:27:11）的最新版 `"react-intl": "^7.1.0"` 中，这玩意儿已经被移除了。如果是 ts 项目，可以导入 `IntlShape` 类型。
+    - ⚠️ 注意：`intlShape` 已经被废弃，和目前很多库的版本不兼容，使用它的会有不少坑。
 
-## 4. 📒 认识 ICU (International Components for Unicode)
+## 3. 🤔 ICU (International Components for Unicode) 是什么？有什么用？
 
 - **简介**
   - ICU 是一个被广泛使用的 C/C++ 和 Java 库集合，为软件开发者提供了一套完整的国际化和本地化解决方案。
@@ -45,7 +79,7 @@
 - **社区与维护**
   - 由 Unicode 组织维护，得到了全球开发者的贡献和支持，保证了其稳定性和可靠性。
 
-## 5. 💻 demos.1 - react-intl 基本使用
+## 4. 💻 demos.1 - react-intl 基本使用
 
 ```js
 import { StrictMode, useState, useEffect } from 'react';
@@ -143,6 +177,45 @@ createRoot(document.getElementById('root')).render(
     - docs：https://formatjs.github.io/docs/intl/
     - 小结：其实用一个 FormattedMessage 基本就够了，其他的 `Formatted*` 都可以基于 `FormattedMessage` 来实现，如果有一些简单的格式化的逻辑需求，完全可以自己实现。
 
+## 5. 🔍 如何判断传入的 locale 是否是合法值
+
+- https://github.com/formatjs/formatjs/blob/%40formatjs/intl%403.0.4/packages/intl/src/create-intl.ts#L77
+- @formatjs/intl@3.0.4/packages/intl/src/create-intl.ts 源码
+
+```js
+const locale = 'xxx'
+if (!Intl.NumberFormat.supportedLocalesOf(locale).length) {
+    console.log(locale, '不支持')
+}
+// 🔗 MDN Intl => doc: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl
+
+
+// locale 不是一个随意的字符串，如果传入非法值是会报错的，比如
+Intl.NumberFormat.supportedLocalesOf('Tdahuyou&We')
+// ❌
+// Uncaught RangeError: Incorrect locale information provided
+//     at Function.supportedLocalesOf (<anonymous>)
+//     at <anonymous>:1:19
+
+// 至于什么值是合法的，什么值是非法的，MDN 上提到 locale 必须是一个  BCP 47 语言标记的字符串。
+// 🔗 BCP 47 语言标记 => https://datatracker.ietf.org/doc/html/rfc5646
+// 文章尚未仔细读过。
+// 通过简单的自测，感觉合法的 locale 蛮奇怪的，常见的一些标准值都是合法的，比如 zh、zh-cn、zh-CN、en、de、ko、ja 等等。
+// 同时，locale 可以是一些奇怪的值，比如 zh-250102
+// 下面是简单自测的结果：
+Intl.NumberFormat.supportedLocalesOf('zh') // => ['zh']
+Intl.NumberFormat.supportedLocalesOf('zh-cn') // => ['zh-CN']
+Intl.NumberFormat.supportedLocalesOf('zh-CN') // => ['zh-CN']
+Intl.NumberFormat.supportedLocalesOf('en') // => ['en']
+Intl.NumberFormat.supportedLocalesOf('de') // => ['de']
+Intl.NumberFormat.supportedLocalesOf('ko') // => ['ko']
+Intl.NumberFormat.supportedLocalesOf('ja') // => ['ja']
+
+Intl.NumberFormat.supportedLocalesOf('zh-250102') // => ['zh-250102']
+```
+
+## 6. 💻 demos.1 - 特殊的 locale 值
+
 ```js
 import { StrictMode, useState } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -181,47 +254,318 @@ function App() {
   );
 }
 
-createRoot(rootElement).render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>,
 );
 ```
 
-## 6. 🔍 如何判断传入的 locale 是否是合法值
-
-- https://github.com/formatjs/formatjs/blob/%40formatjs/intl%403.0.4/packages/intl/src/create-intl.ts#L77
-- @formatjs/intl@3.0.4/packages/intl/src/create-intl.ts 源码
+## 7. 💻 demos.1 - useIntl、injectIntl - 使用 defineMessages 定义消息
 
 ```js
-const locale = 'xxx'
-if (!Intl.NumberFormat.supportedLocalesOf(locale).length) {
-    console.log(locale, '不支持')
+import React, { StrictMode, useState, useEffect } from 'react';
+import { createRoot } from 'react-dom/client';
+import { IntlProvider, FormattedMessage, defineMessages, useIntl } from 'react-intl';
+
+// 推荐
+const msg = defineMessages({
+  welcome: {
+    id: 'app.welcome',
+    defaultMessage: 'Welcome, {name}!',
+    description: '欢迎用户的消息',
+  },
+  goodbye: {
+    id: 'app.goodbye',
+    defaultMessage: 'Goodbye, {name}!',
+    description: '告别用户的消息',
+  },
+});
+
+// 不推荐
+const msg2 = {
+  welcome: {
+    id: 'app.welcome',
+    defaultMessage: 'Welcome, {name}!',
+    description: '欢迎用户的消息',
+  },
+  goodbye: {
+    id: 'app.goodbye',
+    defaultMessage: 'Goodbye, {name}!',
+    description: '告别用户的消息',
+  },
+};
+
+function Greeting({ name }) {
+  const intl = useIntl();
+  return (
+    <>
+      {/* 在组件中使用 */}
+      <div>
+        <FormattedMessage {...msg.welcome} values={{ name }} />
+        <br />
+        <FormattedMessage {...msg.goodbye} values={{ name }} />
+      </div>
+      <hr />
+      <div>
+        <FormattedMessage {...msg2.welcome} values={{ name }} />
+        <br />
+        <FormattedMessage {...msg2.goodbye} values={{ name }} />
+      </div>
+      <hr />
+      <hr />
+      {/* 在函数中使用 */}
+      <div>
+        {intl.formatMessage(msg.welcome, { name })}
+        <br />
+        {intl.formatMessage(msg.goodbye, { name })}
+      </div>
+      <hr />
+      <div>
+        {intl.formatMessage(msg2.welcome, { name })}
+        <br />
+        {intl.formatMessage(msg2.goodbye, { name })}
+      </div>
+    </>
+  );
 }
-// 🔗 MDN Intl => doc: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl
+
+// -------------------------------------------------------------------------
+// #region Q&A
+// -------------------------------------------------------------------------
+// 🤔 msg、msg2 有何区别？
+// 答：单从 demo 的功能来看，用哪个其实都 ok，没啥区别。
+
+// 🔍 在 node_modules/react-intl/index.js 中可以查看到 defineMessages 的实现源码：
+// function defineMessages(msgs) {
+//   return msgs;
+// }
+// 会发现它其实就是将传入的对象直接返回，并没有做任何的特殊处理。
+// 不过还是推荐使用 defineMessages 来定义消息。
+// 1. 可以获得更好的 IDE 支持，比如快速跳转到对应的类型声明文件查看消息结构信息。
+//    export interface MessageDescriptor {
+//        id?: MessageIds;
+//        description?: string | object;
+//        defaultMessage?: string | MessageFormatElement[];
+//    }
+// 2. 如果使用的是 .ts 来写，还能获取更友好的类型提示。
+// 3. 工具链支持，配套的 react-intl-cli 库在处理的时候，可以自动扫描并提取 defineMessages 定义的消息到翻译文件中，若使用 msg2 的写法，则无法提取。
+// 4. 可读性相对更好一些。
+// -------------------------------------------------------------------------
+// #endregion Q&A
+// -------------------------------------------------------------------------
 
 
-// locale 不是一个随意的字符串，如果传入非法值是会报错的，比如
-Intl.NumberFormat.supportedLocalesOf('Tdahuyou&We')
-// ❌
-// Uncaught RangeError: Incorrect locale information provided
-//     at Function.supportedLocalesOf (<anonymous>)
-//     at <anonymous>:1:19
+// 包含了所有的翻译信息的模块
+const localeMessages = {
+  en: {
+    'app.welcome': 'Welcome, {name}!',
+    'app.goodbye': 'Goodbye, {name}!',
+  },
+  zh: {
+    'app.welcome': '欢迎，{name}！',
+    'app.goodbye': '再见，{name}！',
+  },
+};
 
-// 至于什么值是合法的，什么值是非法的，MDN 上提到 locale 必须是一个  BCP 47 语言标记的字符串。
-// 🔗 BCP 47 语言标记 => https://datatracker.ietf.org/doc/html/rfc5646
-// 文章尚未仔细读过。
-// 通过简单的自测，感觉合法的 locale 蛮奇怪的，常见的一些标准值都是合法的，比如 zh、zh-cn、zh-CN、en、de、ko、ja 等等。
-// 同时，locale 可以是一些奇怪的值，比如 zh-250102
-// 下面是简单自测的结果：
-Intl.NumberFormat.supportedLocalesOf('zh') // => ['zh']
-Intl.NumberFormat.supportedLocalesOf('zh-cn') // => ['zh-CN']
-Intl.NumberFormat.supportedLocalesOf('zh-CN') // => ['zh-CN']
-Intl.NumberFormat.supportedLocalesOf('en') // => ['en']
-Intl.NumberFormat.supportedLocalesOf('de') // => ['de']
-Intl.NumberFormat.supportedLocalesOf('ko') // => ['ko']
-Intl.NumberFormat.supportedLocalesOf('ja') // => ['ja']
+function App() {
+  const [locale, setLocale] = useState('en'); // 可以根据需要动态设置
+  const messages = localeMessages[locale];
 
-Intl.NumberFormat.supportedLocalesOf('zh-250102') // => ['zh-250102']
+  return (
+    <IntlProvider locale={locale} messages={messages}>
+      <div>
+        <select value={locale} onChange={(e) => setLocale(e.target.value)}>
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+        <Greeting name="Tdahuyou" />
+      </div>
+    </IntlProvider>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
 ```
+
+- ![](assets/2025-01-03-10-56-42.png)
+- ![](assets/2025-01-03-10-56-52.png)
+
+## 8. 💻 demos.1 - 通过 intl 对象来获取国际化消息数据
+
+```js
+import React, { StrictMode, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import { IntlProvider, defineMessages, useIntl, injectIntl } from 'react-intl';
+
+const msg = defineMessages({
+  welcome: {
+    id: 'app.welcome',
+    defaultMessage: 'Welcome, {name}!',
+    description: '欢迎用户的消息',
+  },
+  goodbye: {
+    id: 'app.goodbye',
+    defaultMessage: 'Goodbye, {name}!',
+    description: '告别用户的消息',
+  },
+});
+
+function Greeting({ name, intl }) {
+  // 通过 useIntl(); 来获取 intl 对象
+  const intl2 = useIntl();
+
+  // 通过 injectIntl 和 useIntl() 获取到的 intl 是同一个对象。
+  // console.log(intl === intl2); // true
+
+  return (
+    <>
+      <div>
+        {intl2.formatMessage(msg.welcome, { name })}
+        <br />
+        {intl2.formatMessage(msg.goodbye, { name })}
+      </div>
+      <hr />
+      <div>
+        {intl.formatMessage(msg.welcome, { name })}
+        <br />
+        {intl.formatMessage(msg.goodbye, { name })}
+      </div>
+    </>
+  );
+}
+
+const localeMessages = {
+  en: {
+    'app.welcome': 'Welcome, {name}!',
+    'app.goodbye': 'Goodbye, {name}!',
+  },
+  zh: {
+    'app.welcome': '欢迎，{name}！',
+    'app.goodbye': '再见，{name}！',
+  },
+};
+
+function App() {
+  const [locale, setLocale] = useState('en');
+  const messages = localeMessages[locale];
+
+  const GreetingContainer = injectIntl(Greeting); // 注入 intl 对象
+
+  return (
+    <IntlProvider locale={locale} messages={messages}>
+      <div>
+        <select value={locale} onChange={(e) => setLocale(e.target.value)}>
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+        <GreetingContainer name="Tdahuyou" />
+      </div>
+    </IntlProvider>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
+```
+
+- ![](assets/2025-01-03-10-56-42.png)
+- ![](assets/2025-01-03-10-56-52.png)
+
+## 9. 💻 demos.2 - IntlShape 在 .ts 中的应用
+
+```ts
+import { StrictMode, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import { IntlProvider, defineMessages, useIntl, injectIntl, IntlShape } from 'react-intl';
+
+const msg = defineMessages({
+  welcome: {
+    id: 'app.welcome',
+    defaultMessage: 'Welcome, {name}!',
+    description: '欢迎用户的消息',
+  },
+  goodbye: {
+    id: 'app.goodbye',
+    defaultMessage: 'Goodbye, {name}!',
+    description: '告别用户的消息',
+  },
+});
+
+interface GreetingProps {
+  name: string;
+  intl: IntlShape;
+}
+
+function Greeting({ name, intl }: GreetingProps) {
+  const intl2: IntlShape = useIntl();
+
+  // 通过 injectIntl 和 useIntl() 获取到的 intl 是同一个对象。
+  // console.log(intl === intl2); // true
+
+  return (
+    <>
+      <div>
+        {intl2.formatMessage(msg.welcome, { name })}
+        <br />
+        {intl2.formatMessage(msg.goodbye, { name })}
+      </div>
+      <hr />
+      <div>
+        {intl.formatMessage(msg.welcome, { name })}
+        <br />
+        {intl.formatMessage(msg.goodbye, { name })}
+      </div>
+    </>
+  );
+}
+
+const localeMessages = {
+  en: {
+    'app.welcome': 'Welcome, {name}!',
+    'app.goodbye': 'Goodbye, {name}!',
+  },
+  zh: {
+    'app.welcome': '欢迎，{name}！',
+    'app.goodbye': '再见，{name}！',
+  },
+};
+
+type Locale = keyof typeof localeMessages;
+
+function App() {
+  const [locale, setLocale] = useState<Locale>('en');
+  const messages = localeMessages[locale];
+
+  const GreetingContainer = injectIntl(Greeting); // 注入 intl 对象
+
+  return (
+    <IntlProvider locale={locale} messages={messages}>
+      <div>
+        <select value={locale} onChange={(e) => setLocale(e.target.value as Locale)}>
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+        <GreetingContainer name="Tdahuyou" />
+      </div>
+    </IntlProvider>
+  );
+}
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
+```
+
+- ![](assets/2025-01-03-10-56-42.png)
+- ![](assets/2025-01-03-10-56-52.png)
 

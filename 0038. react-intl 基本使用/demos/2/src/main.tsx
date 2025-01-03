@@ -1,6 +1,6 @@
-import React, { StrictMode, useState } from 'react';
+import { StrictMode, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { IntlProvider, defineMessages, useIntl, injectIntl } from 'react-intl';
+import { IntlProvider, defineMessages, useIntl, injectIntl, IntlShape } from 'react-intl';
 
 const msg = defineMessages({
   welcome: {
@@ -15,9 +15,13 @@ const msg = defineMessages({
   },
 });
 
-function Greeting({ name, intl }) {
-  // 通过 useIntl(); 来获取 intl 对象
-  const intl2 = useIntl();
+interface GreetingProps {
+  name: string;
+  intl: IntlShape;
+}
+
+function Greeting({ name, intl }: GreetingProps) {
+  const intl2: IntlShape = useIntl();
 
   // 通过 injectIntl 和 useIntl() 获取到的 intl 是同一个对象。
   // console.log(intl === intl2); // true
@@ -50,8 +54,10 @@ const localeMessages = {
   },
 };
 
+type Locale = keyof typeof localeMessages;
+
 function App() {
-  const [locale, setLocale] = useState('en');
+  const [locale, setLocale] = useState<Locale>('en');
   const messages = localeMessages[locale];
 
   const GreetingContainer = injectIntl(Greeting); // 注入 intl 对象
@@ -59,7 +65,7 @@ function App() {
   return (
     <IntlProvider locale={locale} messages={messages}>
       <div>
-        <select value={locale} onChange={(e) => setLocale(e.target.value)}>
+        <select value={locale} onChange={(e) => setLocale(e.target.value as Locale)}>
           <option value="en">English</option>
           <option value="zh">中文</option>
         </select>
@@ -69,7 +75,7 @@ function App() {
   );
 }
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
   </StrictMode>,
